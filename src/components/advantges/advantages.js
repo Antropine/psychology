@@ -7,19 +7,19 @@ export default class advantages extends Component {
       <div className='advantages'>
         <div className='advantages-step'>
             <img src='images/happy.png' alt='счастье'></img>
-            <p>Проверенные специалисты</p>
+            <p>Понятный план терапии и результат</p>
         </div>
         <div className='advantages-step'>
             <img src='images/sad.png' alt='грусть'></img>
-            <p>Проверенные специалисты</p>
+            <p>Конфиденциально и безопасно</p>
         </div>
         <div className='advantages-step'>
             <img src='images/worry.png' alt='беспокойство'></img>
-            <p>Проверенные специалисты</p>
+            <p>Находимся в 4 районах Екатеринбурга</p>
         </div>
         <div className='advantages-step'>
             <img src='images/happy.png' alt='счастье'></img>
-            <p>Проверенные специалисты</p>
+            <p>Оперативная запись</p>
         </div>
       </div>
     )
