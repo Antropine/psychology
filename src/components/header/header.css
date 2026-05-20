@@ -1,0 +1,21 @@
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+nav a{
+    transition: all 0.3s;
+}
+
+nav a:hover{
+    transform: scale(1.05);
+}

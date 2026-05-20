@@ -1,0 +1,36 @@
+.hero{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;    
+}
+
+h1{
+    font-size: 36px;
+    font-weight: 400;
+}
+
+.hero-text{
+    text-align: left;
+}
+
+.hero-text p{
+    font-size: 16px;
+    font-weight: 300px;
+}
+
+.button{
+    display: flex;
+    gap: 20px;
+}
+
+.button a{
+    background-color: #ABD2FF;
+    padding: 10px 15px;
+    border-radius: 20px;
+    transition: all 0.3s;
+}
+
+.button a:hover{
+    transform: scale(1.05);
+}
+

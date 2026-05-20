@@ -1,0 +1,16 @@
+.advantages{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.advantages-step{
+    display: flex;
+    gap: 20px;
+    font-size: 20px;
+    font-weight: 200;
+}
+
+.advantages img{
+    object-fit: contain;
+}

@@ -1,10 +1,33 @@
 .App {
   text-align: center;
+  font-family: "Unbounded", sans-serif;
+  background-color: #EAF0FF;
 }
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+}
+
+.container {
+  max-width: 90%;
+  margin: 0 auto;
+  padding: 0 20px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+h2{
+    font-size: 36px;
+    font-weight: 400;
+    text-align: left;
+}
+
+h1{
+    font-size: 36px;
+    font-weight: 400;
 }
 
 @media (prefers-reduced-motion: no-preference) {
