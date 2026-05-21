@@ -8,6 +8,8 @@ import Assortment from './components/assortment/assortment';
 import Specialists from './components/specialists/specialists';
 import Map from './components/map/map';
 import Faq from './components/faq/faq';
+import Form from './components/form/form';
+import Place from './components/place/place';
 
 function App() {
   return (
@@ -18,7 +20,9 @@ function App() {
         <Advantages/>
         <Howwork/>
         <Assortment/>
+        <Form/>
         <Specialists/>
+        <Place/>
         <Map/>
         <Faq/>
         <Footer/>

@@ -1,0 +1,12 @@
+.place-text{
+    text-align: left;
+    margin-bottom: 70px;
+}
+.place-img{
+    display: flex;
+    gap: 20px;
+}
+
+.place-img img{
+    border-radius: 20px;
+}
