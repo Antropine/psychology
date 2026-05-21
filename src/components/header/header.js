@@ -4,7 +4,7 @@ import './header.css';
 export default class header extends Component {
   render() {
     return (
-      <div className='header'>
+      <header>
         <img className='img_logo' src='images/logo.svg' alt='логотип'></img>
         <div className='nav-menu'>
             <nav>
@@ -20,7 +20,7 @@ export default class header extends Component {
             <a href="#">Расписание</a>
             <a href="#">Адрес</a>
         </div>
-      </div>
+      </header>
     )
   }
 }

@@ -1,0 +1,33 @@
+.result-section{
+    display: flex;
+    justify-content: space-between;
+}
+
+.blue-cloud{
+    background-image: url('./assets/blue_cloud.svg');
+}
+
+.white-cloud{
+    background-image: url('./assets/white_cloud.svg');
+}
+
+.blue-cloud,
+.white-cloud {
+  display: inline-block;
+  padding: 70px 80px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+  max-width: 100%;
+  font-size: 16px;
+}
+
+.white-mars{
+    font-family: 'TD Mars', sans-serif;
+    color: white;
+}
+
+.blue-mars{
+    font-family: 'TD Mars', sans-serif;
+    color: #60BDFF;
+}

@@ -10,6 +10,7 @@ import Map from './components/map/map';
 import Faq from './components/faq/faq';
 import Form from './components/form/form';
 import Place from './components/place/place';
+import Result from './components/result/result';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <Assortment/>
         <Form/>
         <Specialists/>
+        <Result/>
         <Place/>
         <Map/>
         <Faq/>
