@@ -19,3 +19,29 @@ nav a{
 nav a:hover{
     transform: scale(1.05);
 }
+
+.header-button{
+    display: flex;
+    gap: 30px;
+    margin-top: 60px;
+}
+
+.address{
+    text-align: left;
+}
+
+.socail-icon{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.socail-icon img{
+    width: 40px;
+    transition: all 0.3s;
+}
+
+.socail-icon img:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+}

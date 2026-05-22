@@ -1,7 +1,6 @@
 .hero{
     display: flex;
     align-items: center;
-    justify-content: space-between;    
 }
 
 h1{
@@ -35,3 +34,34 @@ h1{
     transform: scale(1.05);
 }
 
+.hero-img{
+    width: 100%;
+}
+
+.message {
+    text-align: left;
+    display: inline-block;
+    max-width: 350px;
+    padding: 20px 20px;
+    background-image: url('./message.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+}
+
+.message p{
+    margin-left: 35px;
+}
+
+.message-title{
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.message-title img{
+    width: 30px;
+}
+
+.message-text{
+    font-weight: 300;
+}

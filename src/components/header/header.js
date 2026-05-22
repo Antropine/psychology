@@ -1,24 +1,36 @@
 import React, { Component } from 'react'
+import { Link } from 'react-router-dom';
 import './header.css';
 
 export default class header extends Component {
   render() {
     return (
       <header>
-        <img className='img_logo' src='images/logo.svg' alt='логотип'></img>
+        <a href='/'>
+          <img className='img_logo' src='images/logo.svg' alt='логотип'></img>
+        </a>
         <div className='nav-menu'>
             <nav>
-                <a href="#">о нас</a>
-                <a href="#">услуги</a>
-                <a href="#">специалисты</a>
-                <a href="#">блог</a>
-                <a href="#">контакты</a>
-                <a href="#">тесты</a>
+              <Link  to="/about">о нас</Link>
+              <Link  to="/service">услуги</Link>
+              <Link  to="/specialists">специалисты</Link>
+              <Link  to="/blog">блог</Link>
+              <Link  to="/contacts">контакты</Link>
+              <Link  to="/tests">тесты</Link>
             </nav>
         </div>
         <div className='header-button'>
-            <a href="#">Расписание</a>
-            <a href="#">Адрес</a>
+            <div className='address'>
+              <p>г. Екатеринбург</p>
+              <p>ул. Малышева, 51<br/>БЦ Высоцкий</p>
+            </div>
+            <div className='phone'>
+              <p>+74839430393</p>
+              <div className='socail-icon'>
+                <img src='images/tg.svg' alt='Телеграм'></img>
+                <img src='images/max.svg' alt='Макс'></img>
+              </div>
+            </div>
         </div>
       </header>
     )

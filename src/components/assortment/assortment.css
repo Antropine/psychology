@@ -15,6 +15,10 @@
     font-weight: 300;
 }
 
+.assortment-text img{
+    float: right;
+}
+
 .quiz-form{
     background-color: white;
     border-radius: 20px;
