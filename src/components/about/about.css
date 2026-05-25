@@ -1,3 +1,5 @@
+/*главная секция*/
+
 .about-hero{
     display: flex;
     justify-content: space-between;
@@ -12,4 +14,168 @@
 
 .about-img img{
     width: 500px;
+}
+
+/*адреса*/
+
+.address-card{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+/*карта*/
+
+.map-wrapper {
+    position: relative;
+    overflow: hidden;
+}
+
+.map-wrapper a {
+    color: #eee;
+    font-size: 12px;
+    position: absolute;
+    top: 0px;
+}
+
+.map-wrapper a:last-of-type {
+    top: 14px;
+}
+
+.map-iframe {
+    position: relative;
+    border-radius: 20px;
+    border: none;
+}
+
+.adress p{
+    text-align: left;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+/* Преимущества */
+
+.pluses-subtitle{
+    text-align: left;
+    font-size: 16px;
+}
+
+.pluses-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+/* Карточки */
+
+.kartochki {
+    margin-top: 80px;
+    background-color: #60BDFF;
+    box-shadow: 0 0 0 100vmax #60BDFF;
+    clip-path: inset(0 -100vmax);
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.kartochki-track {
+    display: flex;
+    gap: 24px;
+    margin-top: 24px;
+}
+
+.kartochki-card {
+    flex: 1;
+    height: 750px;
+    background: white;
+    border-radius: 20px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    position: relative;
+}
+
+.kartochki-card h3 {
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.kartochki-card p {
+    font-size: 14px;
+    text-align: left;
+    margin: 0;
+}
+
+.kartochki-card img {
+    width: 200px;
+    object-fit: contain;
+}
+
+.kartochki-btn {
+    position: absolute;
+    bottom: 24px;
+    right: 24px;
+    background-color: #ABD2FF;
+    padding: 15px 20px;
+    border-radius: 20px;
+    transition: all 0.3s;
+    font-size: 20px;
+    font-family: "Unbounded", sans-serif;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    color: inherit;
+}
+
+.kartochki-btn:hover {
+    transform: scale(1.05);
+}
+
+.kartochki-arrows {
+    display: flex;
+    justify-content: flex-end;
+    gap: 8px;
+    margin-top: 16px;
+}
+
+.kartochki-arrow {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 1px solid #ABD2FF;
+    background: transparent;
+    font-size: 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+    padding: 0;
+}
+
+.kartochki-arrow img {
+    width: 22px;
+    height: auto;
+    display: block;
+}
+
+.kartochki-arrow:hover {
+    background: #ABD2FF;
+}
+
+/* Форма записи */
+
+.about-form{
+    margin-top: 100px;
+    margin-bottom: 60px;
+}
+
+.about-form p{
+    font-size: 36px;
+    text-align: left;
+    width: 75%;
 }

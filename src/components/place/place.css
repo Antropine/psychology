@@ -1,12 +1,54 @@
-.place-text{
+.place-text {
     text-align: left;
     margin-bottom: 70px;
 }
-.place-img{
+
+/* Карусель */
+
+.carousel {
     display: flex;
-    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
 }
 
-.place-img img{
+/* Боковые превью */
+
+.carousel-side {
+    cursor: pointer;
+    opacity: 0.5;
+    transition: opacity 0.2s, transform 0.2s;
+    flex-shrink: 0;
+}
+
+.carousel-side:hover {
+    opacity: 0.75;
+    transform: scale(1.03);
+}
+
+.carousel-side img {
+    width: 300px;
+    height: 190px;
+    object-fit: cover;
+    border-radius: 14px;
+}
+
+/* Активный слайд */
+
+.carousel-center {
+    text-align: center;
+    flex-shrink: 0;
+}
+
+.carousel-center img {
+    width: 700px;
+    height: 450px;
+    object-fit: cover;
     border-radius: 20px;
+}
+
+.carousel-title {
+    margin-top: 16px;
+    font-size: 18px;
+    font-weight: 600;
 }
