@@ -38,7 +38,7 @@ export default class Faq extends Component {
       answers: 'Тревога, стресс',
     },
     {
-      title: 'Сколько стоит консультация со специалистом?',
+      title: '«Я никогда не был у психолога. Мне страшно / неловко»',
       answers: 'Тревога, стресс',
     },
   ]
@@ -57,22 +57,38 @@ export default class Faq extends Component {
     return (
       <div className='faq'>
         <h2>FAQ</h2>
-        {this.faq.map((item, index) => (
-          <div key={index} className='faq-item'>
-            <p
-              className='faq-title'
-              onClick={() => this.toggleFaq(index)}
-            >
-              {item.title} <img src='images/faq_arrow.svg'></img>
-            </p>
-
-            {this.state.openIndex === index && (
-              <div className='faq-answer'>
-                <p>{item.answers}</p>
+        <div className='faq-content'>
+          <div className='faq-list'>
+            {this.faq.map((item, index) => (
+              <div key={index} className='faq-item'>
+                <p className='faq-title' onClick={() => this.toggleFaq(index)}>
+                  {item.title} <img src='images/faq_arrow.svg' alt='' />
+                </p>
+                {this.state.openIndex === index && (
+                  <div className='faq-answer'>
+                    <p>{item.answers}</p>
+                  </div>
+                )}
               </div>
-            )}
+            ))}
           </div>
-        ))}
+
+          <div className='popular-faq'>
+            <div className='popular-faq-header'>
+              <div>
+                <p className='faq-title popular-faq-title'>
+                  Сколько стоит консультация со специалистом? <img src='images/faq_arrow.svg'></img>
+                </p>
+                <div className='faq-answer'>
+                  <p>Наши кабинеты — это пространство, где можно быть собой и меняться в своем темпе</p>
+                </div>
+              </div>
+              <img src='images/popular.png' alt='Искра с сердцем' />
+            </div>
+          </div>
+        </div>
+  
+
       </div>
     )
   }

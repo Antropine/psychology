@@ -59,6 +59,11 @@
     transform: scale(1.05);
 }
 
+.reasons button.selected {
+    background-color: #7DA2FF;
+    color: white;
+}
+
 .quiz-form textarea{
     background-color: #EAF0FF;
     border: none;
@@ -74,10 +79,58 @@
     box-sizing: border-box;
 }
 
+.quiz-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
 .steps-indicator {
   display: flex;
   gap: 8px;
-  margin-top: 20px;
+}
+
+.quiz-arrows {
+  display: flex;
+  gap: 10px;
+}
+
+.arrow-btn {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s;
+  padding: 0;
+}
+
+.arrow-prev {
+  background-color: transparent;
+  border: 2px solid #B8CAFF;
+  color: #7DA2FF;
+}
+
+.arrow-prev:hover:not(.arrow-disabled) {
+  background-color: #EAF0FF;
+}
+
+.arrow-next {
+  background-color: #7DA2FF;
+  color: white;
+}
+
+.arrow-next:hover:not(.arrow-disabled) {
+  background-color: #5f8eff;
+}
+
+.arrow-btn.arrow-disabled {
+  opacity: 0.3;
+  cursor: default;
 }
 
 .step-bar {

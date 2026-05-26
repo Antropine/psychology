@@ -12,7 +12,7 @@ export default class header extends Component {
         <div className='nav-menu'>
             <nav>
               <Link  to="/about">о нас</Link>
-              <Link  to="/service">услуги</Link>
+              <Link  to="/services">услуги</Link>
               <Link  to="/specialists">специалисты</Link>
               <Link  to="/blog">блог</Link>
               <Link  to="/contacts">контакты</Link>

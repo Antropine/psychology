@@ -1,0 +1,139 @@
+.services-hero{
+    display: flex;
+    gap: 200px;
+}
+
+.services-text{
+    text-align: left;
+    font-size: 16px;
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.attention{
+    display: flex;
+    gap: 20px;
+}
+
+.price-cards{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    background-color: #60BDFF;
+    box-shadow: 0 0 0 100vmax #60BDFF;
+    clip-path: inset(0 -100vmax);
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.price-cards > h2 {
+    align-self: flex-start;
+}
+
+.price-card{
+    display: grid;
+    grid-template-columns: repeat(2, 350px);
+    gap: 20px;
+}
+
+.card{
+    background-color: white;
+    padding: 30px;
+    border-radius: 20px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.card p {
+    margin: 0;
+}
+
+.card .button{
+    margin-top: auto;
+}
+
+.card {
+    cursor: pointer;
+    transition: box-shadow 0.2s;
+}
+
+.card--active {
+    box-shadow: 0 0 0 3px #60BDFF;
+}
+
+.card-title{
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.card-info{
+    background-color: #EAF0FF;
+    width: fit-content;
+    padding: 10px 10px;
+    border-radius: 10px;
+}
+
+.card-text{
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.card-price{
+    font-size: 20px;
+}
+
+
+/* Подробнее */
+
+.details {
+    padding-top: 60px;
+    display: none;
+}
+
+.details--visible {
+    display: block;
+}
+
+.details-text {
+    font-weight: 300;
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+.details-subtitle {
+    font-weight: 600;
+    margin-bottom: 16px;
+    text-align: left;
+}
+
+.details-specialists {
+    display: flex;
+    gap: 20px;
+}
+
+.details-specialists .specialists-card {
+    flex: 0 0 calc((100% - 400px) / 3);
+    background-color: #60BDFF;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.details-specialists .specialists-price {
+    align-items: center;
+}
+
+.details-specialists .spec-link {
+    font-size: 13px;
+    font-weight: 300;
+    text-align: left;
+    text-decoration: underline;
+    cursor: pointer;
+    color: inherit;
+}
+
+

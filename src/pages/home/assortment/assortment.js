@@ -3,6 +3,7 @@ import './assortment.css'
 
 export default function Assortment() {
   const [step, setStep] = useState(0)
+  const [answers, setAnswers] = useState({})
 
   const slides = [
     {
@@ -35,7 +36,7 @@ export default function Assortment() {
         'Выгорание',
       ],
     },
-     {
+    {
       title: 'Что вас беспокоит? (Мы можем помочь)',
       subtitle: 'Можно выбрать несколько вариантов ответа',
       answers: [
@@ -49,10 +50,25 @@ export default function Assortment() {
     },
   ]
 
+  const toggleAnswer = (item) => {
+    const current = answers[step] || []
+    const isSelected = current.includes(item)
+    setAnswers({
+      ...answers,
+      [step]: isSelected
+        ? current.filter((a) => a !== item)
+        : [...current, item],
+    })
+  }
+
+  const isSelected = (item) => (answers[step] || []).includes(item)
+
   const nextStep = () => {
-    if (step < slides.length - 1) {
-      setStep(step + 1)
-    }
+    if (step < slides.length - 1) setStep(step + 1)
+  }
+
+  const prevStep = () => {
+    if (step > 0) setStep(step - 1)
   }
 
   return (
@@ -70,19 +86,47 @@ export default function Assortment() {
         <p className='quiz-subtitle'>{slides[step].subtitle}</p>
         <div className='reasons'>
           {slides[step].answers.map((item, index) => (
-            <button key={index} onClick={nextStep}>
+            <button
+              key={index}
+              className={isSelected(item) ? 'selected' : ''}
+              onClick={() => toggleAnswer(item)}
+            >
               {item}
             </button>
           ))}
           <textarea placeholder='Другое________________________'></textarea>
         </div>
-        <div className="steps-indicator">
-          {slides.map((_, index) => (
-            <div
-              key={index}
-              className={`step-bar ${index === step ? 'active' : ''}`}
-            />
-          ))}
+        <div className='quiz-nav'>
+          <div className='steps-indicator'>
+            {slides.map((_, index) => (
+              <div
+                key={index}
+                className={`step-bar ${index === step ? 'active' : ''}`}
+              />
+            ))}
+          </div>
+          <div className='quiz-arrows'>
+            <button
+              className={`arrow-btn arrow-prev${step === 0 ? ' arrow-disabled' : ''}`}
+              onClick={prevStep}
+              disabled={step === 0}
+              aria-label='Назад'
+            >
+              <svg width='18' height='18' viewBox='0 0 20 20' fill='none'>
+                <path d='M13 16L7 10L13 4' stroke='currentColor' strokeWidth='2.2' strokeLinecap='round' strokeLinejoin='round'/>
+              </svg>
+            </button>
+            <button
+              className={`arrow-btn arrow-next${step === slides.length - 1 ? ' arrow-disabled' : ''}`}
+              onClick={nextStep}
+              disabled={step === slides.length - 1}
+              aria-label='Далее'
+            >
+              <svg width='18' height='18' viewBox='0 0 20 20' fill='none'>
+                <path d='M7 4L13 10L7 16' stroke='currentColor' strokeWidth='2.2' strokeLinecap='round' strokeLinejoin='round'/>
+              </svg>
+            </button>
+          </div>
         </div>
       </div>
     </div>

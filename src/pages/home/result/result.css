@@ -1,0 +1,81 @@
+.result {
+    padding-top: 60px;
+    background-color: white;
+    box-shadow: 0 0 0 100vmax white;
+    clip-path: inset(0 -100vmax);
+    padding-bottom: 60px;
+}
+
+.result-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left-cloud,
+.right-cloud {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    flex: 1;
+}
+
+.result-image {
+    position: relative;
+    z-index: 2;
+    margin: 0 -40px;
+    flex-shrink: 0;
+}
+
+.result-image img {
+    width: 650px;
+    height: auto;
+}
+
+/* Облачко: img задаёт форму, текст поверх */
+
+.cloud-item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cloud-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* div-обёртка центрирует через flex, p внутри — обычный текст */
+.cloud-center {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16% 18%;
+    box-sizing: border-box;
+}
+
+.cloud-center p {
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.5;
+    font-family: inherit;
+    margin: 0;
+}
+
+.cloud-center--white p {
+    color: white;
+}
+
+.white-mars {
+    font-family: 'TD Mars', sans-serif;
+    color: white;
+}
+
+.blue-mars {
+    font-family: 'TD Mars', sans-serif;
+    color: #60BDFF;
+}

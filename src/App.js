@@ -1,21 +1,27 @@
 import './App.css';
+
+// Шаред компоненты
 import Header from './components/header/header';
 import Footer from './components/footer/footer';
 
-import Hero from './components/hero/hero';
-import Advantages from './components/advantges/advantages';
-import Howwork from './components/howwork/howwork';
-import Assortment from './components/assortment/assortment';
-import Specialists from './components/specialists/specialists';
-import Map from './components/map/map';
-import Faq from './components/faq/faq';
-import Form from './components/form/form';
-import Place from './components/place/place';
-import Result from './components/result/result';
+// Секции главной страницы
+import Hero from './pages/home/hero/hero';
+import Advantages from './pages/home/advantages/advantages';
+import Howwork from './pages/home/howwork/howwork';
+import Assortment from './pages/home/assortment/assortment';
+import Form from './pages/home/form/form';
+import Specialists from './pages/home/specialists/specialists';
+import Result from './pages/home/result/result';
+import Place from './pages/home/place/place';
+import Map from './pages/home/map/map';
+import Faq from './pages/home/faq/faq';
+import Help from './pages/home/help/help';
+import Services from './pages/services/services';
 
-import About from './components/about/about';
-import Policy from './components/policy/policy';
-import Agreement from './components/policy/agreement';
+// Отдельные страницы
+import About from './pages/about/about';
+import Policy from './pages/policy/policy';
+import Agreement from './pages/policy/agreement';
 
 import { Routes, Route } from 'react-router-dom';
 
@@ -31,6 +37,7 @@ function HomePage() {
       <Result />
       <Place />
       <Map />
+      <Help />
       <Faq />
     </>
   );
@@ -47,6 +54,7 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path='/policy' element={<Policy />} />
           <Route path='/agreement' element={<Agreement />} />
+           <Route path='/services' element={<Services />} />
         </Routes>
 
         <Footer />
