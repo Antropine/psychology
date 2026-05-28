@@ -7,7 +7,7 @@ export default class header extends Component {
     return (
       <header>
         <a href='/'>
-          <img className='img_logo' src='images/logo.svg' alt='логотип'></img>
+          <img className='img_logo' src='/images/logo.svg' alt='логотип'></img>
         </a>
         <div className='nav-menu'>
             <nav>
@@ -27,8 +27,8 @@ export default class header extends Component {
             <div className='phone'>
               <p>+74839430393</p>
               <div className='socail-icon'>
-                <img src='images/tg.svg' alt='Телеграм'></img>
-                <img src='images/max.svg' alt='Макс'></img>
+                <img src='/images/tg.svg' alt='Телеграм'></img>
+                <img src='/images/max.svg' alt='Макс'></img>
               </div>
             </div>
         </div>

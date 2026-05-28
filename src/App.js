@@ -10,7 +10,7 @@ import Advantages from './pages/home/advantages/advantages';
 import Howwork from './pages/home/howwork/howwork';
 import Assortment from './pages/home/assortment/assortment';
 import Form from './pages/home/form/form';
-import Specialists from './pages/home/specialists/specialists';
+import SpecialistsSection from './pages/home/specialists/specialists';
 import Result from './pages/home/result/result';
 import Place from './pages/home/place/place';
 import Map from './pages/home/map/map';
@@ -22,6 +22,10 @@ import Services from './pages/services/services';
 import About from './pages/about/about';
 import Policy from './pages/policy/policy';
 import Agreement from './pages/policy/agreement';
+import Specialists from './pages/specialists/specialists';
+import Anna from './pages/specialists/anna/anna';
+import Timur from './pages/specialists/timur/timur';
+import Maria from './pages/specialists/maria/maria';
 
 import { Routes, Route } from 'react-router-dom';
 
@@ -33,7 +37,7 @@ function HomePage() {
       <Howwork />
       <Assortment />
       <Form />
-      <Specialists />
+      <SpecialistsSection />
       <Result />
       <Place />
       <Map />
@@ -54,7 +58,11 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path='/policy' element={<Policy />} />
           <Route path='/agreement' element={<Agreement />} />
-           <Route path='/services' element={<Services />} />
+          <Route path='/services' element={<Services />} />
+          <Route path='/specialists' element={<Specialists />} />
+          <Route path='/specialists/anna' element={<Anna />} />
+          <Route path='/specialists/timur' element={<Timur />} />
+          <Route path='/specialists/maria' element={<Maria />} />
         </Routes>
 
         <Footer />

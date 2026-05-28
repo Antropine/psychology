@@ -1,0 +1,157 @@
+
+.specialist-hero{
+  display: flex;
+  justify-content: space-between;
+}
+
+.specialist-button{
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.specialist-button button{
+  background-color: #60BDFF;
+  border: none;
+  border-radius: 100px;
+  padding: 15px 20px;
+  font-family: Unbounded;
+  font-weight: 300;
+  font-size: 14px;
+}
+
+.pecialist-hero-text{
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.pecialist-hero-text h2 {
+  margin-bottom: -8px;
+}
+
+.about-spec{
+  display: flex;
+  gap: 60px;
+  background-color: white;
+  box-shadow: 0 0 0 100vmax white;
+  clip-path: inset(0 -100vmax);
+  margin-top: 60px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  text-align: left;
+}
+
+.about-left {
+  flex: 1;
+}
+
+.about-right {
+  flex: 1;
+}
+
+.about-right p {
+  overflow-wrap: break-word;
+  word-break: break-word;
+}
+
+.reviews {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.review-card {
+  background: #EAF0FF;
+  border-radius: 16px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 40px;
+}
+
+.review-date {
+  font-size: 16px;
+  color: black;
+  font-weight: 600;
+  margin: 0;
+}
+
+.review-text {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.3;
+  margin: 0;
+  color: black;
+}
+
+.review-name {
+  font-size: 16px;
+  font-weight: 200;
+  color: black;
+  margin: 0;
+}
+
+.review-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 6px;
+}
+
+.steps-indicator {
+  display: flex;
+  gap: 8px;
+}
+
+.step-bar {
+  width: 30px;
+  height: 10px;
+  background: #DADADA;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.step-bar.active {
+  background: #7DA2FF;
+}
+
+.quiz-arrows {
+  display: flex;
+  gap: 10px;
+}
+
+.arrow-btn {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s;
+  padding: 0;
+}
+
+.arrow-prev {
+  background-color: transparent;
+  border: 2px solid #B8CAFF;
+  color: #7DA2FF;
+}
+
+.arrow-prev:hover {
+  background-color: #EAF0FF;
+}
+
+.arrow-next {
+  background-color: #7DA2FF;
+  color: white;
+}
+
+.arrow-next:hover {
+  background-color: #5f8eff;
+}

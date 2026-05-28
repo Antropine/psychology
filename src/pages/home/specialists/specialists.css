@@ -1,56 +1,56 @@
-.specialists{
+.home-specialists{
     background-color: #60BDFF;
     box-shadow: 0 0 0 100vmax #60BDFF;
     clip-path: inset(0 -100vmax);
 }
 
-.specialists-cards{
+.home-specialists-cards{
     display: flex;
     justify-content: space-between;
     gap: 20px;
     margin-bottom: 60px;
 }
 
-.specialists-card{
+.home-specialists-card{
     flex: 1;
     background-color: white;
     border-radius: 20px;
     padding: 20px;
 }
 
-.specialists-card img{
+.home-specialists-card img{
     border-radius: 10px;
     object-fit: contain;
 }
 
-.specialists-name{
+.home-specialists-name{
     font-size: 16px;
     font-weight: 700;
     margin: 0;
 }
 
-.baze{
+.home-specialists-baze{
     display: flex;
     text-align: left;
     gap: 40px;
 }
 
-.specialists-price{
+.home-specialists-price{
     display: flex;
     justify-content: space-between;
 }
 
-.price{
+.home-price{
     font-size: 20px;
 }
 
-.problem{
+.home-problem{
     display: flex;
     gap: 5px;
     flex-wrap: wrap;
 }
 
-.problem button{
+.home-problem button{
     background-color: #EAF0FF;
     border-radius: 10px;
     font-size: 12px;
@@ -63,7 +63,7 @@
     transition: all 0.3s;
 }
 
-.kryto{
+.home-specialists-kryto{
     font-size: 24px;
     max-width: 65%;
     margin: 0 auto;
