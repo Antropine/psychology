@@ -130,6 +130,11 @@
     margin: 0;
 }
 
+.specialists .our-psyhologs {
+    background-color: #EAF0FF;
+    box-shadow: 0 0 0 100vmax #EAF0FF;
+}
+
 .spec-work{
     background-color: white;
     box-shadow: 0 0 0 100vmax white;
@@ -141,12 +146,11 @@
 .spec-work-steps{
     display: flex;
     text-align: left;
-    gap: 25px;
     justify-content: space-between;
 }
 
 .spec-work-step{
-    width: 350px;
+    width: 380px;
     font-weight: 300;
 }
 
@@ -156,4 +160,23 @@
     clip-path: inset(0 -100vmax);
     padding-top: 60px;
     padding-bottom: 60px;
+}
+
+@media (max-width: 768px) {
+    .psyholog-lists {
+        flex-direction: column;
+    }
+
+    .specialist-flex {
+        flex-direction: column;
+    }
+
+    .spec-work-steps {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .spec-work-step {
+        width: 100%;
+    }
 }

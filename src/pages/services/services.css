@@ -1,9 +1,9 @@
-.services-hero{
+.services-hero {
     display: flex;
     gap: 200px;
 }
 
-.services-text{
+.services-text {
     text-align: left;
     font-size: 16px;
     max-width: 50%;
@@ -12,12 +12,18 @@
     gap: 20px;
 }
 
-.attention{
+.services-text h2 {
+    margin-bottom: -12px;
+}
+
+.attention {
     display: flex;
     gap: 20px;
 }
 
-.price-cards{
+/* Карточки услуг */
+
+.price-cards {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -27,19 +33,20 @@
     clip-path: inset(0 -100vmax);
     padding-top: 60px;
     padding-bottom: 60px;
+    margin-top: 60px;
 }
 
 .price-cards > h2 {
     align-self: flex-start;
 }
 
-.price-card{
+.price-card {
     display: grid;
-    grid-template-columns: repeat(2, 350px);
+    grid-template-columns: repeat(2, 450px);
     gap: 20px;
 }
 
-.card{
+.card {
     background-color: white;
     padding: 30px;
     border-radius: 20px;
@@ -47,93 +54,247 @@
     display: flex;
     flex-direction: column;
     gap: 15px;
+    cursor: pointer;
+    text-decoration: none;
+    color: inherit;
+    transition: box-shadow 0.2s;
+}
+
+.card:hover {
+    box-shadow: 0 0 0 3px white;
 }
 
 .card p {
     margin: 0;
 }
 
-.card .button{
+.card .button {
     margin-top: auto;
 }
 
-.card {
-    cursor: pointer;
-    transition: box-shadow 0.2s;
-}
-
-.card--active {
-    box-shadow: 0 0 0 3px #60BDFF;
-}
-
-.card-title{
+.card-title {
     font-size: 16px;
     font-weight: 600;
 }
 
-.card-info{
+.card-info {
     background-color: #EAF0FF;
     width: fit-content;
-    padding: 10px 10px;
+    padding: 10px;
     border-radius: 10px;
 }
 
-.card-text{
+.card-text {
     font-size: 14px;
     font-weight: 300;
 }
 
-.card-price{
+.card-price {
     font-size: 20px;
 }
 
+/* Секции услуга — специалисты */
 
-/* Подробнее */
-
-.details {
-    padding-top: 60px;
-    display: none;
-}
-
-.details--visible {
-    display: block;
-}
-
-.details-text {
-    font-weight: 300;
-    margin-bottom: 30px;
-    text-align: left;
-}
-
-.details-subtitle {
-    font-weight: 600;
-    margin-bottom: 16px;
-    text-align: left;
-}
-
-.details-specialists {
+.service-section {
     display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: left;
+    padding-top: 120px;
+}
+
+.service-detail-text {
+    font-weight: 300;
+    font-size: 16px;
+    margin: 0;
+}
+
+.service-specialists {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
 }
 
-.details-specialists .specialists-card {
-    flex: 0 0 calc((100% - 400px) / 3);
+/* Карточка специалиста */
+
+.service-spec{
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.srv-spec-card {
     background-color: #60BDFF;
     border-radius: 20px;
     padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
 }
 
-.details-specialists .specialists-price {
-    align-items: center;
+.srv-spec-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 12px;
 }
 
-.details-specialists .spec-link {
+.srv-spec-left img {
+    width: 150px;
+    height: 150px;
+    border-radius: 14px;
+    object-fit: cover;
+}
+
+.srv-spec-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: left;
+}
+
+.srv-spec-info {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.srv-spec-name {
+    font-size: 16px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.srv-spec-role {
     font-size: 13px;
     font-weight: 300;
-    text-align: left;
-    text-decoration: underline;
-    cursor: pointer;
-    color: inherit;
+    margin: 0;
 }
 
+.srv-spec-tags {
+    display: flex;
+    gap: 6px;
+    flex-wrap: wrap;
+}
 
+.srv-spec-tags button {
+    background-color: #EAF0FF;
+    border: none;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 300;
+    padding: 6px 12px;
+    font-family: inherit;
+    cursor: default;
+}
+
+.srv-spec-link {
+    font-size: 12px;
+    font-weight: 300;
+    color: inherit;
+    text-decoration: none;
+    cursor: pointer;
+    line-height: 1.4;
+}
+
+/* Большие экраны */
+@media (min-width: 1400px) {
+    .services-text {
+        font-size: 20px;
+    }
+
+    .price-card {
+        grid-template-columns: repeat(2, 550px);
+    }
+
+    .card-title {
+        font-size: 20px;
+    }
+
+    .card-text {
+        font-size: 18px;
+    }
+
+    .card-price {
+        font-size: 24px;
+    }
+
+    .service-detail-text {
+        font-size: 20px;
+    }
+
+    .srv-spec-top img {
+        width: 90px;
+        height: 90px;
+    }
+
+    .srv-spec-name {
+        font-size: 18px;
+    }
+
+    .srv-spec-role {
+        font-size: 16px;
+    }
+
+    .srv-spec-tags button {
+        font-size: 14px;
+    }
+
+    .srv-spec-link {
+        font-size: 15px;
+    }
+}
+
+/* Планшет */
+@media (max-width: 1024px) {
+    .services-hero {
+        gap: 60px;
+    }
+
+    .price-card {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .service-specialists {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Планшет малый */
+@media (max-width: 768px) {
+    .services-hero {
+        gap: 40px;
+    }
+
+    .srv-spec-card {
+        grid-template-columns: 1fr;
+    }
+
+    .srv-spec-left img {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+/* Мобильный */
+@media (max-width: 640px) {
+    .services-hero {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .services-text {
+        max-width: 100%;
+    }
+
+    .price-card {
+        grid-template-columns: 1fr;
+    }
+
+    .service-specialists {
+        grid-template-columns: 1fr;
+    }
+
+    .service-section {
+        padding-top: 60px;
+    }
+}

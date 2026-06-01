@@ -155,3 +155,19 @@
 .arrow-next:hover {
   background-color: #5f8eff;
 }
+
+@media (max-width: 768px) {
+    .specialist-hero {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .about-spec {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .specialist-button {
+        flex-wrap: wrap;
+    }
+}

@@ -142,5 +142,35 @@
 }
 
 .step-bar.active {
-  background: #7DA2FF; 
+  background: #7DA2FF;
+}
+
+@media (max-width: 1024px) {
+    .assortment {
+        gap: 40px;
+    }
+
+    .assortment-text {
+        min-width: unset;
+    }
+}
+
+@media (max-width: 768px) {
+    .assortment {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .assortment-text {
+        min-width: unset;
+    }
+
+    .quiz-title {
+        font-size: 24px;
+    }
+
+    .reasons button {
+        font-size: 16px;
+        padding: 12px 16px;
+    }
 }

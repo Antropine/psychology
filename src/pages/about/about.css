@@ -179,3 +179,44 @@
     text-align: left;
     width: 75%;
 }
+
+@media (max-width: 768px) {
+    .about-hero {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .about-img img {
+        width: 100%;
+    }
+
+    .address-card {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .pluses-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .kartochki-track {
+        flex-direction: column;
+    }
+
+    .kartochki-card {
+        height: auto;
+        min-height: 0;
+        padding-bottom: 80px;
+    }
+
+    .about-form p {
+        font-size: 24px;
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .about-form p {
+        font-size: 20px;
+    }
+}

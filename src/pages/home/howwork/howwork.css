@@ -22,3 +22,14 @@
     font-weight: 600;
     font-size: 20px;
 }
+
+@media (max-width: 768px) {
+    .work-steps {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .work-step {
+        width: 100%;
+    }
+}

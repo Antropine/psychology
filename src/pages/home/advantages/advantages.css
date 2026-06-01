@@ -6,6 +6,7 @@
 
 .advantages-step{
     display: flex;
+    align-items: center;
     text-align: left;
     gap: 20px;
     font-size: 20px;
@@ -13,5 +14,23 @@
 }
 
 .advantages img{
+    width: 60px;
+    flex-shrink: 0;
     object-fit: contain;
+}
+
+@media (max-width: 768px) {
+    .advantages {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 24px;
+    }
+
+    .advantages img {
+        max-width: 100%;
+    }
+
+    .advantages-step {
+        font-size: 16px;
+    }
 }

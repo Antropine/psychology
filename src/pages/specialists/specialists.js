@@ -2,6 +2,8 @@ import React, { Component } from 'react'
 import './specialists.css'
 
 export default class specialists extends Component {
+  state = { policy: false }
+
   render() {
     return (
       <div className='specialists'>
@@ -24,7 +26,7 @@ export default class specialists extends Component {
         </div>
 
         <div className='our-psyhologs'>
-          <h2>Наши психологи</h2>
+          <h2>Принципы нашей работы</h2>
           <div className='psyholog-lists'>
 
             <div className='psyholog-list'>
@@ -158,10 +160,10 @@ export default class specialists extends Component {
         <div className='form'>
         <textarea placeholder='Номер телефона'></textarea>
           <div>
-            <input type="checkbox" id="policy" name="poilcy" checked />
-            <label for="scales">Согласие на обработку персональных данных</label>
+            <input type="checkbox" id="policy" name="policy" checked={this.state.policy} onChange={e => this.setState({ policy: e.target.checked })} />
+            <label htmlFor="policy">Согласие на обработку персональных данных</label>
           </div>
-          <button type='submit'>оставить заявку</button>
+          <button type='submit' disabled={!this.state.policy}>оставить заявку</button>
         </div>
       </div>
 

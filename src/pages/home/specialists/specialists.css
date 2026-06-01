@@ -19,8 +19,11 @@
 }
 
 .home-specialists-card img{
+    width: 150px;
+    height: 150px;
     border-radius: 10px;
-    object-fit: contain;
+    object-fit: cover;
+    flex-shrink: 0;
 }
 
 .home-specialists-name{
@@ -73,4 +76,19 @@
 .mars{
     font-family: 'TD Mars', sans-serif;
     color: white;
+}
+
+@media (max-width: 768px) {
+    .home-specialists-cards {
+        flex-direction: column;
+    }
+
+    .home-specialists-baze {
+        gap: 20px;
+    }
+
+    .home-specialists-kryto {
+        max-width: 100%;
+        font-size: 18px;
+    }
 }

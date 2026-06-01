@@ -94,3 +94,23 @@
     box-sizing: border-box;
 }
 
+@media (max-width: 768px) {
+    .faq-content {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .faq-list {
+        width: 100%;
+    }
+
+    .popular-faq {
+        width: 100%;
+    }
+
+    .faq-title {
+        width: 100%;
+        box-sizing: border-box;
+    }
+}
+

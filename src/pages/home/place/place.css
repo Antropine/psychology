@@ -61,3 +61,21 @@
     font-size: 18px;
     font-weight: 600;
 }
+
+@media (max-width: 768px) {
+    .carousel-side {
+        display: none;
+    }
+
+    .carousel-center img {
+        width: 100%;
+        height: auto;
+        max-height: 280px;
+    }
+}
+
+@media (max-width: 480px) {
+    .carousel-center img {
+        max-height: 220px;
+    }
+}
