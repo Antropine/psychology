@@ -109,7 +109,13 @@ export default class about extends Component {
       <div className='maskot'>
         <h2>Кто такой Маскот</h2>
         <div>
-          <img src='#' alt='Искра маскот'></img>
+          <div className='hero-img'>
+            <img src='images/iskra2.png' alt='Искра'></img>
+        </div>
+        <div className='message'>
+          <p className='message-title'>Привет! Я - Искра <img src='images/star.svg'></img></p>
+          <p className='message-text'>Я бережно помогу начать работу с психологом и буду рядом на протяжении всего пути</p>
+        </div>
         </div>
       </div>
 
@@ -119,39 +125,39 @@ export default class about extends Component {
         <p className='pluses-subtitle'>Какой-то текст</p>
         <div className='pluses-grid'>
           <div className='pluses-card'>
-            <p>Заголовок</p>
-            <p>Какой-то текст</p>
-            <img src='#' alt='преимущстево'></img>
+            <p className='pluses-title'>Научный подход</p>
+            <p className='pluses-text'>В нашей команде — психологи, которые используют в работе проверенные научные методы</p>
+            <img src='/images/trevoga.svg' alt='преимущстево'></img>
           </div>
 
           <div className='pluses-card'>
-            <p>Заголовок</p>
-            <p>Какой-то текст</p>
-            <img src='#' alt='преимущстево'></img>
+            <p className='pluses-title'>Конфиденциально, безопасно и бережно</p>
+            <p className='pluses-text'>Мы с пониманием и без осуждения поможем разобраться в вашем вопросе и прийти вместе к его решению</p>
+            <img src='images/shield.svg' alt='преимущстево'></img>
           </div>
 
           <div className='pluses-card'>
-            <p>Заголовок</p>
-            <p>Какой-то текст</p>
-            <img src='#' alt='преимущстево'></img>
+            <p className='pluses-title'>Команда профессионалов</p>
+            <p className='pluses-text'>Специалисты центра имеют высшее психологическое образование и квалификацию по психотерапии, увлечены профессией и постоянно совершенствуются в ней</p>
+            <img src='images/heart.svg' alt='преимущстево'></img>
           </div>
 
           <div className='pluses-card'>
-            <p>Заголовок</p>
-            <p>Какой-то текст</p>
-            <img src='#' alt='преимущстево'></img>
+            <p className='pluses-title'>Находимся в 4 районах Екатеринбурга</p>
+            <p className='pluses-text'>Мы находимся в 4 локациях города, чтобы нашим клиентам из разных районов было удобно приехать в наш центр</p>
+            <img src='images/happy.svg' alt='преимущстево'></img>
           </div>
 
           <div className='pluses-card'>
-            <p>Заголовок</p>
-            <p>Какой-то текст</p>
-            <img src='#' alt='преимущстево'></img>
+            <p className='pluses-title'>Современные уютные кабинеты</p>
+            <p className='pluses-text'>Наши кабинеты — это удобное пространство, где можно быть собой и меняться в своем темпе</p>
+            <img src='images/calm.svg' alt='преимущстево'></img>
           </div>
 
           <div className='pluses-card'>
-            <p>Заголовок</p>
-            <p>Какой-то текст</p>
-            <img src='#' alt='преимущстево'></img>
+            <p className='pluses-title'>Транспортная доступность</p>
+            <p className='pluses-text'>В 10-15 минутах от каждой нашей локации находится автобусная, троллейбусная и трамвайная остановка, а также станция метро</p>
+            <img src='images/scary.svg' alt='преимущстево'></img>
           </div>
         </div>
       </div>
