@@ -1,0 +1,8 @@
+.tests-hero{
+    display: flex;
+    justify-content: space-between;
+}
+
+.tests-hero img{
+    width: 460px;
+}

@@ -26,6 +26,8 @@ import Specialists from './pages/specialists/specialists';
 import Anna from './pages/specialists/anna/anna';
 import Timur from './pages/specialists/timur/timur';
 import Maria from './pages/specialists/maria/maria';
+import Blog from './pages/blog/blog';
+import Tests from './pages/tests/tests';
 
 import { Routes, Route } from 'react-router-dom';
 
@@ -63,6 +65,8 @@ function App() {
           <Route path='/specialists/anna' element={<Anna />} />
           <Route path='/specialists/timur' element={<Timur />} />
           <Route path='/specialists/maria' element={<Maria />} />
+          <Route path='/blog' element={<Blog />} />
+          <Route path='/tests' element={<Tests />} />
         </Routes>
 
         <Footer />

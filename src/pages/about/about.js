@@ -6,18 +6,81 @@ export default class about extends Component {
   maskot = [
     {
       name: "Радость",
-      info: "текст о радости",
-      img: 'images/happy.png',
+      info: (
+        <>
+        <p>
+          Я — <span className='black-mars'>ИСКРА</span>. И я так выгляжу, когда радуюсь.
+          Мне хочется прыгать, танцевать и улыбаться.
+        </p>
+        <p>
+          <strong>Мои отличительные черты:</strong><br />
+          счастливая, веселая.
+        </p>
+        <p>
+          <strong>Я часто говорю следующие фразы:</strong><br />
+          «Я очень рада».
+        </p>
+      </>
+      ),
+      img: 'images/happy-card.png',
     },
     {
-      name: "Тревожность",
-      info: "текст о тревожности",
-      img: 'images/worry.png',
+      name: "Гнев",
+      info: (
+        <>
+        <p>
+          Я — <span className='black-mars'>ИСКРА</span>. И я так выгляжу, когда злюсь.
+          Мне хочется потопать, покричать и поколотить подушку.
+        </p>
+        <p>
+          <strong>Мои отличительные черты:</strong><br />
+          вспыльчивая, импульсивная.
+        </p>
+        <p>
+          <strong>Я часто говорю следующие фразы:</strong><br />
+          «Я сейчас очень злюсь».
+        </p>
+      </>
+      ),
+      img: 'images/gnev-card.png',
     },
     {
       name: "Страх",
-      info: "текст о страхе",
-      img: 'images/worry.png',
+      info: (
+        <>
+        <p>
+          Я — <span className='black-mars'>ИСКРА</span>. И я так выгляжу, когда испытываю страх. Мне хочется убежать или спрятаться в комфортном месте и ощутить себя в безопасности.
+        </p>
+        <p>
+          <strong>Мои отличительные черты:</strong><br />
+          беспокойная, одинокая.
+        </p>
+        <p>
+          <strong>Я часто говорю следующие фразы:</strong><br />
+          «Я боюсь», «Мне очень страшно»
+        </p>
+      </>
+      ),
+      img: 'images/scary-card.png',
+    },
+    {
+      name: "Тревожность",
+      info: (
+        <>
+        <p>
+          Я — <span className='black-mars'>ИСКРА</span>.  И я так выгляжу, когда испытываю тревогу. Мне хочется всё контролировать и как можно быстрее перестать ощущать внутреннюю тревогу.
+        </p>
+        <p>
+          <strong>Мои отличительные черты:</strong><br />
+          сильно предусмотрительная, ощущающая панику и приближение катастрофы
+        </p>
+        <p>
+          <strong>Я часто говорю следующие фразы:</strong><br />
+          «Я чувствую тревогу», «Мне очень тревожно».
+        </p>
+      </>
+      ),
+      img: 'images/worry-card.png',
     }
   ]
 
@@ -182,12 +245,9 @@ export default class about extends Component {
             const item = this.maskot[(this.state.current + offset) % this.maskot.length]
             return (
               <div className='kartochki-card' key={offset}>
-                <h3>{item.name}</h3>
-                <p>{item.info}</p>
+                <h3 className='card-title'>{item.name}</h3>
+                <p className='card-text'>{item.info}</p>
                 <img src={item.img} alt={item.name} />
-                <div className='button'>
-                  <button className='kartochki-btn'>читать подробнее</button>
-                </div>
               </div>
             )
           })}
