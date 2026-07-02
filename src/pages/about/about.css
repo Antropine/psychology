@@ -16,6 +16,22 @@
     width: 500px;
 }
 
+.iskra-div{
+    display: flex;
+    gap: 100px;
+    text-align: left;
+}
+
+.iskra-text{
+    font-weight: 300;
+    font-size: 16px;
+}
+
+.iskra-title{
+    font-size: 20px;
+    font-weight: 700;
+}
+
 /*адреса*/
 
 .address-card{
@@ -92,6 +108,10 @@
 }
 
 /* Карточки */
+
+.slogan-div{
+    display: flex;
+}
 
 .kartochki {
     margin-top: 80px;
@@ -241,6 +261,10 @@
     .about-form p {
         font-size: 24px;
         width: 100%;
+    }
+
+    .iskra-div{
+        flex-direction: column;
     }
 }
 

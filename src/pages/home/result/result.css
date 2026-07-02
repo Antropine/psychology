@@ -33,8 +33,6 @@
     height: auto;
 }
 
-/* Облачко: img задаёт форму, текст поверх */
-
 .cloud-item {
     position: relative;
     display: flex;
@@ -48,7 +46,6 @@
     display: block;
 }
 
-/* div-обёртка центрирует через flex, p внутри — обычный текст */
 .cloud-center {
     position: absolute;
     inset: 0;
@@ -65,10 +62,6 @@
     line-height: 1.5;
     font-family: inherit;
     margin: 0;
-}
-
-.cloud-center--white p {
-    color: white;
 }
 
 .white-mars {

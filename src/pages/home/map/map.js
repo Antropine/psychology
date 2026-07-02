@@ -6,11 +6,11 @@ export default class Map extends Component {
     return (
       <div className='map-section'>
         <h2>Контакты</h2>
-        <div className='map'>
+        <div className='map' id='map'>
           <div className='address-text'>
             <div className='address-item'>
               <p><b>Адреса</b></p>
-              <p>г. Екатеринбург, Переулок северный 2А, офис 202<br/>г. Екатеринбург, ул. Ленина, д. 38А , офис 519</p>
+              <p>г. Екатеринбург, Переулок северный 2А, офис 202</p>
             </div>
             <div className='address-item'>
               <p><b>Тел:</b></p>
@@ -18,15 +18,11 @@ export default class Map extends Component {
             </div>
             <div className='address-item'>
               <p><b>Телеграмм:</b></p>
-              <p>@dusha_zdorovie </p>
+              <p>@Iskra_Ekb</p>
             </div>
             <div className='address-item'>
               <p><b>Мах:</b></p>
-              <p>+79506555154</p>
-            </div>
-            <div className='address-item'>
-              <p><b>Почта:</b></p>
-              <p>zdorovedusi@gmail.com</p>
+              <p>@Iskra_Ekb</p>
             </div>
             <div className='address-item'>
               <p><b>График работы:</b></p>

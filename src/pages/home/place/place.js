@@ -32,9 +32,9 @@ export default class place extends Component {
     const nextIdx = (current + 1) % len
 
     return (
-      <div className='place'>
+      <div className='place' id='place'>
         <h2>В центре уютно и спокойно</h2>
-        <p className='place-text'>Наши кабинеты — это пространство, где можно быть собой и меняться в своем темпе</p>
+        <p className='place-text'>Наш центр — это пространство, где можно быть собой и меняться в своем темпе</p>
 
         <div className='carousel'>
 

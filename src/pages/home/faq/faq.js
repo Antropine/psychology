@@ -55,7 +55,7 @@ export default class Faq extends Component {
 
   render() {
     return (
-      <div className='faq'>
+      <div className='faq' id='faq'>
         <h2>FAQ</h2>
         <div className='faq-content'>
           <div className='faq-list'>

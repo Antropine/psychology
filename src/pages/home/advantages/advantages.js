@@ -4,22 +4,18 @@ import './advantages.css'
 export default class advantages extends Component {
   render() {
     return (
-      <div className='advantages'>
+      <div className='advantages' id='advantages'>
         <div className='advantages-step'>
-            <img src='images/happy.png' alt='счастье'></img>
-            <p>Понятный план терапии и результат</p>
+            <img src='images/sad.svg' alt='грусть'></img>
+            <p>Конфиденциально<br/>и безопасно</p>
         </div>
         <div className='advantages-step'>
-            <img src='images/sad.png' alt='грусть'></img>
-            <p>Конфиденциально и безопасно</p>
+            <img src='images/trevoga1.svg' alt='беспокойство'></img>
+            <p>Оперативная<br/>запись</p>
         </div>
         <div className='advantages-step'>
-            <img src='images/worry.png' alt='беспокойство'></img>
-            <p>Находимся в 4 районах Екатеринбурга</p>
-        </div>
-        <div className='advantages-step'>
-            <img src='images/happy.png' alt='счастье'></img>
-            <p>Оперативная запись</p>
+            <img src='images/strah.svg' alt='страх'></img>
+            <p>Уютный кабинет<br/>и транспортная доступность</p>
         </div>
       </div>
     )

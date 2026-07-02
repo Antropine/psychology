@@ -27,7 +27,7 @@ export default class blog extends Component {
 
   render() {
     return (
-      <div className='blog'>
+      <div className='blog' id='blog'>
         <div className='blog-hero'>
             <div className='blog-hero-text'>
                 <h2>Блог</h2>

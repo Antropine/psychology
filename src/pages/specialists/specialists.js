@@ -6,7 +6,7 @@ export default class specialists extends Component {
 
   render() {
     return (
-      <div className='specialists'>
+      <div className='specialists' id='specialists'>
 
         <div className='services-hero'>
           <div className='services-text'>

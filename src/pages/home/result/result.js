@@ -6,7 +6,7 @@ import WhiteCloudSvg from './assets/white_cloud.svg'
 export default class Result extends Component {
   render() {
     return (
-      <div className='result'>
+      <div className='result' id='result'>
         <h2>В результате с психологом вы сможете</h2>
         <div className='result-section'>
           <div className='left-cloud'>

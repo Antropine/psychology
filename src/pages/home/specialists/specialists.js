@@ -4,7 +4,7 @@ import './specialists.css'
 export default class specialists extends Component {
   render() {
     return (
-      <div className='home-specialists'>
+      <div className='home-specialists' id='specialists'>
         <h2>Психологи, которые могут помочь</h2>
         <div className='home-specialists-cards'>
 

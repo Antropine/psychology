@@ -22,12 +22,14 @@ import Services from './pages/services/services';
 import About from './pages/about/about';
 import Policy from './pages/policy/policy';
 import Agreement from './pages/policy/agreement';
+import Cookies from './pages/policy/cookies';
 import Specialists from './pages/specialists/specialists';
 import Anna from './pages/specialists/anna/anna';
 import Timur from './pages/specialists/timur/timur';
 import Maria from './pages/specialists/maria/maria';
 import Blog from './pages/blog/blog';
 import Tests from './pages/tests/tests';
+import Contacts from './pages/contacts/contacts';
 
 import { Routes, Route } from 'react-router-dom';
 
@@ -67,6 +69,8 @@ function App() {
           <Route path='/specialists/maria' element={<Maria />} />
           <Route path='/blog' element={<Blog />} />
           <Route path='/tests' element={<Tests />} />
+          <Route path='/contacts' element={<Contacts />} />
+          <Route path='/cookie' element={<Cookies />} />
         </Routes>
 
         <Footer />

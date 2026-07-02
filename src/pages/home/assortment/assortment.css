@@ -145,6 +145,15 @@
   background: #7DA2FF;
 }
 
+.quiz-form textarea {
+    height: 55px;
+}
+
+.quiz-form textarea.textarea-large {
+    height: 180px;
+    padding-top: 20px;
+}
+
 @media (max-width: 1024px) {
     .assortment {
         gap: 40px;

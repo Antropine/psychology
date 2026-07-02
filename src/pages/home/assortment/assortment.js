@@ -25,43 +25,22 @@ export default function Assortment() {
       ],
     },
     {
-      title: 'Вы рассматриваете работу с психологом для себя или близкого человека',
-      subtitle: 'Можно выбрать несколько вариантов ответа',
-      answers: [
-        'Для себа',
-        'Для близкого человека',
-      ],
-    },
-    {
-      title: 'Есть ли вам 18 лет',
-      subtitle: 'Можно выбрать несколько вариантов ответа',
-      answers: [
-        'Да',
-        'Нет',
-      ],
-    },
-    {
       title: 'Какое время вас интересует',
       subtitle: 'Можно выбрать несколько вариантов ответа',
       answers: [
-        'Да',
-        'Нет',
-      ],
-    },
-    {
-      title: 'Какой адрес вы рассматриваете',
-      subtitle: 'Можно выбрать несколько вариантов ответа',
-      answers: [
-        'Да',
-        'Нет',
+        'Утро будни',
+        'День будни',
+        'Вечер будни',
+        'Утро выходной день',
+        'День выходной день',
+        'Вечер выходной день',
       ],
     },
     {
       title: 'Есть ли у вас еще пожелания к выбору специалиста',
       subtitle: 'Можно выбрать несколько вариантов ответа',
       answers: [
-        'Да',
-        'Нет',
+
       ],
     },
   ]
@@ -88,9 +67,9 @@ export default function Assortment() {
   }
 
   return (
-    <div className='assortment'>
+    <div className='assortment' id='assortment'>
       <div className='assortment-text'>
-        <h2>Давайте найдем психолога</h2>
+        <h2>Давайте найдем<br/>вашего психолога</h2>
         <p>Ответьте на несколько вопросов — это займет всего 2 минуты</p>
         <div className='button'>
           <a href='#'>Начать поиск<br/>специалиста</a>
@@ -110,7 +89,11 @@ export default function Assortment() {
               {item}
             </button>
           ))}
-          <textarea placeholder='Другое________________________'></textarea>
+          {step === 2 ? (
+            <textarea className="textarea-large" placeholder="Вы можете здесь написать любую информацию, которую считаете важной при подборе специалиста для вас" />
+          ) : (
+            <textarea placeholder="Другое" />
+          )}
         </div>
         <div className='quiz-nav'>
           <div className='steps-indicator'>

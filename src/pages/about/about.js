@@ -102,7 +102,7 @@ export default class about extends Component {
 
   render() {
     return (
-      <div className='about'>
+      <div className='about' id='about'>
         <div className='about-hero'>
             <div className='about-text'>
                 <h2>О нас</h2>
@@ -169,27 +169,31 @@ export default class about extends Component {
             </div>
         </div>
 
-      <div className='maskot'>
-        <h2>Кто такой Маскот</h2>
-        <div>
+      <div className='iskra'>
+        <h2>Кто такая Искра?</h2>
+        <div className='iskra-div'>
           <div className='hero-img'>
-            <img src='images/iskra2.png' alt='Искра'></img>
-        </div>
-        <div className='message'>
-          <p className='message-title'>Привет! Я - Искра <img src='images/star.svg'></img></p>
-          <p className='message-text'>Я бережно помогу начать работу с психологом и буду рядом на протяжении всего пути</p>
-        </div>
+            <img src='images/iskra1.png' alt='Искра'></img>
+          </div>
+          <div className='iskra-text'>
+            <p className='iskra-title'>Привет! Я - Искра <img src='images/star.svg'></img></p>
+            <p>Я являюсь частью команды современного психологического центра в Екатеринбурге «Искра».</p>
+            <p>Я очень эмоциональная и могу испытывать, как люди, разные эмоции: радость, грусть, гнев, скуку, тревожность и страх.</p>
+            <p>Также я очень любознательная: увлечена психологией и люблю делиться своими знаниями. </p>
+            <p>Еще я очень ответственная: в психологическом центре я знакомлю клиентов с нашими специалистами и принципами работы, помогаю начать работу с психологом и нахожусь рядом на протяжении всего пути.</p>
+            <p>Давайте знакомиться с миром психологии и получать поддержку вместе!</p>
+          </div>
         </div>
       </div>
 
 
       <div className='pluses'>
         <h2>Преимущества</h2>
-        <p className='pluses-subtitle'>Какой-то текст</p>
+        <p className='pluses-subtitle'>Наш центр имеет ряд преимуществ:</p>
         <div className='pluses-grid'>
           <div className='pluses-card'>
             <p className='pluses-title'>Научный подход</p>
-            <p className='pluses-text'>В нашей команде — психологи, которые используют в работе проверенные научные методы</p>
+            <p className='pluses-text'>В нашей команде — психологи, которые используют в работе научные методы</p>
             <img src='/images/trevoga.svg' alt='преимущстево'></img>
           </div>
 
@@ -227,13 +231,16 @@ export default class about extends Component {
 
       <div className='about-form'>
         <p>Приглашаем на первую встречу — чтобы познакомиться и понять, подходим ли мы вам.</p>
-        <div className='form'>
-        <textarea placeholder='Номер телефона'></textarea>
+        <div className='slogan-div'>
+          <div className='form'>
+          <textarea placeholder='Номер телефона'></textarea>
           <div>
             <input type="checkbox" id="policy" name="poilcy" checked />
             <label for="scales">Согласие на обработку персональных данных</label>
           </div>
           <button type='submit'>оставить заявку</button>
+        </div>
+        <img src='images/slogan.svg'></img>
         </div>
       </div>
 

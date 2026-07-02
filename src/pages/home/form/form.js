@@ -4,7 +4,7 @@ import './form.css'
 export default class form extends Component {
   render() {
     return (
-      <div className='form-section'>
+      <div className='form-section' id='form'>
         <h2>Форма записи</h2>
             <div className='main-form'>
                 <div className='form'>

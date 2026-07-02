@@ -53,7 +53,7 @@ const services = [
 export default class Services extends Component {
   render() {
     return (
-      <div className='services'>
+      <div className='services' id='services'>
 
         <div className='services-hero'>
           <div className='services-text'>
