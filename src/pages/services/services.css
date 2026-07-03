@@ -97,10 +97,14 @@
 
 .service-section {
     display: flex;
+    background-color: white;
+    box-shadow: 0 0 0 100vmax white;
+    clip-path: inset(0 -100vmax);
     flex-direction: column;
     gap: 20px;
     text-align: left;
-    padding-top: 120px;
+    padding-top: 100px;
+    padding-bottom: 60px;
 }
 
 .service-detail-text {
@@ -139,8 +143,8 @@
 }
 
 .srv-spec-left img {
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
     border-radius: 14px;
     object-fit: cover;
 }

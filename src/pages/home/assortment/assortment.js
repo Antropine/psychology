@@ -72,7 +72,7 @@ export default function Assortment() {
         <h2>Давайте найдем<br/>вашего психолога</h2>
         <p>Ответьте на несколько вопросов — это займет всего 2 минуты</p>
         <div className='button'>
-          <a href='#'>Начать поиск<br/>специалиста</a>
+          <a href='#specialists'>Начать поиск<br/>специалиста</a>
         </div>
         <img src='images/sad_person.png'></img>
       </div>
@@ -105,16 +105,14 @@ export default function Assortment() {
             ))}
           </div>
           <div className='quiz-arrows'>
-            <a href='#' className='ahother'>мне плохо, но я не <br/>знаю, что со мной</a>
+            <a href='#form' className='ahother'>Хочу сразу<br/>записаться на<br/>консультацию</a>
             <button
               className={`arrow-btn arrow-prev${step === 0 ? ' arrow-disabled' : ''}`}
               onClick={prevStep}
               disabled={step === 0}
               aria-label='Назад'
             >
-              <svg width='18' height='18' viewBox='0 0 20 20' fill='none'>
-                <path d='M13 16L7 10L13 4' stroke='currentColor' strokeWidth='2.2' strokeLinecap='round' strokeLinejoin='round'/>
-              </svg>
+              <img src='images/arrow_left.svg'></img>
             </button>
             <button
               className={`arrow-btn arrow-next${step === slides.length - 1 ? ' arrow-disabled' : ''}`}
@@ -122,9 +120,7 @@ export default function Assortment() {
               disabled={step === slides.length - 1}
               aria-label='Далее'
             >
-              <svg width='18' height='18' viewBox='0 0 20 20' fill='none'>
-                <path d='M7 4L13 10L7 16' stroke='currentColor' strokeWidth='2.2' strokeLinecap='round' strokeLinejoin='round'/>
-              </svg>
+              <img src='images/arrow_right.svg'></img>
             </button>
           </div>
         </div>

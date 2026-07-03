@@ -10,7 +10,7 @@ export default class Map extends Component {
           <div className='address-text'>
             <div className='address-item'>
               <p><b>Адреса</b></p>
-              <p>г. Екатеринбург, Переулок северный 2А, офис 202</p>
+              <p>г. Екатеринбург, ул. Малышева, 51, БЦ «Высоцкий»</p>
             </div>
             <div className='address-item'>
               <p><b>Тел:</b></p>
@@ -26,12 +26,12 @@ export default class Map extends Component {
             </div>
             <div className='address-item'>
               <p><b>График работы:</b></p>
-              <p>будни 10:00 - 22:00<br/>выходные 10:00 - 20:00</p>
+              <p>ежедневно 12:00 - 21:00</p>
             </div>
           </div>
         <div className='map-frame'>
           <iframe
-            src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2244.9!2d37.6!3d55.75!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTXCsDQ1JzAwLjAiTiAzN8KwMzYnMDAuMCJF!5e0!3m2!1sru!2sru!4v1600000000000!5m2!1sru!2sru'
+            src='https://yandex.ru/map-widget/v1/?indoorLevel=1&ll=60.615709%2C56.835969&mode=search&oid=1016292298&ol=biz&sctx=ZAAAAAgBEAAaKAoSCRO6S%2BKsTk5AEaT%2BeoUFa0xAEhIJdlPKayV0hz8RH73hPnJrcj8iBgABAgMEBSgKOABA25wGSAFiPHJlbGV2X3Bpbl9zdWJ0aXRsZV9tdWx0aWNsYXNzPXBpbl9zdWJ0aXRsZV9tdWx0aWNsYXNzX2ZtbF92M2I6cmVhcnI9c2NoZW1lX0xvY2FsL0dlb3VwcGVyL0FkdmVydHMvQ3VzdG9tTWF4YWR2L0VuYWJsZWQ9MWI6cmVhcnI9c2NoZW1lX0xvY2FsL0dlb3VwcGVyL0FkdmVydHMvQ3VzdG9tTWF4YWR2L01heGFkdj0xNWJEcmVhcnI9c2NoZW1lX0xvY2FsL0dlb3VwcGVyL0FkdmVydHMvQ3VzdG9tTWF4YWR2L1JlZ2lvbklkcz1bMSwxMDE3NF1iQHJlYXJyPXNjaGVtZV9Mb2NhbC9HZW91cHBlci9BZHZlcnRzL01heGFkdlRvcE1peC9NYXhhZHZGb3JNaXg9MTBqAnJ1nQHNzMw9oAEAqAEAvQGALT2lwgEQysfN5AOrzr3BBPeVx7CcAoICENCy0YvRgdC%2B0YbQutC40LmKAgCSAgCaAgxkZXNrdG9wLW1hcHM%3D&sll=60.615709%2C56.835969&sspn=0.005054%2C0.002967&text=%D0%B2%D1%8B%D1%81%D0%BE%D1%86%D0%BA%D0%B8%D0%B9&z=17.72'
             width='100%'
             height='100%'
             style={{ border: 0 }}

@@ -19,7 +19,7 @@ export default class Result extends Component {
             <div className='cloud-item'>
               <img src={WhiteCloudSvg} alt='' />
               <div className='cloud-center'>
-                <p>Научиться работать с тревогой и <span className='blue-mars'>преодолеть</span> страхи</p>
+                <p><span className='blue-mars'>Научиться</span> работать с тревогой и страхами</p>
               </div>
             </div>
             <div className='cloud-item'>

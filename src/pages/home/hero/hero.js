@@ -9,7 +9,7 @@ export default class hero extends Component {
             <h1>Современный психологический центр в Екатеринбурге</h1>
             <p>В нашей команде — психологи, которые используют в работе проверенные научные методы</p>
             <div className='button'>
-                <a href="#">подобрать<br/>специалиста</a>
+                <a href="#form">подобрать<br/>специалиста</a>
             </div>
         </div>
         <div className='hero-img'>

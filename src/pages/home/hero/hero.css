@@ -26,9 +26,12 @@ h1{
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    text-align: center;
+    text-align: left;
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
     background-color: #ABD2FF;
-    padding: 6px 15px;
+    padding: 10px 15px;
     border-radius: 20px;
     transition: all 0.3s;
     font-size: clamp(14px, 1.5vw, 20px);

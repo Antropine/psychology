@@ -208,19 +208,6 @@ export default class about extends Component {
             <p className='pluses-text'>Специалисты центра имеют высшее психологическое образование и квалификацию по психотерапии, увлечены профессией и постоянно совершенствуются в ней</p>
             <img src='images/heart.svg' alt='преимущстево'></img>
           </div>
-
-          <div className='pluses-card'>
-            <p className='pluses-title'>Находимся в 4 районах Екатеринбурга</p>
-            <p className='pluses-text'>Мы находимся в 4 локациях города, чтобы нашим клиентам из разных районов было удобно приехать в наш центр</p>
-            <img src='images/happy.svg' alt='преимущстево'></img>
-          </div>
-
-          <div className='pluses-card'>
-            <p className='pluses-title'>Современные уютные кабинеты</p>
-            <p className='pluses-text'>Наши кабинеты — это удобное пространство, где можно быть собой и меняться в своем темпе</p>
-            <img src='images/calm.svg' alt='преимущстево'></img>
-          </div>
-
           <div className='pluses-card'>
             <p className='pluses-title'>Транспортная доступность</p>
             <p className='pluses-text'>В 10-15 минутах от каждой нашей локации находится автобусная, троллейбусная и трамвайная остановка, а также станция метро</p>
@@ -240,7 +227,7 @@ export default class about extends Component {
           </div>
           <button type='submit'>оставить заявку</button>
         </div>
-        <img src='images/slogan.svg'></img>
+        <img src='images/group.svg'></img>
         </div>
       </div>
 

@@ -17,7 +17,7 @@ export default class specialists extends Component {
               <p>Предоставляем услуги только<br/>клиентам старше 18 лет</p>
             </div>
             <div className='button'>
-              <a href='#'>подобрать<br/>специалиста</a>
+              <a href='#form'>подобрать<br/>специалиста</a>
             </div>
           </div>
           <div className='services-img'>
@@ -30,34 +30,34 @@ export default class specialists extends Component {
           <div className='psyholog-lists'>
 
             <div className='psyholog-list'>
-              <img src='images/sick.png'></img>
+              <img src='images/sick.svg'></img>
               <div className='psyholog-text'>
                 <p className='psyholog-title'>Бережный подход</p>
-                <p>мы на стороне людей, а не идей о том, как «правильно»</p>
+                <p className='psyholog-inf'>Консультации проходят в спокойной атмосфере с соблюдением конфиденциальности</p>
               </div>
             </div>
 
             <div className='psyholog-list'>
-              <img src='images/red.png'></img>
+              <img src='images/red.svg'></img>
               <div className='psyholog-text'>
                 <p className='psyholog-title'>Научный подход</p>
-                <p>Опора на научные данные, а не на фантазии</p>
+                <p className='psyholog-inf'>Использование в работе научных методов</p>
               </div>
             </div>
 
             <div className='psyholog-list'>
-              <img src='images/happy1.png'></img>
-              <div className='psyholog-text'>
-                <p className='psyholog-title'>Самопознание</p>
-                <p>Проходят регулярную супервизию, личную терапию</p>
-              </div>
-            </div>
-
-            <div className='psyholog-list'>
-              <img src='images/sick.png'></img>
+              <img src='images/happy1.svg'></img>
               <div className='psyholog-text'>
                 <p className='psyholog-title'>Образование</p>
-                <p>Высшее психологическое образование и квалификация по психотерапии</p>
+                <p className='psyholog-inf'>Высшее психологическое образование и квалификация по психотерапии</p>
+              </div>
+            </div>
+
+            <div className='psyholog-list'>
+              <img src='images/apathy.svg'></img>
+              <div className='psyholog-text'>
+                <p className='psyholog-title'>Профессиональное развитие</p>
+                <p className='psyholog-inf'>Любовь к психологии и постоянное совершенствование в профессии</p>
               </div>
             </div>
 
@@ -136,20 +136,20 @@ export default class specialists extends Component {
         <h2>Как пройдет прием</h2>
         <div className='spec-work-steps'>
             <div className='spec-work-step'>
-                <p className='step-header'>1 Соберём анамнез и определим запрос</p>
-                <p>Уже на первой консультации специалист поймёт, что вас беспокоит, и поможет сформулировать цель работы.</p>
+                <p className='step-header'>1 Определим запрос</p>
+                <p>На первой консультации специалист поможет определить, что именно вас сейчас беспокоит, и предложит понятный план работы.</p>
             </div>
             <div className='spec-work-step'>
-                <p className='step-header'>2 Выстроим доверие</p>
-                <p>Создаст тёплую и безопасную атмосферу, где можно быть собой.</p>
+                <p className='step-header'>2 Выстроим доверительный контакт</p>
+                <p>Обеспечит комфортную обстановку, где вы сможете быть собой и работать в своем темпе.</p>
             </div>
             <div className='spec-work-step'>
-                <p className='step-header'>3 Поддержим вас в процессе</p>
-                <p>Поможет постепенно менять отношения с собой и окружающими.</p>
+                <p className='step-header'>3 Будем рядом с вами на каждом этапе</p>
+                <p>Бережно и с полным пониманием пройдет с вами путь изменений.</p>
             </div>
             <div className='spec-work-step'>
-                <p className='step-header'>4 Подробно объясним нюансы</p>
-                <p>Специалист внимательно выслушает и ответит на все вопросы.</p>
+                <p className='step-header'>4 Подробно ответим на ваши вопросы</p>
+                <p>Специалист без осуждений выслушает вас и ответит на все вопросы.</p>
             </div>
             </div>
         </div>
@@ -157,16 +157,18 @@ export default class specialists extends Component {
         
         <div className='about-form'>
         <p>Приглашаем на первую встречу — чтобы познакомиться и понять, подходим ли мы вам.</p>
-        <div className='form'>
-        <textarea placeholder='Номер телефона'></textarea>
+        <div className='about-form-cont'>
+            <div className='form'>
+            <textarea placeholder='Номер телефона'></textarea>
           <div>
             <input type="checkbox" id="policy" name="policy" checked={this.state.policy} onChange={e => this.setState({ policy: e.target.checked })} />
             <label htmlFor="policy">Согласие на обработку персональных данных</label>
           </div>
           <button type='submit' disabled={!this.state.policy}>оставить заявку</button>
         </div>
+        <img src='images/group.svg'></img>
       </div>
-
+        </div>
       </div>
     )
   }

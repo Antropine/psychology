@@ -35,6 +35,18 @@
     font-weight: 300;
 }
 
+.ahother{
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+  margin-right: 50px;
+  transition: all 0.3s;
+}
+
+.ahother:hover{
+  transform: scale(1.05);
+}
+
 .reasons{
     display: flex;
     flex-direction: row;
