@@ -116,3 +116,32 @@
 .oplata-iskra {
     margin-top: -150px;
 }
+
+.oplata-steps{
+    margin-top: 50px;
+    display: flex;
+    gap: 20px;
+    text-align: left;
+    font-weight: 300;
+    margin-bottom: 50px;
+}
+
+.oplata-step p{
+    width: 230px;
+}
+
+.reqviziti{
+    display: flex;
+    text-align: left;
+    margin-top: 50px;
+    gap: 100px;
+}
+
+.reqviziti_block{
+    background-color: white;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    font-weight: 300;
+    box-shadow: 0 0 0 100vmax white;
+    clip-path: inset(0 -100vmax);
+}

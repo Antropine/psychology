@@ -68,6 +68,34 @@ export default function Oplata() {
           <img src="images/iskra_oplata.png" alt="Искра" />
         </div>
       </div>
+
+      <div className='oplata-steps'>
+        <div className='oplata-step'>
+          <p><b>1</b> Сканируйте QR код с помощью банковского приложения</p>
+        </div>
+        <div className='oplata-step'>
+          <p><b>2</b> Важно! В поле назначения платежа заполнить данные!</p>
+        </div>
+        <div className='oplata-step'>
+          <p><b>3</b> № ДОГОВОРА, Без НДС</p>
+        </div>
+      </div>
+
+      <div className='reqviziti_block'>
+        <h2>Реквизиты для оплаты</h2>
+        <div className='reqviziti'>
+          <p>ООО «Грация»<br/>
+          ИНН 6670429660<br/>
+          КПП 667001001<br/>
+          р/с 40702810238060004556<br/>
+          ФИЛИАЛ «ЕКАТЕРИНБУРГСКИЙ» АО «АЛЬФА-БАНК»<br/>
+          БИК 046577964</p>
+           <div>
+            <p><b>Заполните значение платежа по примеру:</b></p>
+            <p>Оплата по договору №, Без НДС</p>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
