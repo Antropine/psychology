@@ -31,6 +31,8 @@ import Maria from './pages/specialists/maria/maria';
 import Blog from './pages/blog/blog';
 import Tests from './pages/tests/tests';
 import Contacts from './pages/contacts/contacts';
+import Page_404 from './pages/404/page_404';
+import Oplata from './pages/oplata/oplata';
 
 import { Routes, Route } from 'react-router-dom';
 
@@ -70,6 +72,8 @@ function App() {
           <Route path='/tests' element={<Tests />} />
           <Route path='/contacts' element={<Contacts />} />
           <Route path='/cookie' element={<Cookies />} />
+          <Route path='/oplata' element={<Oplata />} />
+          <Route path="*" element={<Page_404 />} />
         </Routes>
 
         <Footer />

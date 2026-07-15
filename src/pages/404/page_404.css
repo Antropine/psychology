@@ -1,0 +1,26 @@
+.page_404 {
+    text-align: center;
+}
+
+.page_404 .button {
+    margin-left: 0;
+    margin-right: 0;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.grust img{
+    float: right;
+}
+
+.title_404{
+    margin-top: 0px;
+    font-size: 36px;
+}
+
+.subtitle_404{
+    font-size: 24px;
+    font-weight: 300;
+    margin-bottom: 50px;
+}
