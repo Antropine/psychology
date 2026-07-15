@@ -7,9 +7,12 @@ export default function Header() {
 
   return (
     <header>
-      <a href='/'>
+      <div className='logo-div'>
+        <a href='/'>
         <img className='img_logo' src='/images/logo.svg' alt='логотип' />
       </a>
+      <p className='logo_subtitle'>Современный<br/>психологический<br/>центр</p>
+      </div>
       <button className='hamburger' onClick={() => setMenuOpen(!menuOpen)} aria-label='меню'>
         {menuOpen ? '✕' : '☰'}
       </button>

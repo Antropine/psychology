@@ -17,6 +17,7 @@ import Map from './pages/home/map/map';
 import Faq from './pages/home/faq/faq';
 import Help from './pages/home/help/help';
 import Services from './pages/services/services';
+import Assortment2 from './pages/home/assortment_replace/assortment2';
 
 // Отдельные страницы
 import About from './pages/about/about';
@@ -39,14 +40,12 @@ function HomePage() {
       <Hero />
       <Advantages />
       <Howwork />
-      <Assortment />
-      <Form />
+      <Assortment2 />
       <SpecialistsSection />
+      <Form />
       <Result />
-      <Place />
       <Map />
       <Help />
-      <Faq />
     </>
   );
 }

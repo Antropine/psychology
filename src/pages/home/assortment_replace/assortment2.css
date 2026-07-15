@@ -1,0 +1,35 @@
+.assortment2{
+    display: flex;
+    gap: 90px;
+}
+
+.advantages2{
+    background-color: white;
+    border-radius: 20px;
+    padding: 30px;
+    text-align: left;
+}
+
+.advantages2_title{
+    font-size: 32px;
+    margin: 0;
+}
+.advantages2_subtitle{
+    font-size: 16px;
+    font-weight: 300;
+    margin-bottom: 40px;
+}
+
+.advantages-lists{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.advantages-list{
+    border: none;
+    background-color: #EAF0FF;
+    padding: 15px 20px;
+    border-radius: 20px;
+    font-family: unbounded;
+}

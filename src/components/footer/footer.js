@@ -22,8 +22,8 @@ export default class footer extends Component {
             </div>
             <div className='footer-column'>
               <p>Еще</p>
-              <a href='/policy'>пользовательское соглашение</a>
-              <a href='/agreement'>политика конфиденциальности</a>
+              <a href='/agreement'>пользовательское соглашение</a>
+              <a href='/policy'>политика конфиденциальности</a>
               <a href='/cookie'>согласие на обработку cookie</a>
             </div>
         </div>

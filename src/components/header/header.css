@@ -6,6 +6,16 @@ header{
     align-items: center;
 }
 
+.logo_subtitle{
+    text-align: left;
+    font-weight: 200;
+}
+
+.logo-div{
+    display: flex;
+    gap: 38px;
+}
+
 nav{
     display: flex;
     flex-direction: row;

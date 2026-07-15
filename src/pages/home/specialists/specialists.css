@@ -39,8 +39,15 @@
 }
 
 .home-specialists-price{
+    margin-top: 40px;
     display: flex;
     justify-content: space-between;
+}
+
+
+.home-spec-work{
+    font-weight: 300;
+    font-size: 14px;
 }
 
 .home-price{
@@ -50,6 +57,7 @@
 .home-problem{
     display: flex;
     gap: 5px;
+    margin-top: 40px;
     flex-wrap: wrap;
 }
 
