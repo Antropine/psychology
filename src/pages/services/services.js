@@ -1,5 +1,8 @@
 import React, { Component } from 'react'
 import './services.css'
+import Form from '../home/form/form'
+import { Link } from 'react-router-dom'
+
 
 const services = [
   {
@@ -7,25 +10,23 @@ const services = [
     title: 'Консультация психолога',
     info: 'Только очно',
     text: 'Индивидуальный формат работы с психологом',
-    price: '3000',
-    detailText: 'Консультация психолога — это формат психологической помощи. Цель — проработать запрос клиента, чтобы он мог лучше понять себя, свое поведение и улучшил качество жизни, приобрел полезные и функциональные навыки, которые можно использовать в повседневной жизни',
+    price: '3500',
+    detailText: 'Консультация психолога — это формат психологической помощи. Цель — проработать запрос клиента, чтобы он мог лучше понять себя, свое поведение. Приобрел полезные и функциональные навыки, которые можно использовать в повседневной жизни, и улучшил качество жизни.',
     specialists: [
-      { name: 'Анна Пална', role: 'Гештальт-терапевт', img: '/images/anna.png', tags: ['Тревога', 'Самооценка', 'Отношения'], href: '/specialists/anna' },
-      { name: 'Тимур Батрутдинов', role: 'Психоаналитик', img: '/images/anna.png', tags: ['Тревога', 'Самопознание', 'Отношения'], href: '/specialists/timur' },
-      { name: 'Тимур Батрутдинов', role: 'Психоаналитик', img: '/images/anna.png', tags: ['Отношения', 'Самопознание'], href: '/specialists/timur' },
+      { name: 'Валерия Федина', role: 'Клинический психолог, КПТ, ACT', img: '/images/valeria.png', price: 'от 3500 Р / сессия', href: '/specialists/valeria' },
+      { name: 'Юлия Верёвочникова', role: 'Психолог, КПТ, АСТ', img: '/images/ulia.png', price: 'от 4000 Р / сессия', href: '/specialists/ulia' },
+      { name: 'Арина Джумаян', role: 'Клинический психолог, КПТ, схема-терапия, семейная терапия', img: '/images/arina.png', price: 'от 3500 Р / сессия', href: '/specialists/arina' },
     ],
   },
   {
     id: 'semya',
     title: 'Семейный психолог',
     info: 'Только очно',
-    text: 'От 2 участников встречи',
-    price: '3000',
+    text: 'От 2 участников во время консультации',
+    price: '6000',
     detailText: 'Семейный психолог — это специалист, который помогает семьям и парам решать недопонимания в отношениях. Он работает с коммуникацией, помогает разрешить конфликты и кризисные ситуации. Основное отличие от индивидуального консультирования: семейный психолог не работает с одним человеком, а выстраивает работу с семьей как с единой системой. Запрос одного члена семьи может быть маркером нарушения работы всей системы.',
     specialists: [
-      { name: 'Анна Пална', role: 'Гештальт-терапевт', img: '/images/anna.png', tags: ['Отношения', 'Самооценка'], href: '/specialists/anna' },
-      { name: 'Тимур Батрутдинов', role: 'Психоаналитик', img: '/images/anna.png', tags: ['Отношения', 'Самопознание'], href: '/specialists/timur' },
-      { name: 'Тимур Батрутдинов', role: 'Психоаналитик', img: '/images/anna.png', tags: ['Отношения', 'Самопознание'], href: '/specialists/timur' },
+      { name: 'Арина Джумаян', role: 'Клинический психолог, КПТ, схема-терапия, семейная терапия', img: '/images/arina.png', price: 'от 6000 Р / сессия', href: '/specialists/arina' },
     ],
   },
 ]
@@ -38,13 +39,13 @@ export default class Services extends Component {
         <div className='services-hero'>
           <div className='services-text'>
             <h2>Услуги</h2>
-            <p>Наш психологический центр в Екатеринбурге работает в научно-обоснованных методах психотерапии — КПТ, ACT, CFT и DBT</p>
+            <p>Наш современный психологический центр в Екатеринбурге работает в научно-обоснованных методах терапии: КПТ (когнитивно-поведенческая терапия), ACT (терапия принятия и ответственности), CFT (терапия, сфокусированная на сострадании), DBT (диалектическая поведенческая терапия) и схема-терапия.</p>
             <div className='attention'>
               <img src='/images/heart.svg' alt='сердце' />
               <p>Предоставляем услуги только<br/>клиентам старше 18 лет</p>
             </div>
             <div className='button'>
-              <a href='#'>подобрать<br/>специалиста</a>
+              <a href='#form'>выбрать<br/>специалиста</a>
             </div>
           </div>
           <div className='services-img'>
@@ -53,7 +54,7 @@ export default class Services extends Component {
         </div>
 
         <div className='price-cards'>
-          <h2>Непосредственно услуги</h2>
+          <h2>Наши услуги</h2>
           <div className='price-card'>
             {services.map((s) => (
               <a key={s.id} href={`#${s.id}`} className='card'>
@@ -71,23 +72,19 @@ export default class Services extends Component {
           <div key={s.id} id={s.id} className='service-section'>
             <h2>{s.title}</h2>
             <p className='service-detail-text'>{s.detailText}</p>
-            <p className='service-spec'>Список специалистов, которые работают с этой услугой</p>
+            <p className='service-spec'>Список специалистов, которые работают с этой услугой:</p>
             <div className='service-specialists'>
               {s.specialists.map((spec, i) => (
                 <div key={i} className='srv-spec-card'>
                   <div className='srv-spec-left'>
                     <img src={spec.img} alt={spec.name} />
-                    <a className='srv-spec-link' href={spec.href}>узнать больше<br/>о специалисте</a>
+                    <Link className='srv-spec-link' to={spec.href}>узнать больше<br/>о специалисте</Link>
                   </div>
                   <div className='srv-spec-right'>
                     <div className='srv-spec-info'>
                       <p className='srv-spec-name'>{spec.name}</p>
                       <p className='srv-spec-role'>{spec.role}</p>
-                      <div className='srv-spec-tags'>
-                        {spec.tags.map((tag, j) => (
-                          <button key={j}>{tag}</button>
-                        ))}
-                      </div>
+                      <p className='srv-spec-price'>{spec.price}</p>
                     </div>
                     <div className='button'><a href='#form'>записаться</a></div>
                   </div>
@@ -97,19 +94,8 @@ export default class Services extends Component {
           </div>
         ))}
          <div className='about-form'>
-        <p>Приглашаем на первую встречу — чтобы познакомиться и понять, подходим ли мы вам.</p>
-          <div className='about-form-cont'>
-              <div className='form' id='form'>
-              <textarea placeholder='Номер телефона'></textarea>
-            <div>
-              <input type="checkbox" id="policy" name="policy"/>
-              <label htmlFor="policy">Согласие на обработку персональных данных</label>
-            </div>
-            <button type='submit'>оставить заявку</button>
+          <Form title="Приглашаем на первую встречу — чтобы познакомиться и понять, подходим ли мы вам." />
           </div>
-          <img src='images/group.svg'></img>
-          </div>
-        </div>
       </div>
     )
   }

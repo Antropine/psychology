@@ -27,6 +27,12 @@
   gap: 15px;
 }
 
+.spec-img img{
+  border-radius: 20px;
+  width: 300px;
+  height: auto;
+}
+
 .pecialist-hero-text h2 {
   margin-bottom: -8px;
 }

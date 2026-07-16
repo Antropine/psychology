@@ -11,7 +11,9 @@
     flex-direction: column;
     gap: 20px;
 }
-
+.services-text p{
+    font-weight: 300;
+}
 .services-text h2 {
     margin-bottom: -12px;
 }

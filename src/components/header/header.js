@@ -21,9 +21,7 @@ export default function Header() {
           <Link to="/about">о нас</Link>
           <Link to="/services">услуги</Link>
           <Link to="/specialists">специалисты</Link>
-          <Link to="/blog">блог</Link>
           <Link to="/contacts">контакты</Link>
-          <Link to="/tests">тесты</Link>
         </nav>
       </div>
       <div className='header-button'>

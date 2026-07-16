@@ -65,12 +65,16 @@
 }
 
 .white-mars {
-    font-family: 'TD Mars', sans-serif;
+    font-family: "Noto Sans", sans-serif;
+    font-weight: 800;
+    font-size: 20px;
     color: white;
 }
 
 .blue-mars {
-    font-family: 'TD Mars', sans-serif;
+    font-family: "Noto Sans", sans-serif;
+    font-size: 20px;
+    font-weight: 800;
     color: #60BDFF;
 }
 

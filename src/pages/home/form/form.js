@@ -1,30 +1,74 @@
-import React, { Component } from 'react'
+import { useState } from 'react'
 import './form.css'
 
-export default class form extends Component {
-  render() {
-    return (
-      <div className='form-section' id='form'>
-        <h2>Форма записи</h2>
-            <div className='main-form'>
-                <div className='form'>
-                    <textarea placeholder='Ник в Telegram'></textarea>
-                    <textarea placeholder='Номер телефона*'></textarea>
-                    <div>
-                        <input type="checkbox" id="policy" name="poilcy" checked />
-                        <label for="scales">Я соглашаюсь с политикой конфиденциальности</label>
-                    </div>
-                    <div>
-                        <input type="checkbox" id="policy" name="poilcy" checked />
-                        <label for="scales">Я соглашаюсь на обработку персональных данных</label>
-                    </div>
-                    <button type='submit'>оставить заявку</button>
-                </div>
-                <div>
-                    <img src='images/worry_person.png'></img>
-                </div>
-            </div>
-      </div>
-    )
+export default function Form({title = 'Форма записи'}) {
+  const [telegram,setTelegram] = useState('')
+  const [phone,setPhone] = useState('')
+
+  const sendForm = async(e)=>{
+    e.preventDefault()
+
+    const response = await fetch('/send.php',{
+      method:'POST',
+      headers:{
+        'Content-Type':'application/json'
+      },
+      body:JSON.stringify({
+        telegram,
+        phone
+      })
+    })
+
+    const result = await response.json()
+
+    if(result.success){
+      alert('Заявка отправлена')
+      setTelegram('')
+      setPhone('')
+    }
   }
+
+  return(
+    <div className='form-section' id='form'>
+      <h2>{title}</h2>
+
+      <div className='main-form'>
+        <form className='form' onSubmit={sendForm}>
+
+          <textarea
+            placeholder='Ник в Telegram'
+            value={telegram}
+            onChange={(e)=>setTelegram(e.target.value)}
+          />
+
+          <textarea
+            placeholder='Номер телефона*'
+            value={phone}
+            onChange={(e)=>setPhone(e.target.value)}
+          />
+
+          <div>
+            <input type="checkbox" id="policy" required/>
+            <label htmlFor="policy">
+              <a href='/policy'>Я соглашаюсь с политикой конфиденциальности</a>
+            </label>
+          </div>
+
+          <div>
+            <input type="checkbox" id="data" required/>
+            <label htmlFor="data">
+              <a href='/agreement'>Я соглашаюсь на обработку персональных данных</a>
+            </label>
+          </div>
+
+          <button type='submit'>
+            оставить заявку
+          </button>
+
+        </form>
+
+        <img src='/images/worry_person.png' alt="person"/>
+      </div>
+    </div>
+  )
 }

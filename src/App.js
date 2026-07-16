@@ -1,4 +1,5 @@
 import './App.css';
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
 // Шаред компоненты
 import Header from './components/header/header';
@@ -25,16 +26,14 @@ import Policy from './pages/policy/policy';
 import Agreement from './pages/policy/agreement';
 import Cookies from './pages/policy/cookies';
 import Specialists from './pages/specialists/specialists';
-import Anna from './pages/specialists/anna/anna';
-import Timur from './pages/specialists/timur/timur';
-import Maria from './pages/specialists/maria/maria';
+import Arina from './pages/specialists/arina/arina';
+import Valeria from './pages/specialists/valeria/valeria';
+import Ulia from './pages/specialists/ulia/ulia';
 import Blog from './pages/blog/blog';
 import Tests from './pages/tests/tests';
 import Contacts from './pages/contacts/contacts';
 import Page_404 from './pages/404/page_404';
 import Oplata from './pages/oplata/oplata';
-
-import { Routes, Route } from 'react-router-dom';
 
 function HomePage() {
   return (
@@ -57,7 +56,6 @@ function App() {
     <div className="App">
       <div className="container">
         <Header />
-
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/about" element={<About />} />
@@ -65,9 +63,9 @@ function App() {
           <Route path='/agreement' element={<Agreement />} />
           <Route path='/services' element={<Services />} />
           <Route path='/specialists' element={<Specialists />} />
-          <Route path='/specialists/anna' element={<Anna />} />
-          <Route path='/specialists/timur' element={<Timur />} />
-          <Route path='/specialists/maria' element={<Maria />} />
+          <Route path='/specialists/arina' element={<Arina />} />
+          <Route path='/specialists/valeria' element={<Valeria />} />
+          <Route path='/specialists/ulia' element={<Ulia />} />
           <Route path='/blog' element={<Blog />} />
           <Route path='/tests' element={<Tests />} />
           <Route path='/contacts' element={<Contacts />} />
@@ -75,7 +73,6 @@ function App() {
           <Route path='/oplata' element={<Oplata />} />
           <Route path="*" element={<Page_404 />} />
         </Routes>
-
         <Footer />
       </div>
     </div>

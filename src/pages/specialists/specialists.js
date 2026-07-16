@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import './specialists.css'
+import Form from '../home/form/form'
 
 export default class specialists extends Component {
   state = { policy: false }
@@ -11,7 +12,7 @@ export default class specialists extends Component {
         <div className='services-hero'>
           <div className='services-text'>
             <h2>Специалисты</h2>
-            <p>В процессе работы у вас постепенно складываются уникальные отношения с психотерапевтом, которые в определенный момент жизни служат местом поддержки и выращивания нужных изменений.</p>
+            <p>В ходе работы у вас складываются уникальные отношения с психологом, которые со временем становятся местом поддержки и способствуют необходимым изменениям.</p>
             <div className='attention'>
               <img src='images/heart.svg' alt='сердце' />
               <p>Предоставляем услуги только<br/>клиентам старше 18 лет</p>
@@ -40,8 +41,8 @@ export default class specialists extends Component {
             <div className='psyholog-list'>
               <img src='images/red.svg'></img>
               <div className='psyholog-text'>
-                <p className='psyholog-title'>Научный подход</p>
-                <p className='psyholog-inf'>Использование в работе научных методов</p>
+                <p className='psyholog-title'>Научные методы</p>
+                <p className='psyholog-inf'>Использование в работе подходов с доказанной эффективностью</p>
               </div>
             </div>
 
@@ -49,7 +50,7 @@ export default class specialists extends Component {
               <img src='images/happy1.svg'></img>
               <div className='psyholog-text'>
                 <p className='psyholog-title'>Образование</p>
-                <p className='psyholog-inf'>Высшее психологическое образование и квалификация по психотерапии</p>
+                <p className='psyholog-inf'>Высшее психологическое образование и квалификация по доказательным методикам</p>
               </div>
             </div>
 
@@ -70,61 +71,61 @@ export default class specialists extends Component {
             <div className='specialist-flex'>
                 <div className='spec-card'>
                     <div className='spec-card-top'>
-                        <img src='images/anna.png' alt='специалист' />
+                        <img src='images/valeria.png' alt='специалист' />
                         <div className='spec-card-info'>
-                            <p className='spec-card-name'>Анна Пална</p>
-                            <p className='spec-card-work'>Гештальт-терапевт</p>
+                            <p className='spec-card-name'>Валерия Федина</p>
+                            <p className='spec-card-work'>Клинический психолог, КПТ, ACT</p>
                             <div className='spec-card-tags'>
+                                <button>Нестабильность в жизни</button>
+                                <button>Ничего не радует</button>
                                 <button>Тревога</button>
-                                <button>Самооценка</button>
-                                <button>Отношения</button>
                             </div>
                         </div>
                     </div>
-                    <p className='spec-card-desc'>Помогаю научиться слышать свои эмоции и мысли, понимать и удовлетворять свои потребности, относиться к себе с заботой и добротой.</p>
+                    <p className='spec-card-desc'>Мне важно не только помочь клиенту понять причины своих переживаний, но и научить использовать эти знания в повседневной жизни.</p>
                     <div className='spec-card-bottom'>
-                        <p className='spec-card-price'>от <b>2500 Р</b></p>
-                        <div className='button'><a href='#'>узнать больше</a></div>
+                        <p className='spec-card-price'>от <b>3500 Р</b></p>
+                        <div className='button'><a href='/specialists/valeria'>узнать больше</a></div>
                     </div>
                 </div>
 
                 <div className='spec-card'>
                     <div className='spec-card-top'>
-                        <img src='images/anna.png' alt='специалист' />
+                        <img src='images/ulia.png' alt='специалист' />
                         <div className='spec-card-info'>
-                            <p className='spec-card-name'>Тимур Батрутдинов</p>
-                            <p className='spec-card-work'>Психоаналитик</p>
+                            <p className='spec-card-name'>Юлия Верёвочникова</p>
+                            <p className='spec-card-work'>Психолог, КПТ, ACT</p>
                             <div className='spec-card-tags'>
+                                <button>Принятие себя</button>
                                 <button>Тревога</button>
-                                <button>Самопознание</button>
-                                <button>Отношения</button>
+                                <button>Травмирующий опыт</button>
                             </div>
                         </div>
                     </div>
-                    <p className='spec-card-desc'>Помогаю разобраться в себе, найти внутренние ресурсы и выстроить гармоничные отношения с окружающим миром.</p>
+                    <p className='spec-card-desc'>В своей работе я придерживаюсь доказательных методов и опираюсь на последние научные данные, которые получаю на обучениях и повышениях квалификации.</p>
                     <div className='spec-card-bottom'>
-                        <p className='spec-card-price'>от <b>3200 Р</b></p>
-                        <div className='button'><a href='#'>узнать больше</a></div>
+                        <p className='spec-card-price'>от <b>4000 Р</b></p>
+                        <div className='button'><a href='/specialists/ulia'>узнать больше</a></div>
                     </div>
                 </div>
 
                 <div className='spec-card'>
                     <div className='spec-card-top'>
-                        <img src='images/anna.png' alt='специалист' />
+                        <img src='images/arina.png' alt='специалист' />
                         <div className='spec-card-info'>
-                            <p className='spec-card-name'>Мария Соколова</p>
-                            <p className='spec-card-work'>КПТ-терапевт</p>
+                            <p className='spec-card-name'>Арина Джумаян</p>
+                            <p className='spec-card-work'>Клинический психолог, КПТ, схема-терапия</p>
                             <div className='spec-card-tags'>
-                                <button>Депрессия</button>
-                                <button>Самооценка</button>
-                                <button>Стресс</button>
+                                <button>Тревога, страхи</button>
+                                <button>РПП</button>
+                                <button>Романтические отношения</button>
                             </div>
                         </div>
                     </div>
-                    <p className='spec-card-desc'>Работаю с тревогой, депрессией и низкой самооценкой через когнитивно-поведенческий подход.</p>
+                    <p className='spec-card-desc'>Я убеждена, что универсальных решений не существует: то, что подходит одному, может не подойти другому, поэтому выстраиваю терапию с клиентом всегда индивидуально.</p>
                     <div className='spec-card-bottom'>
-                        <p className='spec-card-price'>от <b>2800 Р</b></p>
-                        <div className='button'><a href='#'>узнать больше</a></div>
+                        <p className='spec-card-price'>от <b>3500 Р</b></p>
+                        <div className='button'><a href='/specialists/arina'>узнать больше</a></div>
                     </div>
                 </div>
             </div>
@@ -156,18 +157,7 @@ export default class specialists extends Component {
 
         
         <div className='about-form'>
-        <p>Приглашаем на первую встречу — чтобы познакомиться и понять, подходим ли мы вам.</p>
-        <div className='about-form-cont'>
-            <div className='form'>
-            <textarea placeholder='Номер телефона'></textarea>
-          <div>
-            <input type="checkbox" id="policy" name="policy" checked={this.state.policy} onChange={e => this.setState({ policy: e.target.checked })} />
-            <label htmlFor="policy">Согласие на обработку персональных данных</label>
-          </div>
-          <button type='submit' disabled={!this.state.policy}>оставить заявку</button>
-        </div>
-        <img src='images/group.svg'></img>
-      </div>
+          <Form title="Приглашаем на первую встречу — чтобы познакомиться и понять, подходим ли мы вам." />
         </div>
       </div>
     )
