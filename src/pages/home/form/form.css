@@ -128,6 +128,43 @@
     font-weight:300;
 }
 
+.toast-error{
+    position:fixed;
+    top:30px;
+    right:30px;
+    max-width:350px;
+    background:#ff6b6b;
+    color:white;
+    padding:18px 25px;
+    border-radius:15px;
+    font-size:14px;
+    z-index:99999;
+    box-shadow:0 5px 20px rgba(0,0,0,.25);
+    animation:toastShow .3s ease;
+}
+
+@keyframes toastShow{
+    from{
+        opacity:0;
+        transform:translateY(-20px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+.success-message{
+    width:100%;
+    min-height:300px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    gap:15px;
+}
+
 /* ноутбуки */
 @media(max-width:1200px){
     .form{

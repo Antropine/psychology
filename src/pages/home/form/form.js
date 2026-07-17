@@ -9,38 +9,53 @@ export default function Form({title = 'Форма записи'}) {
   const [data,setData] = useState(false)
   const [error,setError] = useState('')
 
+  const showError = (message)=>{
+    setError(message)
+    setTimeout(()=>setError(''),3000)
+  }
+
   const sendForm = async(e)=>{
     e.preventDefault()
 
     if(!policy || !data){
-      setError('Необходимо согласиться с политикой конфиденциальности и обработкой данных')
+      showError('Необходимо согласиться с политикой конфиденциальности и обработкой данных')
       return
     }
 
-    setError('')
-
-    const response = await fetch('/send.php',{
-      method:'POST',
-      headers:{
-        'Content-Type':'application/json'
-      },
-      body:JSON.stringify({
-        telegram,
-        phone
+    try{
+      const response = await fetch('/send.php',{
+        method:'POST',
+        headers:{
+          'Content-Type':'application/json'
+        },
+        body:JSON.stringify({
+          telegram,
+          phone
+        })
       })
-    })
 
-    const result = await response.json()
+      const result = await response.json()
 
-    if(result.success){
-      setSuccess(true)
-      setTelegram('')
-      setPhone('')
+      if(result.success){
+        setSuccess(true)
+        setTelegram('')
+        setPhone('')
+      }
+
+    }catch(error){
+      showError('Ошибка отправки. Попробуйте позже')
     }
   }
 
   return(
     <div className='form-section' id='form'>
+
+      {error && (
+        <div className="toast-error">
+          {error}
+        </div>
+      )}
+
       <h2>{title}</h2>
 
       <div className='main-form'>
@@ -57,57 +72,53 @@ export default function Form({title = 'Форма записи'}) {
             </span>
           </div>
         ) : (
+          <form className='form' onSubmit={sendForm}>
 
-        <form className='form' onSubmit={sendForm}>
-
-          <textarea
-            placeholder='Ник в Telegram'
-            value={telegram}
-            onChange={(e)=>setTelegram(e.target.value)}
-          />
-
-          <textarea
-            placeholder='Номер телефона*'
-            value={phone}
-            onChange={(e)=>{
-              setPhone(e.target.value.replace(/\D/g, ''))
-            }}
-          />
-
-          <div className="policy-block">
-            <input 
-              type="checkbox" 
-              id="policy"
-              checked={policy}
-              onChange={(e)=>setPolicy(e.target.checked)}
+            <textarea
+              placeholder='Ник в Telegram'
+              value={telegram}
+              onChange={(e)=>setTelegram(e.target.value)}
             />
-            <label htmlFor="policy">
-              <a className="policy_link" href="/policy">
-                Я соглашаюсь с политикой конфиденциальности
-              </a>
-            </label>
-          </div>
 
-          <div className="policy-block">
-            <input 
-              type="checkbox" 
-              id="data"
-              checked={data}
-              onChange={(e)=>setData(e.target.checked)}
+            <textarea
+              placeholder='Номер телефона*'
+              value={phone}
+              onChange={(e)=>setPhone(e.target.value.replace(/\D/g,''))}
             />
-            <label htmlFor="data">
-              <a className="policy_link" href="/agreement">
-                Я соглашаюсь на обработку персональных данных
-              </a>
-            </label>
-          </div>
-          {error && (
-            <p className="form-error">
-              {error}
-            </p>
-          )}
-          <button type='submit'>оставить заявку</button>
-        </form>
+
+            <div className="policy-block">
+              <input
+                type="checkbox"
+                id="policy"
+                checked={policy}
+                onChange={(e)=>setPolicy(e.target.checked)}
+              />
+              <label htmlFor="policy">
+                <a className="policy_link" href="/policy">
+                  Я соглашаюсь с политикой конфиденциальности
+                </a>
+              </label>
+            </div>
+
+            <div className="policy-block">
+              <input
+                type="checkbox"
+                id="data"
+                checked={data}
+                onChange={(e)=>setData(e.target.checked)}
+              />
+              <label htmlFor="data">
+                <a className="policy_link" href="/agreement">
+                  Я соглашаюсь на обработку персональных данных
+                </a>
+              </label>
+            </div>
+
+            <button type="submit">
+              оставить заявку
+            </button>
+
+          </form>
         )}
 
         <img src='/images/ponimanie.svg' alt="понимание"/>
