@@ -4,22 +4,16 @@ import './oplata.css';
 
 export default function Oplata() {
   const qrCodes = {
-    2500: "/images/alfa-qr-2500.png",
-    3000: "/images/alfa-qr-3000.png",
-    3500: "/images/alfa-qr-3500.png",
-    4000: "/images/alfa-qr-4000.png",
-    4500: "/images/alfa-qr-4500.png",
-    5000: "/images/alfa-qr-5000.png",
-    6000: "/images/alfa-qr-6000.png",
+    3500: "/images/3500.png",
+    4000: "/images/4000.png",
+    4500: "/images/4500.png",
+    6000: "/images/6000.png",
   };
 
   const options = [
-    { value: 2500, label: '2500 ₽' },
-    { value: 3000, label: '3000 ₽' },
     { value: 3500, label: '3500 ₽' },
     { value: 4000, label: '4000 ₽' },
     { value: 4500, label: '4500 ₽' },
-    { value: 5000, label: '5000 ₽' },
     { value: 6000, label: '6000 ₽' },
   ];
 

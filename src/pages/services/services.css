@@ -1,306 +1,320 @@
-.services-hero {
-    display: flex;
-    gap: 200px;
+.services-hero{
+    display:flex;
+    gap:clamp(40px,10vw,200px);
 }
 
-.services-text {
-    text-align: left;
-    font-size: 16px;
-    max-width: 50%;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+.services-text{
+    text-align:left;
+    font-size:clamp(14px,1.2vw,16px);
+    max-width:50%;
 }
+
 .services-text p{
-    font-weight: 300;
-}
-.services-text h2 {
-    margin-bottom: -12px;
+    font-weight:300;
 }
 
-.attention {
-    display: flex;
-    gap: 20px;
+.services-text h2{
+    margin-bottom:-12px;
+}
+
+.services-img img{
+    max-width:100%;
+    height:auto;
+}
+
+.attention{
+    display:flex;
+    gap:20px;
+    align-items:center;
 }
 
 /* Карточки услуг */
 
-.price-cards {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-    background-color: #60BDFF;
-    box-shadow: 0 0 0 100vmax #60BDFF;
-    clip-path: inset(0 -100vmax);
-    padding-top: 60px;
-    padding-bottom: 60px;
-    margin-top: 60px;
+.price-cards{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:20px;
+    background-color:#60BDFF;
+    box-shadow:0 0 0 100vmax #60BDFF;
+    clip-path:inset(0 -100vmax);
+    padding:clamp(40px,5vw,60px) 0;
+    margin-top:60px;
 }
 
-.price-cards > h2 {
-    align-self: flex-start;
+.price-cards > h2{
+    align-self:flex-start;
 }
 
-.price-card {
-    display: grid;
-    grid-template-columns: repeat(2, 450px);
-    gap: 20px;
+.price-card{
+    display:grid;
+    grid-template-columns:repeat(2,minmax(280px,450px));
+    gap:20px;
+    width:100%;
+    justify-content:center;
 }
 
-.card {
-    background-color: white;
-    padding: 30px;
-    border-radius: 20px;
-    text-align: left;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    cursor: pointer;
-    text-decoration: none;
-    color: inherit;
-    transition: box-shadow 0.2s;
+.card{
+    background-color:white;
+    padding:clamp(20px,3vw,30px);
+    border-radius:20px;
+    text-align:left;
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+    cursor:pointer;
+    text-decoration:none;
+    color:inherit;
+    transition:.2s;
 }
 
-.card:hover {
-    box-shadow: 0 0 0 3px white;
+.card:hover{
+    box-shadow:0 0 0 3px white;
 }
 
-.card p {
-    margin: 0;
+.card p{
+    margin:0;
 }
 
-.card .button {
-    margin-top: auto;
+.card .button{
+    margin-top:auto;
 }
 
-.card-title {
-    font-size: 16px;
-    font-weight: 600;
+.card-title{
+    font-size:clamp(15px,1.5vw,20px);
+    font-weight:600;
 }
 
-.card-info {
-    background-color: #EAF0FF;
-    width: fit-content;
-    padding: 10px;
-    border-radius: 10px;
+.card-info{
+    background-color:#EAF0FF;
+    width:fit-content;
+    padding:10px;
+    border-radius:10px;
 }
 
-.card-text {
-    font-size: 14px;
-    font-weight: 300;
+.card-text{
+    font-size:clamp(13px,1.2vw,18px);
+    font-weight:300;
 }
 
-.card-price {
-    font-size: 20px;
+.card-price{
+    font-size:clamp(18px,1.5vw,24px);
 }
 
-/* Секции услуга — специалисты */
 
-.service-section {
-    display: flex;
-    background-color: white;
-    box-shadow: 0 0 0 100vmax white;
-    clip-path: inset(0 -100vmax);
-    flex-direction: column;
-    gap: 20px;
-    text-align: left;
-    padding-top: 100px;
-    padding-bottom: 60px;
+/* Секция услуги */
+
+.service-section{
+    display:flex;
+    background-color:white;
+    box-shadow:0 0 0 100vmax white;
+    clip-path:inset(0 -100vmax);
+    flex-direction:column;
+    gap:20px;
+    text-align:left;
+    padding:clamp(25px,4vw,50px) 0;
 }
 
-.service-detail-text {
-    font-weight: 300;
-    font-size: 16px;
-    margin: 0;
+.service-detail-text{
+    font-weight:300;
+    font-size:clamp(14px,1.2vw,20px);
+    margin:0;
 }
 
-.service-specialists {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+.service-spec{
+    font-size:clamp(14px,1.2vw,16px);
+    font-weight:700;
 }
+
+.service-specialists{
+    display:grid;
+    grid-template-columns:repeat(3,minmax(250px,1fr));
+    gap:20px;
+}
+
+.srv-spec-link{
+    font-size:clamp(11px,1vw,15px);
+    font-weight:300;
+    color:inherit;
+    text-decoration:none;
+    cursor:pointer;
+    line-height:1.4;
+    width:max-content;
+}
+
 
 /* Карточка специалиста */
 
-.service-spec{
-    font-size: 16px;
-    font-weight: 700;
+.srv-spec-card{
+    background-color:#60BDFF;
+    border-radius:20px;
+    padding:clamp(15px,2vw,20px);
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:16px;
 }
 
-.srv-spec-card {
-    background-color: #60BDFF;
-    border-radius: 20px;
-    padding: 20px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 16px;
+.srv-spec-left{
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    gap:12px;
 }
 
-.srv-spec-left {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    gap: 12px;
+.srv-spec-left img{
+    width:clamp(100px,15vw,200px);
+    height:clamp(100px,15vw,200px);
+    border-radius:14px;
+    object-fit:cover;
 }
 
-.srv-spec-left img {
-    width: 200px;
-    height: 200px;
-    border-radius: 14px;
-    object-fit: cover;
+.srv-spec-right{
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    text-align:left;
 }
 
-.srv-spec-right {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    text-align: left;
+.srv-spec-info{
+    display:flex;
+    flex-direction:column;
+    gap:8px;
 }
 
-.srv-spec-info {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
+.srv-spec-name{
+    font-size:clamp(14px,1.2vw,18px);
+    font-weight:700;
+    margin:0;
 }
 
-.srv-spec-name {
-    font-size: 16px;
-    font-weight: 700;
-    margin: 0;
+.srv-spec-role{
+    font-size:clamp(12px,1vw,16px);
+    font-weight:300;
+    margin:0;
 }
 
-.srv-spec-role {
-    font-size: 13px;
-    font-weight: 300;
-    margin: 0;
+.srv-spec-link{
+    font-size:clamp(11px,1vw,15px);
+    font-weight:300;
+    color:inherit;
+    text-decoration:none;
+    cursor:pointer;
+    line-height:1.4;
 }
 
-.srv-spec-tags {
-    display: flex;
-    gap: 6px;
-    flex-wrap: wrap;
+.srv-spec-right .button{
+    justify-content:flex-end;
 }
 
-.srv-spec-tags button {
-    background-color: #EAF0FF;
-    border: none;
-    border-radius: 20px;
-    font-size: 12px;
-    font-weight: 300;
-    padding: 6px 12px;
-    font-family: inherit;
-    cursor: default;
+.srv-spec-right .button a{
+    width:fit-content;
 }
 
-.srv-spec-link {
-    font-size: 12px;
-    font-weight: 300;
-    color: inherit;
-    text-decoration: none;
-    cursor: pointer;
-    line-height: 1.4;
+@media(max-width:1200px){
+
+    .services-hero{
+        gap:50px;
+    }
+
+    .price-card{
+        grid-template-columns:repeat(2,minmax(250px,1fr));
+    }
+
+    .service-specialists{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .srv-spec-left img{
+        width:130px;
+        height:130px;
+    }
+
 }
 
-/* Большие экраны */
-@media (min-width: 1400px) {
-    .services-text {
-        font-size: 20px;
+@media(max-width:768px){
+
+    .services-hero{
+        flex-direction:column;
+        gap:30px;
     }
 
-    .price-card {
-        grid-template-columns: repeat(2, 550px);
+    .services-text{
+        max-width:100%;
     }
 
-    .card-title {
-        font-size: 20px;
+    .services-img img{
+        width:100%;
     }
 
-    .card-text {
-        font-size: 18px;
+    .price-card{
+        grid-template-columns:1fr;
     }
 
-    .card-price {
-        font-size: 24px;
+    .service-specialists{
+        grid-template-columns:1fr;
     }
 
-    .service-detail-text {
-        font-size: 20px;
+    .srv-spec-card{
+        grid-template-columns:100px 1fr;
+        gap:15px;
+        padding:15px;
     }
 
-    .srv-spec-top img {
-        width: 90px;
-        height: 90px;
+    .srv-spec-left{
+        align-items:flex-start;
     }
 
-    .srv-spec-name {
-        font-size: 18px;
+    .srv-spec-left img{
+        width:100px;
+        height:100px;
     }
 
-    .srv-spec-role {
-        font-size: 16px;
+    .srv-spec-right{
+        gap:10px;
     }
 
-    .srv-spec-tags button {
-        font-size: 14px;
+    .srv-spec-info{
+        gap:5px;
     }
 
-    .srv-spec-link {
-        font-size: 15px;
-    }
-}
-
-/* Планшет */
-@media (max-width: 1024px) {
-    .services-hero {
-        gap: 60px;
+    .srv-spec-name{
+        font-size:14px;
     }
 
-    .price-card {
-        grid-template-columns: repeat(2, 1fr);
+    .srv-spec-role{
+        font-size:12px;
     }
 
-    .service-specialists {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-/* Планшет малый */
-@media (max-width: 768px) {
-    .services-hero {
-        gap: 40px;
+    .srv-spec-price{
+        font-size:13px;
     }
 
-    .srv-spec-card {
-        grid-template-columns: 1fr;
-    }
-
-    .srv-spec-left img {
-        width: 100px;
-        height: 100px;
+    .srv-spec-link{
+        font-size:11px;
     }
 }
 
-/* Мобильный */
-@media (max-width: 640px) {
-    .services-hero {
-        flex-direction: column;
-        gap: 30px;
+@media(max-width:480px){
+
+    .srv-spec-card{
+        grid-template-columns:85px 1fr;
+        gap:10px;
     }
 
-    .services-text {
-        max-width: 100%;
+    .srv-spec-left img{
+        width:85px;
+        height:85px;
     }
 
-    .price-card {
-        grid-template-columns: 1fr;
+    .srv-spec-name{
+        font-size:13px;
     }
 
-    .service-specialists {
-        grid-template-columns: 1fr;
+    .srv-spec-role{
+        font-size:11px;
     }
 
-    .service-section {
-        padding-top: 60px;
+    .srv-spec-link{
+        font-size:10px;
     }
 }

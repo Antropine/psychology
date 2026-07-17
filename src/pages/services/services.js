@@ -13,9 +13,9 @@ const services = [
     price: '3500',
     detailText: 'Консультация психолога — это формат психологической помощи. Цель — проработать запрос клиента, чтобы он мог лучше понять себя, свое поведение. Приобрел полезные и функциональные навыки, которые можно использовать в повседневной жизни, и улучшил качество жизни.',
     specialists: [
-      { name: 'Валерия Федина', role: 'Клинический психолог, КПТ, ACT', img: '/images/valeria.png', price: 'от 3500 Р / сессия', href: '/specialists/valeria' },
-      { name: 'Юлия Верёвочникова', role: 'Психолог, КПТ, АСТ', img: '/images/ulia.png', price: 'от 4000 Р / сессия', href: '/specialists/ulia' },
-      { name: 'Арина Джумаян', role: 'Клинический психолог, КПТ, схема-терапия, семейная терапия', img: '/images/arina.png', price: 'от 3500 Р / сессия', href: '/specialists/arina' },
+      { name: 'Валерия Федина', role: 'Клинический психолог, КПТ, ACT', img: '/images/valeria.png', price: <>от <b>3500 Р</b> / сессия</>, href: '/specialists/valeria' },
+      { name: 'Юлия Верёвочникова', role: 'Психолог, КПТ, АСТ', img: '/images/ulia.png', price: <>от <b>4000 Р</b> / сессия</>, href: '/specialists/ulia' },
+      { name: 'Арина Джумаян', role: 'Клинический психолог, КПТ, схема-терапия, семейная терапия', img: '/images/arina.png', price: <>от <b>3500 Р</b> / сессия</>, href: '/specialists/arina' },
     ],
   },
   {
@@ -26,7 +26,7 @@ const services = [
     price: '6000',
     detailText: 'Семейный психолог — это специалист, который помогает семьям и парам решать недопонимания в отношениях. Он работает с коммуникацией, помогает разрешить конфликты и кризисные ситуации. Основное отличие от индивидуального консультирования: семейный психолог не работает с одним человеком, а выстраивает работу с семьей как с единой системой. Запрос одного члена семьи может быть маркером нарушения работы всей системы.',
     specialists: [
-      { name: 'Арина Джумаян', role: 'Клинический психолог, КПТ, схема-терапия, семейная терапия', img: '/images/arina.png', price: 'от 6000 Р / сессия', href: '/specialists/arina' },
+      { name: 'Арина Джумаян', role: 'Клинический психолог, КПТ, схема-терапия, семейная терапия', img: '/images/arina.png', price: <>от <b>6000 Р</b> / сессия</>, href: '/specialists/arina' },
     ],
   },
 ]
@@ -78,7 +78,7 @@ export default class Services extends Component {
                 <div key={i} className='srv-spec-card'>
                   <div className='srv-spec-left'>
                     <img src={spec.img} alt={spec.name} />
-                    <Link className='srv-spec-link' to={spec.href}>узнать больше<br/>о специалисте</Link>
+                    <Link className='srv-spec-link' to={spec.href}><b>узнать больше<br/>о специалисте</b></Link>
                   </div>
                   <div className='srv-spec-right'>
                     <div className='srv-spec-info'>

@@ -1,5 +1,5 @@
 import './App.css';
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { Routes, Route } from 'react-router-dom'
 
 // Шаред компоненты
 import Header from './components/header/header';
@@ -9,13 +9,10 @@ import Footer from './components/footer/footer';
 import Hero from './pages/home/hero/hero';
 import Advantages from './pages/home/advantages/advantages';
 import Howwork from './pages/home/howwork/howwork';
-import Assortment from './pages/home/assortment/assortment';
 import Form from './pages/home/form/form';
 import SpecialistsSection from './pages/home/specialists/specialists';
 import Result from './pages/home/result/result';
-import Place from './pages/home/place/place';
 import Map from './pages/home/map/map';
-import Faq from './pages/home/faq/faq';
 import Help from './pages/home/help/help';
 import Services from './pages/services/services';
 import Assortment2 from './pages/home/assortment_replace/assortment2';
@@ -32,8 +29,9 @@ import Ulia from './pages/specialists/ulia/ulia';
 import Blog from './pages/blog/blog';
 import Tests from './pages/tests/tests';
 import Contacts from './pages/contacts/contacts';
-import Page_404 from './pages/404/page_404';
+import Page404 from './pages/404/page_404';
 import Oplata from './pages/oplata/oplata';
+import Cookie from './pages/cookie/cookie';
 
 function HomePage() {
   return (
@@ -71,8 +69,9 @@ function App() {
           <Route path='/contacts' element={<Contacts />} />
           <Route path='/cookie' element={<Cookies />} />
           <Route path='/oplata' element={<Oplata />} />
-          <Route path="*" element={<Page_404 />} />
+          <Route path="*" element={<Page404 />} />
         </Routes>
+        <Cookie />
         <Footer />
       </div>
     </div>

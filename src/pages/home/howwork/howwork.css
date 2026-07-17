@@ -26,10 +26,14 @@
 @media (max-width: 768px) {
     .work-steps {
         flex-direction: column;
-        gap: 30px;
+        gap: 10px;
     }
 
     .work-step {
         width: 100%;
+    }
+
+    .step-header{
+        margin-bottom: 0px;
     }
 }

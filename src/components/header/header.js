@@ -1,6 +1,8 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom';
 import './header.css';
+import { RxHamburgerMenu } from "react-icons/rx";
+import { IoCloseOutline } from "react-icons/io5";
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -14,7 +16,7 @@ export default function Header() {
       <p className='logo_subtitle'>Современный<br/>психологический<br/>центр</p>
       </div>
       <button className='hamburger' onClick={() => setMenuOpen(!menuOpen)} aria-label='меню'>
-        {menuOpen ? '✕' : '☰'}
+        {menuOpen ? <IoCloseOutline /> : <RxHamburgerMenu />}
       </button>
       <div className={`nav-menu${menuOpen ? ' open' : ''}`}>
         <nav onClick={() => setMenuOpen(false)}>
@@ -26,14 +28,13 @@ export default function Header() {
       </div>
       <div className='header-button'>
         <div className='address'>
-          <p>г. Екатеринбург</p>
+          <p className='city'>г. Екатеринбург</p>
           <p>ул. Малышева, 51<br />БЦ Высоцкий</p>
         </div>
         <div className='phone'>
-          <p>+74839430393</p>
           <div className='socail-icon'>
-            <img src='/images/tg.svg' alt='Телеграм' />
-            <img src='/images/max.svg' alt='Макс' />
+            <a href='https://t.me/iskra_psycenter' target='_blank'><img src='/images/tg.svg' alt='Телеграм' /></a>
+            <a href='https://max.ru/u/f9LHodD0cOIhJjPwMBW_HDyIkUGHf8Q5i_e-Tj2UgMTqlOh5eQlo4or6CUQ' target='_blank'><img src='/images/max.svg' alt='Макс' /></a>
           </div>
         </div>
       </div>

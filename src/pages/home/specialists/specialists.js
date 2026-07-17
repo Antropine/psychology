@@ -28,7 +28,7 @@ export default class specialists extends Component {
             <div className='home-specialists-price'>
               <p className='home-price'>от <b>3500 Р</b> / сессия</p>
               <div className='button'>
-                  <a href='#'>выбрать</a>
+                  <a href='/specialists/valeria'>выбрать</a>
               </div>
             </div>
           </div>
@@ -53,7 +53,7 @@ export default class specialists extends Component {
             <div className='home-specialists-price'>
               <p className='home-price'>от <b>4000 Р</b> / сессия</p>
               <div className='button'>
-                  <a href='#'>выбрать</a>
+                  <a href='/specialists/ulia'>выбрать</a>
               </div>
             </div>
           </div>
@@ -78,7 +78,7 @@ export default class specialists extends Component {
             <div className='home-specialists-price'>
               <p className='home-price'>от <b>3500 Р</b> / сессия</p>
               <div className='button'>
-                  <a href='#'>выбрать</a>
+                  <a href='/specialists/arina'>выбрать</a>
               </div>
             </div>
           </div>

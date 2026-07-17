@@ -168,21 +168,147 @@
     padding-bottom: 60px;
 }
 
-@media (max-width: 768px) {
-    .psyholog-lists {
-        flex-direction: column;
+/* Планшеты */
+@media (max-width:1200px){
+
+    .psyholog-lists{
+        gap:15px;
     }
 
-    .specialist-flex {
-        flex-direction: column;
+    .psyholog-list{
+        gap:15px;
     }
 
-    .spec-work-steps {
-        flex-direction: column;
-        gap: 30px;
+    .psyholog-inf{
+        font-size:13px;
     }
 
-    .spec-work-step {
-        width: 100%;
+    .specialist-flex{
+        gap:15px;
     }
+
+    .spec-card{
+        padding:15px;
+    }
+
+    .spec-card-top{
+        gap:15px;
+    }
+
+    .spec-card-top img{
+        width:100px;
+        height:100px;
+        flex-basis:100px;
+    }
+
+    .spec-card-work{
+        font-size:13px;
+    }
+
+    .spec-card-desc{
+        font-size:13px;
+    }
+
+    .spec-work-steps{
+        gap:20px;
+    }
+
+    .spec-work-step{
+        width:auto;
+        flex:1;
+    }
+}
+
+
+/* Мобильные */
+@media(max-width:768px){
+
+    /* скрываем принципы */
+    .our-psyhologs{
+        display:none;
+    }
+
+    .specialist-flex{
+        flex-direction:column;
+        margin-top:25px;
+    }
+
+    .spec-card{
+        padding:15px;
+        gap:12px;
+    }
+
+    .spec-card-top{
+        gap:15px;
+    }
+
+    .spec-card-top img{
+        width:90px;
+        height:90px;
+        flex-basis:90px;
+    }
+
+    .spec-card-name{
+        font-size:14px;
+    }
+
+    .spec-card-work{
+        font-size:12px;
+    }
+
+    .spec-card-tags button{
+        font-size:11px;
+        padding:6px 10px;
+    }
+
+    .spec-card-desc{
+        font-size:13px;
+    }
+
+    .spec-card-price{
+        font-size:18px;
+    }
+
+    .spec-work{
+        padding-top:40px;
+        padding-bottom:40px;
+    }
+
+    .spec-work-steps{
+        flex-direction:column;
+        gap:0px;
+    }
+
+    .spec-work-step{
+        width:100%;
+    }
+}
+
+
+/* Маленькие телефоны */
+@media(max-width:480px){
+
+    .spec-card-top img{
+        width:80px;
+        height:80px;
+        flex-basis:80px;
+    }
+
+    .spec-card-name{
+        font-size:13px;
+    }
+
+    .spec-card-work{
+        font-size:11px;
+    }
+
+    .spec-card-desc{
+        font-size:12px;
+    }
+
+    .spec-card-bottom .button a{
+        font-size:13px;
+        padding:10px 15px;
+    }
+
 }

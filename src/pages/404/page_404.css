@@ -1,26 +1,90 @@
 .page_404 {
-    text-align: center;
-}
-
-.page_404 .button {
-    margin-left: 0;
-    margin-right: 0;
-    display: flex;
-    justify-content: center;
-    margin-top: 50px;
-}
-
-.grust img{
-    float: right;
+    text-align:center;
+    padding:0 20px;
 }
 
 .title_404{
-    margin-top: 0px;
-    font-size: 36px;
+    margin-top:0;
+    font-size:clamp(24px,4vw,36px);
 }
 
 .subtitle_404{
-    font-size: 24px;
-    font-weight: 300;
-    margin-bottom: 50px;
+    font-size:clamp(16px,2.5vw,24px);
+    font-weight:300;
+    max-width:800px;
+    margin:0 auto 50px;
+}
+
+.page_404 > img{
+    width:clamp(200px,40vw,450px);
+    height:auto;
+}
+
+
+/* кнопка */
+
+.page_404 .button {
+    margin:50px auto 0;
+    display:flex;
+    justify-content:center;
+}
+
+.page_404 .button a{
+    white-space:nowrap;
+}
+
+
+/* грусть */
+
+.grust{
+    display:flex;
+    justify-content:flex-end;
+    margin-top:30px;
+}
+
+.grust img{
+    width:clamp(100px,15vw,220px);
+    height:auto;
+}
+
+
+/* планшет */
+
+@media(max-width:768px){
+
+    .page_404{
+        padding:0 15px;
+    }
+
+    .subtitle_404{
+        margin-bottom:30px;
+    }
+
+    .page_404 .button{
+        margin-top:30px;
+    }
+
+}
+
+
+/* мобильные */
+
+@media(max-width:480px){
+
+    .page_404 > img{
+        width:100%;
+    }
+
+    .page_404 .button a{
+        font-size:14px;
+    }
+
+    .grust{
+        justify-content:center;
+    }
+
+    .grust img{
+        width:350px;
+    }
+
 }

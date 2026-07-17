@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import './map.css'
+import { GoArrowRight } from "react-icons/go";
 
 export default class Map extends Component {
   render() {
@@ -9,20 +10,16 @@ export default class Map extends Component {
         <div className='map' id='map'>
           <div className='address-text'>
             <div className='address-item'>
-              <p><b>Адреса</b></p>
+              <p><b>Адрес</b></p>
               <p>г. Екатеринбург, ул. Малышева, 51, БЦ «Высоцкий»</p>
             </div>
             <div className='address-item'>
-              <p><b>Тел:</b></p>
-              <p>+79506555154</p>
+              <p><b>Telegram:</b></p>
+              <a href='https://t.me/iskra_psycenter'>Перейти в Telegram <GoArrowRight /></a>
             </div>
             <div className='address-item'>
-              <p><b>Телеграмм:</b></p>
-              <p>@Iskra_Ekb</p>
-            </div>
-            <div className='address-item'>
-              <p><b>Мах:</b></p>
-              <p>@Iskra_Ekb</p>
+              <p><b>МAX:</b></p>
+              <a href='https://max.ru/u/f9LHodD0cOIhJjPwMBW_HDyIkUGHf8Q5i_e-Tj2UgMTqlOh5eQlo4or6CUQ'>Перейти в MAX <GoArrowRight /></a>
             </div>
             <div className='address-item'>
               <p><b>График работы:</b></p>

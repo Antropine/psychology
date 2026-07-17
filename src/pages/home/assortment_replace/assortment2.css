@@ -1,35 +1,121 @@
 .assortment2{
-    display: flex;
-    gap: 90px;
+    display:flex;
+    gap:clamp(30px,6vw,90px);
+    align-items:center;
+}
+
+.assortment-text{
+    flex:1;
+}
+
+.assortment-text h2{
+    font-size:clamp(24px,3vw,40px);
+}
+
+.assortment-text p{
+    font-size:clamp(14px,1.2vw,16px);
+    font-weight:300;
+}
+
+.assortment-text img{
+    width:clamp(150px,20vw,250px);
+    height:auto;
+    display:block;
+    margin-top:30px;
 }
 
 .advantages2{
-    background-color: white;
-    border-radius: 20px;
-    padding: 30px;
-    text-align: left;
+    flex:1;
+    background:#fff;
+    border-radius:20px;
+    padding:clamp(20px,3vw,30px);
+    text-align:left;
 }
 
 .advantages2_title{
-    font-size: 32px;
-    margin: 0;
+    font-size:clamp(20px,2.5vw,32px);
+    margin:0;
 }
+
 .advantages2_subtitle{
-    font-size: 16px;
-    font-weight: 300;
-    margin-bottom: 40px;
+    font-size:clamp(13px,1.2vw,16px);
+    font-weight:300;
+    margin-bottom:40px;
 }
 
 .advantages-lists{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
+    display:flex;
+    flex-wrap:wrap;
+    gap:clamp(10px,1.5vw,20px);
 }
 
 .advantages-list{
-    border: none;
-    background-color: #EAF0FF;
-    padding: 15px 20px;
-    border-radius: 20px;
-    font-family: unbounded;
+    border:none;
+    background:#EAF0FF;
+    padding:clamp(10px,1.5vw,15px) clamp(15px,2vw,20px);
+    border-radius:20px;
+    font-family:unbounded;
+    font-size:clamp(11px,1vw,14px);
+}
+
+@media(max-width:992px){
+    .assortment2{
+        gap:40px;
+    }
+
+    .advantages2{
+        padding:20px;
+    }
+}
+@media(max-width:768px){
+    .assortment2{
+        flex-direction:column;
+        gap:30px;
+    }
+
+    .assortment-text{
+        width:100%;
+    }
+
+    .assortment-text img{
+        width:180px;
+        margin:20px auto 0;
+    }
+
+    .advantages2{
+        width:100%;
+        box-sizing:border-box;
+    }
+
+    .advantages2_title{
+        font-size:22px;
+    }
+
+    .advantages2_subtitle{
+        margin-bottom:25px;
+    }
+
+    .advantages-list{
+        width:fit-content;;
+        text-align:center;
+    }
+}
+@media(max-width:480px){
+    .assortment2{
+        gap:20px;
+    }
+
+    .assortment-text h2{
+        font-size:24px;
+    }
+
+    .advantages2{
+        padding:15px;
+        border-radius:15px;
+    }
+
+    .advantages-list{
+        font-size:11px;
+        padding:10px;
+    }
 }

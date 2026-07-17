@@ -174,7 +174,8 @@ export default class about extends Component {
               })}
             </div>
             <div className='kartochki-arrows'>
-              <button className='kartochki-arrow' onClick={this.prev}><img src='images/left_arrow.svg' alt='назад'></img></button>
+              <button className='kartochki-arrow' onClick={this.prev}><img src='images/arrow_left.svg' alt='назад'></img></button>
+              <button className='kartochki-arrow' onClick={this.next}><img src='images/arrow_right.svg' alt='вперед'></img></button>
             </div>
           </div>
           </div>

@@ -80,23 +80,124 @@ h1{
     font-weight: 300;
 }
 
-@media (max-width: 768px) {
-    .hero {
-        flex-direction: column;
-        gap: 30px;
-        text-align: left;
+@media (max-width: 1200px) {
+
+    .hero{
+        gap: 40px;
     }
 
-    .hero-text {
-        text-align: left;
+    .hero-img{
+        max-width: 400px;
     }
 
-    .button {
-        justify-content: center;
+    .message{
+        max-width: 280px;
+    }
+
+    .message-title{
+        font-size: 18px;
+    }
+}
+
+
+/* Планшеты */
+@media (max-width: 992px) {
+
+    .hero{
         flex-wrap: wrap;
+        justify-content: center;
     }
 
-    .message {
+    .hero-text{
+        width: 50%;
+    }
+
+    .hero-img{
+        width: 45%;
+        max-width: 350px;
+    }
+
+    .message{
+        order: 3;
+        max-width: 400px;
+        width: 100%;
+    }
+}
+
+
+/* Телефоны */
+@media (max-width: 768px) {
+
+    .hero{
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .hero-text{
+        order: 1;
+        width: 100%;
+    }
+
+    .message{
+        order: 2;
+        background-image: none;
+        padding: 0;
         max-width: 100%;
+        text-align: center;
+    }
+
+    .hero-img{
+        order: 3;
+        width: clamp(220px, 70vw, 350px);
+    }
+
+    .message p{
+        margin-left: 0;
+    }
+
+    .message-title{
+        font-size: clamp(16px, 5vw, 20px);
+    }
+
+    .message-title img{
+        width: 25px;
+    }
+
+    .message-text{
+        font-size: 14px;
+    }
+}
+
+
+/* Маленькие телефоны */
+@media (max-width: 480px) {
+
+    .hero{
+        gap: 20px;
+    }
+
+    .hero-img{
+        width: 80%;
+    }
+
+    h1{
+        font-size: 24px;
+    }
+
+    .hero-text p{
+        font-size: 14px;
+    }
+
+    .button a{
+        font-size: 14px;
+        padding: 8px 14px;
+    }
+
+    .message-title{
+        font-size: 16px;
+    }
+
+    .message-text{
+        font-size: 13px;
     }
 }

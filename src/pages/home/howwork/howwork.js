@@ -5,7 +5,7 @@ export default class howwork extends Component {
   render() {
     return (
       <div className='work' id='work'>
-        <h2>Как это работает</h2>
+        <h2>Как мы работаем</h2>
         <div className='work-steps'>
             <div className='work-step'>
                 <p className='step-header'>1 Расскажите о своем запросе</p>

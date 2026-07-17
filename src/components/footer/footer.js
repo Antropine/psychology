@@ -12,13 +12,10 @@ export default class footer extends Component {
               <a href='/about'>о нас</a>
               <a href='/services'>услуги</a>
               <a href='/specialists'>специалисты</a>
-              <a href='/blog'>блог</a>
               <a href='/contacts'>контакты</a>
             </div>
             <div className='footer-column'>
-              <p>Полезное</p>
-              <a href='/tests'>психологические тесты</a>
-              <a href='/blog'>статьи о психологии</a>
+
             </div>
             <div className='footer-column'>
               <p>Еще</p>

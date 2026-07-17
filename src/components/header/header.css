@@ -42,9 +42,20 @@ nav a:hover{
     text-align: left;
 }
 
+.city{
+    font-weight: 300;
+    margin: 0px;
+}
+
+.phone{
+    display: flex;
+    justify-content: center;
+}
+
 .socail-icon{
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 20px;
 }
 
@@ -70,40 +81,93 @@ nav a:hover{
     position: relative;
 }
 
+@media(max-width:1200px){
+    .header-button{
+        display:none;
+    }
+
+    .img_logo{
+        width:110px;
+    }
+
+    .logo-div{
+        gap:20px;
+    }
+
+    nav{
+        gap:15px;
+    }
+
+    nav a{
+        font-size:14px;
+    }
+}
+
 @media (max-width: 768px) {
-    .hamburger {
-        display: block;
+    header{
+        padding: 20px 0px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
 
-    .header-button {
+    .logo-div{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        flex-shrink: 1;
+    }
+
+    .img_logo{
+        width: 90px;
+        height: auto;
+    }
+
+    .logo_subtitle{
+        font-size: 12px;
+        line-height: 1.2;
+    }
+
+    .header-button{
         display: none;
     }
 
-    .nav-menu {
-        display: none;
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background: #EAF0FF;
-        z-index: 1000;
-        flex-direction: column;
+    .hamburger{
+        display: flex;
         align-items: center;
         justify-content: center;
+        width: 44px;
+        height: 44px;
+        border: none;
+        border-radius: 12px;
+        color: black;
+        font-size: 28px;
+        cursor: pointer;
+        z-index: 1100;
     }
 
-    .nav-menu.open {
+    .nav-menu{
+        display: none;
+        position: fixed;
+        inset: 0;
+        background: #EAF0FF;
+        z-index: 1000;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .nav-menu.open{
         display: flex;
     }
 
-    nav {
+    .nav-menu nav{
+        display: flex;
         flex-direction: column;
+        gap: 28px;
         align-items: center;
-        gap: 32px;
     }
 
-    nav a {
-        font-size: 20px;
+    .nav-menu nav a{
+        font-size: 22px;
     }
 }

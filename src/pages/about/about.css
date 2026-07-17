@@ -196,34 +196,32 @@
 .kartochki-arrows {
     display: flex;
     justify-content: flex-end;
-    gap: 8px;
+    gap: 10px;
     margin-top: 16px;
 }
 
-.kartochki-arrow {
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    border: 1px solid #ABD2FF;
-    background: transparent;
-    font-size: 20px;
+.kartochki-arrow{
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
     cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;
-    line-height: 1;
-    padding: 0;
+    transition: all 0.3s;
 }
 
 .kartochki-arrow img {
-    width: 22px;
+    width: 50px;
     height: auto;
     display: block;
 }
 
-.kartochki-arrow:hover {
-    background: #ABD2FF;
+.kartochki-arrow:hover{
+    transform: scale(1.1);
 }
+
 
 /* Форма записи */
 
@@ -236,6 +234,40 @@
     font-size: 36px;
     text-align: left;
     width: 75%;
+}
+
+@media(max-width:1200px){
+    .kartochki-card{
+        height:650px;
+        padding:40px 40px;
+    }
+
+    .kartochki-card img{
+        width:280px;
+    }
+
+    .kartochki-card p{
+        font-size:14px;
+    }
+}
+
+@media(max-width:992px){
+    .kartochki-track{
+        gap:20px;
+    }
+
+    .kartochki-card{
+        height:600px;
+        padding:30px;
+    }
+
+    .kartochki-card h3{
+        font-size:18px;
+    }
+
+    .kartochki-card img{
+        width:230px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -257,16 +289,6 @@
         grid-template-columns: 1fr;
     }
 
-    .kartochki-track {
-        flex-direction: column;
-    }
-
-    .kartochki-card {
-        height: auto;
-        min-height: 0;
-        padding-bottom: 80px;
-    }
-
     .about-form p {
         font-size: 24px;
         width: 100%;
@@ -275,10 +297,62 @@
     .iskra-div{
         flex-direction: column;
     }
+
+    .kartochki{
+        margin-top:50px;
+        padding-top:40px;
+        padding-bottom:40px;
+    }
+
+    .kartochki-track{
+        flex-direction:column;
+    }
+
+    .kartochki-card{
+        height:auto;
+        min-height:500px;
+        padding:30px 20px;
+    }
+
+    .kartochki-card p{
+        font-size:14px;
+        margin-bottom:15px;
+    }
+
+    .kartochki-card img{
+        width:220px;
+        margin-top:auto;
+    }
+
+    .kartochki-arrows{
+        justify-content:center;
+        margin-top:20px;
+    }
+
+    .kartochki-arrow img{
+        width:40px;
+    }
 }
 
 @media (max-width: 480px) {
     .about-form p {
         font-size: 20px;
+    }
+    
+      .kartochki-card{
+        min-height:450px;
+        padding:25px 15px;
+    }
+
+    .kartochki-card h3{
+        font-size:16px;
+    }
+
+    .kartochki-card p{
+        font-size:13px;
+    }
+
+    .kartochki-card img{
+        width:180px;
     }
 }

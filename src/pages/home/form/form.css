@@ -1,70 +1,224 @@
 .main-form{
-    display: flex;
-    margin: 0;
-    margin-bottom: 65px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:clamp(20px,5vw,80px);
+    margin-bottom:65px;
 }
 
 .form{
-    background: linear-gradient(
+    background:linear-gradient(
         0.6turn,
-        rgba(255, 255, 255, 0.2),
-        rgba(96, 189, 255, 0.2)
+        rgba(255,255,255,0.2),
+        rgba(96,189,255,0.2)
     );
-    border-radius: 20px;
-    padding: 40px 160px;
-    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
-    display: flex;
-    flex-direction: column;
-    max-width: 600px;
-    margin: 0 auto;
-    gap: 20px;
-    align-items: center;
-    justify-content: center;
+    border-radius:20px;
+    padding:40px 160px;
+    box-shadow:4px 4px 4px rgba(0,0,0,0.25);
+    display:flex;
+    flex-direction:column;
+    max-width:600px;
+    gap:20px;
+    align-items:center;
+    justify-content:center;
 }
 
-
 .form textarea{
-    border: none;
-    outline: none;
-    resize: none;
-    border-radius: 20px;
-    font-size: 20px;
-    font-weight: 400;
-    font-family: inherit;
-    padding: 30px 20px 0 20px;
-    text-align: center;
-    width: 100%;
-    box-sizing: border-box;
+    border:none;
+    outline:none;
+    resize:none;
+    border-radius:20px;
+    font-size:20px;
+    font-weight:400;
+    font-family:inherit;
+    padding:30px 20px 0;
+    text-align:center;
+    width:100%;
+    min-height:80px;
+    box-sizing:border-box;
 }
 
 .form button{
-    background-color: #ABD2FF;
-    border-radius: 20px;
-    font-family: inherit;
-    font-weight: 500;
-    font-size: 20px;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    width: fit-content;
-    padding: 20px 40px;
-    transition: all 0.3s;
+    background-color:#ABD2FF;
+    border-radius:20px;
+    font-family:inherit;
+    font-weight:500;
+    font-size:20px;
+    border:none;
+    outline:none;
+    cursor:pointer;
+    width:fit-content;
+    padding:20px 40px;
+    transition:all 0.3s;
 }
 
 .form button:hover{
-    transform: scale(1.05);
+    transform:scale(1.05);
 }
 
-.form button:disabled {
-    opacity: 0.4;
-    cursor: not-allowed;
-    transform: none;
+.form button:disabled{
+    opacity:0.4;
+    cursor:not-allowed;
+    transform:none;
 }
 
-@media (max-width: 768px) {
-    .form {
-        padding: 30px 20px;
-        max-width: 100%;
-        box-sizing: border-box;
+.main-form img{
+    width:clamp(180px,25vw,350px);
+    height:auto;
+}
+
+.policy_link{
+    display:block;
+    width:100%;
+    text-decoration:none;
+    color:black;
+    font-size:clamp(12px,1.2vw,16px);
+    text-align:left;
+}
+
+.form .policy-block{
+    width:100%;
+    text-align:left;
+}
+
+.policy-block{
+    width:100%;
+    display:flex;
+    align-items:flex-start;
+    gap:8px;
+}
+
+.policy-block label{
+    flex:1;
+}
+
+.policy_link{
+    text-decoration:underline;
+    color:black;
+    font-size:clamp(12px,1.2vw,16px);
+    text-align:left;
+}
+
+.success-message{
+    width:100%;
+    min-height:300px;
+    background:#EAF0FF;
+    border-radius:20px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    gap:15px;
+}
+
+.success-message h2{
+    margin:0;
+    font-size:36px;
+}
+
+.success-message p{
+    margin:0;
+    font-size:16px;
+    font-weight:300;
+}
+
+.success-message span{
+    font-size:12px;
+    font-weight:300;
+}
+
+/* ноутбуки */
+@media(max-width:1200px){
+    .form{
+        padding:40px 80px;
+    }
+
+    .main-form img{
+        width:280px;
+    }
+}
+
+
+/* планшеты */
+@media(max-width:992px){
+    .main-form{
+        gap:30px;
+    }
+
+    .form{
+        padding:35px 50px;
+    }
+
+    .form textarea{
+        font-size:18px;
+    }
+
+    .form button{
+        font-size:18px;
+    }
+
+    .main-form img{
+        width:230px;
+    }
+}
+
+
+/* телефоны */
+@media(max-width:768px){
+    .main-form{
+        flex-direction:column;
+        gap:30px;
+        margin-bottom: 0px;
+    }
+
+    .form{
+        width:100%;
+        max-width:100%;
+        padding:30px 20px;
+        box-sizing:border-box;
+    }
+
+    .form textarea{
+        font-size:16px;
+        min-height:70px;
+    }
+
+    .form button{
+        font-size:16px;
+        padding:15px 30px;
+    }
+
+    .main-form img{
+        width:350px;
+    }
+
+    .form-section{
+        padding-bottom: 50px;
+    }
+}
+
+
+/* маленькие телефоны */
+@media(max-width:480px){
+    .form{
+        padding:20px 15px;
+        border-radius:15px;
+        gap:15px;
+    }
+
+    .form textarea{
+        font-size:14px;
+        padding:20px 15px 0;
+    }
+
+    .form button{
+        width:100%;
+        padding:15px;
+        font-size:14px;
+    }
+
+    .main-form img{
+        width:300px;
     }
 }
