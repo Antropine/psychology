@@ -1,5 +1,6 @@
 import './App.css';
 import { Routes, Route } from 'react-router-dom'
+import ScrollToTop from './components/scrolll//ScrollToTop'
 
 // Шаред компоненты
 import Header from './components/header/header';
@@ -54,6 +55,7 @@ function App() {
     <div className="App">
       <div className="container">
         <Header />
+        <ScrollToTop />
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/about" element={<About />} />
