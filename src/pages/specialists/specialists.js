@@ -122,7 +122,7 @@ export default class specialists extends Component {
                             </div>
                         </div>
                     </div>
-                    <p className='spec-card-desc'>Я убеждена, что универсальных решений не существует: то, что подходит одному, может не подойти другому, поэтому выстраиваю терапию с клиентом всегда индивидуально.</p>
+                    <p className='spec-card-desc'>Я убеждена, что универсальных решенийне существует: то, что подходит одному, может не подойти другому, поэтому выстраиваю терапию с клиентом всегда индивидуально.</p>
                     <div className='spec-card-bottom'>
                         <p className='spec-card-price'>от <b>3500 Р</b></p>
                         <div className='button'><a href='/specialists/arina'>узнать больше</a></div>

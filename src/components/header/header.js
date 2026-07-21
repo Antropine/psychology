@@ -34,6 +34,7 @@ export default function Header() {
         <div className='phone'>
           <div className='socail-icon'>
             <a href='https://t.me/iskra_psycenter' target='_blank'><img src='/images/tg.svg' alt='Телеграм' /></a>
+            <a href='https://vk.ru/iskra_center'><img src='images/vk.svg' alt='вконтакте'></img></a>
             <a href='https://max.ru/u/f9LHodD0cOIhJjPwMBW_HDyIkUGHf8Q5i_e-Tj2UgMTqlOh5eQlo4or6CUQ' target='_blank'><img src='/images/max.svg' alt='Макс' /></a>
           </div>
         </div>

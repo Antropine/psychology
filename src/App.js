@@ -5,6 +5,7 @@ import ScrollToTop from './components/scrolll//ScrollToTop'
 // Шаред компоненты
 import Header from './components/header/header';
 import Footer from './components/footer/footer';
+import SocialButtons from './components/social/social';
 
 // Секции главной страницы
 import Hero from './pages/home/hero/hero';
@@ -74,6 +75,7 @@ function App() {
           <Route path="*" element={<Page404 />} />
         </Routes>
         <Cookie />
+        <SocialButtons />
         <Footer />
       </div>
     </div>

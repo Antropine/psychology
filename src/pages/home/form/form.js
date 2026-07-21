@@ -1,34 +1,40 @@
 import { useState } from 'react'
 import './form.css'
+import { Link } from 'react-router-dom'
 
-export default function Form({title = 'Форма записи'}) {
-  const [telegram,setTelegram] = useState('')
-  const [phone,setPhone] = useState('')
-  const [success,setSuccess] = useState(false)
-  const [policy,setPolicy] = useState(false)
-  const [data,setData] = useState(false)
-  const [error,setError] = useState('')
+export default function Form({ title = 'Форма записи' }) {
+  const [telegram, setTelegram] = useState('')
+  const [phone, setPhone] = useState('')
+  const [success, setSuccess] = useState(false)
+  const [policy, setPolicy] = useState(false)
+  const [data, setData] = useState(false)
+  const [error, setError] = useState('')
 
-  const showError = (message)=>{
+  const showError = (message) => {
     setError(message)
-    setTimeout(()=>setError(''),3000)
+    setTimeout(() => setError(''), 3000)
   }
 
-  const sendForm = async(e)=>{
+  const sendForm = async (e) => {
     e.preventDefault()
 
-    if(!policy || !data){
+    if (!phone.trim()) {
+      showError('Введите номер телефона')
+      return
+    }
+
+    if (!policy || !data) {
       showError('Необходимо согласиться с политикой конфиденциальности и обработкой данных')
       return
     }
 
-    try{
-      const response = await fetch('/send.php',{
-        method:'POST',
-        headers:{
-          'Content-Type':'application/json'
+    try {
+      const response = await fetch('/send.php', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
         },
-        body:JSON.stringify({
+        body: JSON.stringify({
           telegram,
           phone
         })
@@ -36,20 +42,18 @@ export default function Form({title = 'Форма записи'}) {
 
       const result = await response.json()
 
-      if(result.success){
+      if (result.success) {
         setSuccess(true)
         setTelegram('')
         setPhone('')
       }
-
-    }catch(error){
+    } catch (error) {
       showError('Ошибка отправки. Попробуйте позже')
     }
   }
 
-  return(
+  return (
     <div className='form-section' id='form'>
-
       {error && (
         <div className="toast-error">
           {error}
@@ -59,7 +63,6 @@ export default function Form({title = 'Форма записи'}) {
       <h2>{title}</h2>
 
       <div className='main-form'>
-
         {success ? (
           <div className="success-message">
             <h2>Спасибо!</h2>
@@ -73,17 +76,17 @@ export default function Form({title = 'Форма записи'}) {
           </div>
         ) : (
           <form className='form' onSubmit={sendForm}>
-
             <textarea
               placeholder='Ник в Telegram'
               value={telegram}
-              onChange={(e)=>setTelegram(e.target.value)}
+              onChange={(e) => setTelegram(e.target.value)}
             />
 
             <textarea
+              type="tel"
               placeholder='Номер телефона*'
               value={phone}
-              onChange={(e)=>setPhone(e.target.value.replace(/\D/g,''))}
+              onChange={(e) => setPhone(e.target.value.replace(/\D/g, ''))}
             />
 
             <div className="policy-block">
@@ -91,12 +94,12 @@ export default function Form({title = 'Форма записи'}) {
                 type="checkbox"
                 id="policy"
                 checked={policy}
-                onChange={(e)=>setPolicy(e.target.checked)}
+                onChange={(e) => setPolicy(e.target.checked)}
               />
               <label htmlFor="policy">
-                <a className="policy_link" href="/policy">
+                <Link className="policy_link" to="/policy">
                   Я соглашаюсь с политикой конфиденциальности
-                </a>
+                </Link>
               </label>
             </div>
 
@@ -105,24 +108,22 @@ export default function Form({title = 'Форма записи'}) {
                 type="checkbox"
                 id="data"
                 checked={data}
-                onChange={(e)=>setData(e.target.checked)}
+                onChange={(e) => setData(e.target.checked)}
               />
               <label htmlFor="data">
-                <a className="policy_link" href="/agreement">
+                <Link className="policy_link" to="/agreement">
                   Я соглашаюсь на обработку персональных данных
-                </a>
+                </Link>
               </label>
             </div>
 
             <button type="submit">
               оставить заявку
             </button>
-
           </form>
         )}
 
         <img src='/images/ponimanie.svg' alt="понимание"/>
-
       </div>
     </div>
   )

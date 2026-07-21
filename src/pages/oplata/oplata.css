@@ -42,10 +42,12 @@
     font-weight:500;
     cursor:pointer;
     box-shadow:none !important;
+    cursor: pointer;
 }
 
 .amount__single-value {
     color:black !important;
+    cursor: pointer;
     font-size:clamp(16px,2vw,20px);
     font-weight:700;
 }
@@ -56,12 +58,14 @@
     overflow:hidden;
     margin-top:8px;
     width:fit-content;
+    cursor: pointer;
 }
 
 .amount__menu-list {
     max-height:300px;
     overflow-y:auto;
     scrollbar-width:none;
+    cursor: pointer;
 }
 
 .amount__menu-list::-webkit-scrollbar{
@@ -77,6 +81,7 @@
     padding:18px 25px !important;
     cursor:pointer;
     text-align:center;
+    cursor: pointer;
 }
 
 

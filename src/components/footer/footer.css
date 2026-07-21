@@ -43,6 +43,11 @@
     margin:10px 0;
 }
 
+.company-info{
+    font-weight: 300 !important;
+    font-size: 12px !important;
+}
+
 @media(max-width:992px){
     .footer{
         gap:30px;

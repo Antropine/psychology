@@ -61,6 +61,26 @@ export default class Ulia extends Component {
           
         </div>
 
+        <div className='format-work'>
+          <h2>Формат работы</h2>
+          <div className='format-cards'>
+              <div className='format-card'>
+                <p className='format-title'>Первичная консультация</p>
+                <button className='format-time'>90 минут</button>
+                <p className='format-text'>Индивидуальный формат работы с психологом</p>
+                <p className='format-price'>4500 Р</p>
+              </div>
+              <div className='format-cards'>
+              <div className='format-card'>
+                <p className='format-title'>Вторичная консультация</p>
+                <button className='format-time'>55 минут</button>
+                <p className='format-text'>Индивидуальный формат работы с психологом</p>
+                <p className='format-price'>4000 Р</p>
+              </div>
+              </div>
+          </div>
+        </div>
+
         <div className='about-form'>
           <Form title="Приглашаем на первую встречу — чтобы познакомиться и понять, подходим ли мы вам." />
         </div>

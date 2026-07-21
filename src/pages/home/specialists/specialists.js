@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import './specialists.css'
+import { Link } from 'react-router-dom'
 
 export default class specialists extends Component {
   render() {
@@ -28,7 +29,7 @@ export default class specialists extends Component {
             <div className='home-specialists-price'>
               <p className='home-price'>от <b>3500 Р</b> / сессия</p>
               <div className='button'>
-                  <a href='/specialists/valeria'>выбрать</a>
+                  <Link to='/specialists/valeria'>выбрать</Link>
               </div>
             </div>
           </div>
@@ -53,7 +54,7 @@ export default class specialists extends Component {
             <div className='home-specialists-price'>
               <p className='home-price'>от <b>4000 Р</b> / сессия</p>
               <div className='button'>
-                  <a href='/specialists/ulia'>выбрать</a>
+                  <Link to='/specialists/ulia'>выбрать</Link>
               </div>
             </div>
           </div>
@@ -78,7 +79,7 @@ export default class specialists extends Component {
             <div className='home-specialists-price'>
               <p className='home-price'>от <b>3500 Р</b> / сессия</p>
               <div className='button'>
-                  <a href='/specialists/arina'>выбрать</a>
+                  <Link to='/specialists/arina'>выбрать</Link>
               </div>
             </div>
           </div>
@@ -86,7 +87,7 @@ export default class specialists extends Component {
         </div>
 
         <div className='home-specialists-kryto'>
-          <p>Наши специалисты имеют <span className='mars'>высшее</span> психологическое <span className='mars'>образование</span> и квалификацию по психотерапии, увлечены профессией и постоянно <span className='mars'>совершенствуются</span> в ней</p>
+          <p>Наши специалисты имеют <span className='mars'>высшее</span> психологическое <span className='mars'>образование</span> и квалификацию доказательным методикам, по-настоящему увлечены профессией и постоянно <span className='mars'>развиваются</span> в ней</p>
         </div>
       </div>
     )

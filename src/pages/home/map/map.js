@@ -14,12 +14,17 @@ export default class Map extends Component {
               <p>г. Екатеринбург, ул. Малышева, 51, БЦ «Высоцкий»</p>
             </div>
             <div className='address-item'>
-              <p><b>Telegram:</b></p>
-              <a href='https://t.me/iskra_psycenter'>Перейти в Telegram <GoArrowRight /></a>
+              <p><b>ВКонтакте:</b></p>
+              <a href='https://vk.ru/iskra_center'>Перейти в VK <GoArrowRight /></a>
             </div>
             <div className='address-item'>
               <p><b>МAX:</b></p>
               <a href='https://max.ru/u/f9LHodD0cOIhJjPwMBW_HDyIkUGHf8Q5i_e-Tj2UgMTqlOh5eQlo4or6CUQ'>Перейти в MAX <GoArrowRight /></a>
+            </div>
+            <div className='address-item'>
+              <p><b>Telegram:</b></p>
+              <a href='https://t.me/iskra_psycenter'>Перейти в Telegram <GoArrowRight /></a>
+              <p>@iskra_psycenter</p>
             </div>
             <div className='address-item'>
               <p><b>График работы:</b></p>

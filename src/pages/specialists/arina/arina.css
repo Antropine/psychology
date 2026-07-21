@@ -148,6 +148,52 @@
     cursor:pointer;
 }
 
+.format-work{
+    background-color: #EAF0FF;
+    padding-top: 50px;
+    padding-bottom: 80px;
+}
+
+.format-cards{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.format-card{
+    margin-top: 100px;
+    background-color: white;
+    padding: 30px;
+    border-radius: 20px;
+    text-align: left;
+    max-width: 340px;
+}
+
+.format-title{
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.format-time{
+    border: none;
+    padding: 7px 10px;
+    background-color: #EAF0FF;
+    border-radius: 10px;
+    font-family: unbounded;
+    font-size: 12px;
+    font-weight: 300;
+}
+
+.format-text{
+    font-family: 14px;
+    font-weight: 300;
+}
+
+.format-price{
+    font-size: 20px;
+    font-weight: 700;
+}
+    
 
 /* планшет */
 
@@ -163,6 +209,11 @@
 
     .about-spec{
         gap:30px;
+    }
+
+    .format-card{
+        flex:1 1 45%;
+        max-width:none;
     }
 
 }
@@ -211,6 +262,22 @@
 
     .about-tit img{
       width: 20px;
+    }
+
+    .format-cards{
+        flex-direction:column;
+        align-items:center;
+        margin-top: 0px;
+    }
+
+    .format-card{
+        width:90%;
+        margin-top: 0px;
+        padding:25px;
+    }
+
+    .format-work h2{
+        margin-bottom: 50px;
     }
 
 }

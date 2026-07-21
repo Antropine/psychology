@@ -1,0 +1,21 @@
+.social-buttons{
+    position:fixed;
+    right:20px;
+    bottom:20px;
+    display:none;
+    flex-direction:column;
+    gap: 5px;
+    z-index:9999;
+}
+
+@media (max-width:768px){
+    .social-buttons{
+        display:flex;
+    }
+
+    .social-buttons img{
+        width: 40px;
+        height: 40px;
+    }
+}
+
