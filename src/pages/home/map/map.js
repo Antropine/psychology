@@ -15,15 +15,15 @@ export default class Map extends Component {
             </div>
             <div className='address-item'>
               <p><b>ВКонтакте:</b></p>
-              <a href='https://vk.ru/iskra_center'>Перейти в VK <GoArrowRight /></a>
+              <a href='https://vk.ru/iskra_psycenter'>Написать в VK <GoArrowRight /></a>
             </div>
             <div className='address-item'>
               <p><b>МAX:</b></p>
-              <a href='https://max.ru/u/f9LHodD0cOIhJjPwMBW_HDyIkUGHf8Q5i_e-Tj2UgMTqlOh5eQlo4or6CUQ'>Перейти в MAX <GoArrowRight /></a>
+              <a href='https://max.ru/u/f9LHodD0cOIhJjPwMBW_HDyIkUGHf8Q5i_e-Tj2UgMTqlOh5eQlo4or6CUQ'>Написать в MAX <GoArrowRight /></a>
             </div>
             <div className='address-item'>
               <p><b>Telegram:</b></p>
-              <a href='https://t.me/iskra_psycenter'>Перейти в Telegram <GoArrowRight /></a>
+              <a href='https://t.me/iskra_psycenter'>Написать в Telegram <GoArrowRight /></a>
               <p>@iskra_psycenter</p>
             </div>
             <div className='address-item'>

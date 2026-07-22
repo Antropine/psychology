@@ -87,7 +87,7 @@ export default class specialists extends Component {
         </div>
 
         <div className='home-specialists-kryto'>
-          <p>Наши специалисты имеют <span className='mars'>высшее</span> психологическое <span className='mars'>образование</span> и квалификацию доказательным методикам, по-настоящему увлечены профессией и постоянно <span className='mars'>развиваются</span> в ней</p>
+          <p>Наши специалисты имеют <span className='mars'>высшее</span> психологическое <span className='mars'>образование</span> и квалификацию по доказательным методикам, по-настоящему увлечены профессией и постоянно <span className='mars'>развиваются</span> в ней</p>
         </div>
       </div>
     )

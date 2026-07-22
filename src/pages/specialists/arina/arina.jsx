@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import './arina.css'
 import Form from '../../home/form/form'
+import { Link } from 'react-router-dom'
+
 
 export default class Arina extends Component {
 
@@ -37,7 +39,7 @@ export default class Arina extends Component {
 
             <div className='about-list'>
               <p className='about-tit'>Подходы и опыт</p>
-              <p className='about-text'>Клиническая психология, КПТ (когнитивно-поведенческая терапия), схема-терапия, семейная терапия Опыт: 3 года</p>
+              <p className='about-text'>Клиническая психология, КПТ (когнитивно-поведенческая терапия), схема-терапия, семейная терапия<br/>Опыт: 3 года</p>
             </div>
 
             <div className='about-list'>
@@ -63,7 +65,7 @@ export default class Arina extends Component {
         </div>
 
         <div className='format-work'>
-          <h2>Формат работы</h2>
+          <h2>Форматы работы</h2>
           <div className='format-cards'>
               <div className='format-card'>
                 <p className='format-title'>Первичная консультация</p>
@@ -93,7 +95,6 @@ export default class Arina extends Component {
         <div className='about-form'>
           <Form title="Приглашаем на первую встречу — чтобы познакомиться и понять, подходим ли мы вам." />
         </div>
-
       </div>
     )
   }

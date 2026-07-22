@@ -13,7 +13,7 @@ export default function SocialButtons() {
       </a>
 
       <a
-        href="https://vk.ru/iskra_center"
+        href="https://vk.ru/iskra_psycenter"
         target="_blank"
         rel="noopener noreferrer"
         aria-label="Vk"

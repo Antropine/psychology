@@ -22,11 +22,11 @@ export default class footer extends Component {
               <Link to='/cookie'>согласие на обработку cookie</Link>
             </div>
             <div className='footer-column'>
-              <p className='company-info'>ООО «Грация»<br/>ИНН 6670429660<br/>КПП 667001001</p>
+              <p className='company-info'><noindex>ООО «Грация»<br/>ИНН 6670429660<br/>КПП 667001001</noindex></p>
             </div>
         </div>
         <p className='footer-subtitle'>Оператор включен в Реестр под регистрационным № 66-24-029440 (Приказ № 88 от 24.12.2024)</p>
-        <p className='footer-subtitle'>Информация на сайте носит ознакомительный характер</p>
+        <p className='footer-subtitle'>Информация на сайте носит ознакомительный характер и не является офертой</p>
       </footer>
     )
   }

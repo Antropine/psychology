@@ -13,7 +13,7 @@ export default class Result extends Component {
   render() {
     return (
       <div className='result' id='result'>
-        <h2>В результате с психологом вы сможете</h2>
+        <h2>Психолог может помочь</h2>
         <div className='result-section'>
           <div className='left-cloud'>
             <div className='cloud-item'>

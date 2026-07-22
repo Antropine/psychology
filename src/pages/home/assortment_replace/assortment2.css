@@ -20,10 +20,11 @@
 }
 
 .assortment-text img{
-    width:clamp(150px,20vw,250px);
+    width:clamp(350px,30vw,450px);
     height:auto;
     display:block;
-    margin-top:30px;
+    margin-top: 0px;
+    float: right;
 }
 
 .advantages2{
@@ -80,7 +81,7 @@
     }
 
     .assortment-text img{
-        width:180px;
+        width:250px;
         margin:20px auto 0;
     }
 
