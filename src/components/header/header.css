@@ -81,11 +81,7 @@ nav a:hover{
     position: relative;
 }
 
-@media(max-width:1200px){
-    .header-button{
-        display:none;
-    }
-
+@media(max-width:1300px){
     .img_logo{
         width:110px;
     }
@@ -100,6 +96,10 @@ nav a:hover{
 
     nav a{
         font-size:14px;
+    }
+
+    .logo_subtitle{
+        display:none;
     }
 }
 

@@ -34,6 +34,8 @@ import Contacts from './pages/contacts/contacts';
 import Page404 from './pages/404/page_404';
 import Oplata from './pages/oplata/oplata';
 import Cookie from './pages/cookie/cookie';
+import Faq from './pages/home/faq/faq';
+import Metods from './pages/metods/metods';
 
 function HomePage() {
   return (
@@ -43,9 +45,11 @@ function HomePage() {
       <Howwork />
       <Assortment2 />
       <SpecialistsSection />
+      <Metods/>
       <Form />
       <Result />
       <Map />
+      <Faq />
       <Help />
     </>
   );
