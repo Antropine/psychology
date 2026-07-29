@@ -45,7 +45,7 @@ function HomePage() {
       <Howwork />
       <Assortment2 />
       <SpecialistsSection />
-      <Metods/>
+      <Metods />
       <Form />
       <Result />
       <Map />

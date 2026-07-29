@@ -47,7 +47,7 @@ export default class policy extends Component {
             <td rowspan="5">Аналитическая	</td>
             <td>60 минут</td>
             <td>Проверяет, правильно ли установлены другие cookies Метрики</td>
-            <td rowspan="10">iksweb.ru</td>
+            <td rowspan="10">https://iskrapsy.ru</td>
           </tr>
           <tr>
             <td>_ym_isad</td>
