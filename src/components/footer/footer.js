@@ -7,7 +7,7 @@ export default class footer extends Component {
     return (
       <footer>
         <div className='footer'>
-          <img src='/images/logo.svg'></img>
+          <img src='/images/logo.svg' alt='логотип'></img>
             <div className='footer-column'>
               <p>О проекте</p>
               <Link to="/about">о нас</Link>

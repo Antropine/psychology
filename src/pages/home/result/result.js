@@ -1,7 +1,5 @@
 import React, { Component } from 'react'
 import './result.css'
-import BlueCloudSvg from './assets/blue_cloud.svg'
-import WhiteCloudSvg from './assets/white_cloud.svg'
 import cloud1 from './assets/cloud1.svg'
 import cloud2 from './assets/cloud2.svg'
 import cloud3 from './assets/cloud3.svg'

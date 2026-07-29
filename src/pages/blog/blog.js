@@ -33,7 +33,7 @@ export default class blog extends Component {
                 <h2>Блог</h2>
                 <p>Здесь вы можете ознакомиться с текстами, написанными нашими специалистами на популярные и острые темы, которые помогут вам разобраться в чем-то ?</p>
             </div>
-            <img src='images/blog-iskra.png'></img>
+            <img src='images/blog-iskra.png' alt='Искра'></img>
         </div>
 
         <div className='article'>
@@ -44,7 +44,7 @@ export default class blog extends Component {
                         <img src={item.image} className="news-img" alt={item.title} />
                         <p className='news-title'>{item.title}</p>
                         <p className='news-text'>{item.content}</p>
-                        <a className='news-details' href='#'>узнать больше <img src='images/black_arrow.svg'></img></a>
+                        <a className='news-details' href='/home'>узнать больше <img src='images/black_arrow.svg'></img></a>
                     </div>
                     ))}
             </div>

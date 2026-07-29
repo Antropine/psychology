@@ -11,7 +11,7 @@ export default class Assortment2 extends Component {
             <div className='button'>
             <a href='#specialists'>подобрать<br/>специалиста</a>
             </div>
-            <img src='images/sad_person.png'></img>
+            <img src='images/sad_person.png' alt='грустная искра'></img>
         </div>
         <div className='advantages2'>
             <p className='advantages2_title'>Основные направления работы центра</p>

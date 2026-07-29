@@ -50,7 +50,7 @@ export default class Valeria extends Component {
             </div>
 
             <div className='about-list'>
-              <p className='about-tit'>С какими запросами предпочитаю работать <img src='/images/heart.svg'></img></p>
+              <p className='about-tit'>С какими запросами предпочитаю работать <img src='/images/heart.svg' alt='сердце'></img></p>
               <p className='about-text'>Тревога, навязчивые мысли, зависимости, депрессивные состояния, жизненные кризисы, РПП (расстройство пищевого поведения), сложности в отношениях с собой и окружающими, нестабильность в жизни и переезд</p>
             </div>
           </div>

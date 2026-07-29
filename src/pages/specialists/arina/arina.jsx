@@ -1,8 +1,6 @@
 import React, { Component } from 'react'
 import './arina.css'
 import Form from '../../home/form/form'
-import { Link } from 'react-router-dom'
-
 
 export default class Arina extends Component {
 
@@ -53,7 +51,7 @@ export default class Arina extends Component {
             </div>
 
             <div className='about-list'>
-              <p className='about-tit'>С какими запросами предпочитаю работать <img src='/images/heart.svg'></img></p>
+              <p className='about-tit'>С какими запросами предпочитаю работать <img src='/images/heart.svg' alt='сердце'></img></p>
               <p className='about-text'>Социальная тревога, ГТР (генерализованное тревожное расстройство), межличностные проблемы (романтические отношения, детско-родительские отношения, друзья, коллеги), РПП (расстройство пищевого поведения), жизненные кризисы, прокрастинация, ничего не радует, потеря смысла жизни, стресс на работе, отношения с собой (самооценка, принятие себя, уверенность в себе)</p>
             </div>
           </div>

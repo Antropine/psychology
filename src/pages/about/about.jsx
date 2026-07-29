@@ -160,7 +160,7 @@ export default class about extends Component {
             <img src='images/iskra1.png' alt='Искра'></img>
           </div>
           <div className='iskra-text'>
-            <p className='iskra-title'>Привет! Я - Искра <img src='images/star.svg'></img></p>
+            <p className='iskra-title'>Привет! Я - Искра <img src='images/star.svg' alt='звезда'></img></p>
             <p>Я являюсь частью команды современного психологического центра в Екатеринбурге «Искра».</p>
             <p>Я очень эмоциональная и могу испытывать, как люди, разные эмоции: радость, грусть, гнев, скуку, тревожность и страх.</p>
             <p>Также я очень любознательная: увлечена психологией и люблю делиться своими знаниями. </p>
