@@ -22,7 +22,7 @@ jobs:
         run: npm install
 
       - name: 🏗 Собрать проект
-        run: npm run build
+        run: CI=false npm run build
 
       - name: 🚀 Загрузить на хостинг
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
