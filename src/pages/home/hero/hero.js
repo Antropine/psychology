@@ -6,19 +6,17 @@ export default class hero extends Component {
     return (
       <div className='hero' id='hero'>
         <div className='hero-text'>
-            <h1>Современный психологический центр в Екатеринбурге</h1>
-            <p>В нашей команде — психологи, которые используют в работе доказательные методы</p>
-            <div className='button'>
-                <a href="#form">записаться<br/>на сессию</a>
-            </div>
+          <h1>Современный психологический центр в Екатеринбурге</h1>
+          <p>В нашей команде — психологи, которые используют в работе доказательные методы</p>
+          <div className='button'>
+            <a href="#form">записаться<br/>на сессию</a>
+          </div>
         </div>
-        <div className='hero-img'>
-            <img src='images/iskra.png' alt='Искра'></img>
-        </div>
-        <div className='message'>
-          <p className='message-title'>Привет! Я - Искра <img src='images/star.svg' alt='звезда'></img></p>
-          <p className='message-text'>Я бережно помогу начать работу с психологом и буду рядом на протяжении всего пути</p>
-        </div>
+
+        <div className='hero-image-wrap'>
+          <img className='hero-img' src='images/iskra.png' alt='Искра'/>
+          <img className='message-img' src="images/massage.svg" alt="Сообщение"/>
+      </div>
       </div>
     )
   }
