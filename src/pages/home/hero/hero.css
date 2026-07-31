@@ -104,20 +104,29 @@ h1{
     }
 
     .message-img{
-        width:100%;
+        display: none;
     }
 }
 
 @media(max-width:768px){
+    .hero{
+        flex-wrap:wrap;
+    }
+
+    .hero-text{
+        width:100%;
+    }
+
     .hero-image-wrap{
-        width:clamp(250px,80vw,400px);
+        width:100%;
+        justify-content:center;
     }
 
     .hero-img{
-        width:60%;
+        width:clamp(280px,75vw,420px);
     }
 
     .message-img{
-        width:70%;
+        display:none;
     }
 }
