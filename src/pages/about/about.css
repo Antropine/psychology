@@ -41,6 +41,19 @@
     clip-path: inset(0 -100vmax);
 }
 
+.about-hero{
+    align-items:center;
+}
+
+.about-img{
+    flex-shrink:0;
+}
+
+.hero-img{
+    display:flex;
+    align-items:center;
+}
+
 /*адреса*/
 
 .address-card{
@@ -356,4 +369,121 @@
     .kartochki-card img{
         width:180px;
     }
+}
+
+
+/* ноутбуки */
+@media(max-width:1400px){
+
+    .about-hero{
+        gap:100px;
+        align-items:center;
+    }
+
+
+    .about-img{
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        flex:0 0 45%;
+    }
+
+
+    .about-img img{
+        width:520px;
+        max-width:100%;
+    }
+
+
+    .iskra-div{
+        gap:60px;
+        align-items:center;
+    }
+
+
+    .hero-img{
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        flex:0 0 40%;
+    }
+
+
+    .hero-img img{
+        width:430px;
+        max-width:100%;
+    }
+
+}
+
+
+
+/* планшеты */
+@media(max-width:992px){
+
+    .about-img img{
+        width:420px;
+    }
+
+
+    .hero-img img{
+        width:350px;
+    }
+
+
+    .about-img,
+    .hero-img{
+        justify-content:center;
+    }
+
+}
+
+
+
+/* телефоны */
+@media(max-width:768px){
+
+    .about-hero{
+        flex-direction:column;
+        gap:20px;
+    }
+
+
+    .about-img img{
+        width:260px;
+    }
+
+
+    .iskra-div{
+        flex-direction:column;
+        gap:20px;
+    }
+
+
+    .hero-img img{
+        width:260px;
+    }
+
+
+    .hero-img{
+        width:100%;
+        justify-content:center;
+    }
+
+}
+
+
+
+/* маленькие телефоны */
+@media(max-width:480px){
+
+    .about-img img{
+        width:220px;
+    }
+
+
+    .hero-img img{
+        width:220px;
+    }
+
 }

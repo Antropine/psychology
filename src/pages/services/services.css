@@ -1,179 +1,230 @@
+/* =========================
+   HERO
+========================= */
+
 .services-hero{
     display:flex;
-    gap:clamp(40px,10vw,200px);
+    align-items:center;
+    justify-content:space-between;
+    gap:clamp(30px,6vw,100px);
 }
 
+
 .services-text{
+    max-width:520px;
     text-align:left;
     font-size:clamp(14px,1.2vw,16px);
-    max-width:50%;
 }
+
 
 .services-text p{
     font-weight:300;
 }
 
+
 .services-text h2{
-    margin-bottom:-12px;
+    margin-bottom:15px;
 }
 
+
+.services-img{
+    flex:1;
+}
+
+
 .services-img img{
+    display:block;
     max-width:100%;
     height:auto;
 }
 
+
 .attention{
     display:flex;
-    gap:20px;
     align-items:center;
+    gap:20px;
 }
 
-/* Карточки услуг */
+
+
+/* =========================
+   ЦЕНЫ
+========================= */
 
 .price-cards{
     display:flex;
     flex-direction:column;
-    align-items:center;
-    gap:20px;
-    background-color:#60BDFF;
+    gap:25px;
+    background:#60BDFF;
     box-shadow:0 0 0 100vmax #60BDFF;
     clip-path:inset(0 -100vmax);
     padding:clamp(40px,5vw,60px) 0;
     margin-top:60px;
 }
 
+
 .price-cards > h2{
     align-self:flex-start;
 }
 
+
 .price-card{
-    display:grid;
-    grid-template-columns:repeat(2,minmax(280px,450px));
-    gap:20px;
     width:100%;
+    display:grid;
+    grid-template-columns:repeat(2,minmax(0,450px));
     justify-content:center;
+    gap:20px;
 }
 
+
 .card{
-    background-color:white;
+    background:white;
     padding:clamp(20px,3vw,30px);
     border-radius:20px;
-    text-align:left;
     display:flex;
     flex-direction:column;
     gap:15px;
-    cursor:pointer;
-    text-decoration:none;
+    text-align:left;
     color:inherit;
-    transition:.2s;
+    text-decoration:none;
+    transition:.25s;
 }
 
+
 .card:hover{
-    box-shadow:0 0 0 3px white;
+    transform:translateY(-3px);
 }
+
 
 .card p{
     margin:0;
 }
 
+
 .card .button{
     margin-top:auto;
 }
+
 
 .card-title{
     font-size:clamp(15px,1.5vw,20px);
     font-weight:600;
 }
 
+
 .card-info{
-    background-color:#EAF0FF;
-    width:fit-content;
+    width:max-content;
+    background:#EAF0FF;
     padding:10px;
     border-radius:10px;
 }
+
 
 .card-text{
     font-size:clamp(13px,1.2vw,18px);
     font-weight:300;
 }
 
+
 .card-price{
     font-size:clamp(18px,1.5vw,24px);
 }
 
 
-/* Секция услуги */
+
+/* =========================
+   СЕКЦИЯ УСЛУГИ
+========================= */
+
 
 .service-section{
     display:flex;
-    background-color:white;
+    flex-direction:column;
+    gap:25px;
+    background:white;
     box-shadow:0 0 0 100vmax white;
     clip-path:inset(0 -100vmax);
-    flex-direction:column;
-    gap:20px;
+    padding:clamp(30px,4vw,50px) 0;
     text-align:left;
-    padding:clamp(25px,4vw,50px) 0;
 }
 
+
 .service-detail-text{
-    font-weight:300;
-    font-size:clamp(14px,1.2vw,20px);
     margin:0;
+    font-size:clamp(14px,1.2vw,20px);
+    font-weight:300;
 }
+
 
 .service-spec{
     font-size:clamp(14px,1.2vw,16px);
     font-weight:700;
 }
 
+
+
+/* =========================
+   СПЕЦИАЛИСТЫ
+========================= */
+
 .service-specialists{
     display:grid;
-    grid-template-columns:repeat(3,minmax(250px,1fr));
+    grid-template-columns:repeat(3, minmax(0,1fr));
     gap:20px;
 }
 
-.srv-spec-link{
-    font-size:clamp(11px,1vw,15px);
-    font-weight:300;
-    color:inherit;
-    text-decoration:none;
-    cursor:pointer;
-    line-height:1.4;
-    width:max-content;
-}
-
-
-/* Карточка специалиста */
 
 .srv-spec-card{
-    background-color:#60BDFF;
+    background:#60BDFF;
     border-radius:20px;
-    padding:clamp(15px,2vw,20px);
+    padding:20px;
+
     display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:16px;
+    grid-template-columns:minmax(120px, 160px) minmax(0,1fr);
+    gap:20px;
+
+    min-width:0;
 }
+
+/* левая часть */
 
 .srv-spec-left{
     display:flex;
     flex-direction:column;
     justify-content:space-between;
-    gap:12px;
+    gap:15px;
 }
+
 
 .srv-spec-left img{
-    width:clamp(100px,15vw,200px);
-    height:clamp(100px,15vw,200px);
-    border-radius:14px;
+    width:120px;
+    height:120px;
     object-fit:cover;
+    border-radius:14px;
 }
 
+
+/* ссылка */
+
+.srv-spec-link{
+    font-size:14px;
+    line-height:1.3;
+    color:inherit;
+    text-decoration:none;
+    white-space:nowrap;
+}
+
+/* правая часть */
+
 .srv-spec-right{
+    min-width:0;
+
     display:flex;
     flex-direction:column;
     justify-content:space-between;
-    text-align:left;
+    gap:20px;
 }
+
 
 .srv-spec-info{
     display:flex;
@@ -181,140 +232,171 @@
     gap:8px;
 }
 
-.srv-spec-name{
-    font-size:clamp(14px,1.2vw,18px);
-    font-weight:700;
+
+.srv-spec-name,
+.srv-spec-role,
+.srv-spec-price{
     margin:0;
+    overflow-wrap:anywhere;
 }
+
+
+.srv-spec-name{
+    font-size:clamp(14px,1.1vw,18px);
+    font-weight:700;
+}
+
 
 .srv-spec-role{
-    font-size:clamp(12px,1vw,16px);
+    font-size:clamp(12px,1vw,15px);
     font-weight:300;
-    margin:0;
 }
 
-.srv-spec-link{
-    font-size:clamp(11px,1vw,15px);
-    font-weight:300;
-    color:inherit;
-    text-decoration:none;
-    cursor:pointer;
-    line-height:1.4;
+
+.srv-spec-price{
+    font-size:clamp(13px,1vw,16px);
 }
+
+
 
 .srv-spec-right .button{
+    display:flex;
     justify-content:flex-end;
 }
 
+
 .srv-spec-right .button a{
-    width:fit-content;
+    white-space:nowrap;
 }
 
-@media(max-width:1200px){
 
-    .services-hero{
-        gap:50px;
-    }
 
-    .price-card{
-        grid-template-columns:repeat(2,minmax(250px,1fr));
-    }
+/* =========================
+   АДАПТИВ
+========================= */
+
+
+/* =========================
+   НОУТБУК
+========================= */
+
+@media(max-width:1400px){
 
     .service-specialists{
-        grid-template-columns:repeat(2,1fr);
-    }
-
-    .srv-spec-left img{
-        width:130px;
-        height:130px;
+        grid-template-columns:repeat(2,minmax(0,1fr));
     }
 
 }
 
-@media(max-width:768px){
 
-    .services-hero{
-        flex-direction:column;
-        gap:30px;
-    }
 
-    .services-text{
-        max-width:100%;
-    }
+/* =========================
+   ПЛАНШЕТ
+========================= */
 
-    .services-img img{
-        width:100%;
-    }
-
-    .price-card{
-        grid-template-columns:1fr;
-    }
+@media(max-width:900px){
 
     .service-specialists{
         grid-template-columns:1fr;
     }
+
 
     .srv-spec-card{
-        grid-template-columns:100px 1fr;
-        gap:15px;
-        padding:15px;
+        grid-template-columns:140px minmax(0,1fr);
     }
 
-    .srv-spec-left{
-        align-items:flex-start;
-    }
 
     .srv-spec-left img{
-        width:100px;
-        height:100px;
+        width:140px;
+        height:140px;
     }
 
-    .srv-spec-right{
-        gap:10px;
+}
+
+
+
+/* =========================
+   ТЕЛЕФОН
+========================= */
+
+@media(max-width:600px){
+
+    .srv-spec-card{
+        grid-template-columns:90px minmax(0,1fr);
+        padding:15px;
+        gap:15px;
     }
 
-    .srv-spec-info{
-        gap:5px;
+
+    .srv-spec-left img{
+        width:90px;
+        height:90px;
     }
+
+
+    .srv-spec-link{
+        font-size:11px;
+    }
+
 
     .srv-spec-name{
         font-size:14px;
     }
 
+
     .srv-spec-role{
         font-size:12px;
     }
+
 
     .srv-spec-price{
         font-size:13px;
     }
 
-    .srv-spec-link{
-        font-size:11px;
+
+    .srv-spec-right{
+        gap:12px;
     }
+
+
+    .srv-spec-right .button a{
+        font-size:12px;
+        padding:8px 15px;
+    }
+
 }
 
-@media(max-width:480px){
+
+
+/* =========================
+   МАЛЕНЬКИЕ ТЕЛЕФОНЫ
+========================= */
+
+@media(max-width:380px){
 
     .srv-spec-card{
-        grid-template-columns:85px 1fr;
-        gap:10px;
+        grid-template-columns:1fr;
     }
+
+
+    .srv-spec-left{
+        align-items:center;
+    }
+
 
     .srv-spec-left img{
-        width:85px;
-        height:85px;
+        width:120px;
+        height:120px;
     }
 
-    .srv-spec-name{
-        font-size:13px;
-    }
-
-    .srv-spec-role{
-        font-size:11px;
-    }
 
     .srv-spec-link{
-        font-size:10px;
+        text-align:center;
     }
+
+
+    .srv-spec-right .button{
+        justify-content:center;
+    }
+
 }

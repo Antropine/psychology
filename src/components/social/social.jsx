@@ -9,7 +9,7 @@ export default function SocialButtons() {
         rel="noopener noreferrer"
         aria-label="Телеграм"
       >
-        <img src='images/tg.svg' alt='тг'></img>
+        <img src='/images/tg.svg' alt='тг'></img>
       </a>
 
       <a
@@ -18,7 +18,7 @@ export default function SocialButtons() {
         rel="noopener noreferrer"
         aria-label="Vk"
       >
-        <img src='images/vk.svg' alt='вк'></img>
+        <img src='/images/vk.svg' alt='вк'></img>
       </a>
 
       <a
@@ -27,7 +27,7 @@ export default function SocialButtons() {
         rel="noopener noreferrer"
         aria-label="Max"
       >
-        <img src='images/max.svg' alt='макс'></img>
+        <img src='/images/max.svg' alt='макс'></img>
       </a>
     </div>
   );
