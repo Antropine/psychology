@@ -13,11 +13,16 @@
     display: flex;
 }
 
+.services-img{
+    margin-bottom: 30px;
+}
+
 .psyholog-lists{
     display: flex;
     justify-content: space-between;
+    flex-wrap:wrap;
     text-align: left;
-    gap: 20px;
+    gap: 40px;
     margin-top: 40px;
 }
 
@@ -25,6 +30,7 @@
     display: flex;
     flex-direction: row;
     align-items: flex-start;
+    max-width: 450px;
     gap: 20px;
     flex: 1;
 }
@@ -54,14 +60,15 @@
 }
 
 .spec-card{
-    background-color: #60BDFF;
-    border-radius: 20px;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-    flex: 1;
-    text-align: left;
+    background:#60BDFF;
+    border-radius:20px;
+    padding:20px;
+    display:flex;
+    flex-direction:column;
+    gap:16px;
+    flex:1 1 350px;
+    min-width:0;
+    text-align:left;
 }
 
 .spec-card-top{
@@ -176,10 +183,6 @@
         gap:15px;
     }
 
-    .psyholog-list{
-        gap:15px;
-    }
-
     .psyholog-inf{
         font-size:13px;
     }
@@ -190,6 +193,7 @@
 
     .spec-card{
         padding:15px;
+        flex:1 1 calc(50% - 10px);
     }
 
     .spec-card-top{
@@ -219,7 +223,6 @@
         flex:1;
     }
 }
-
 
 /* Мобильные */
 @media(max-width:768px){

@@ -6,16 +6,16 @@
     display:flex;
     align-items:center;
     justify-content:space-between;
-    gap:clamp(30px,6vw,100px);
+    gap:40px;
 }
 
 
 .services-text{
-    max-width:520px;
+    flex:1;
+    max-width:950px;
     text-align:left;
     font-size:clamp(14px,1.2vw,16px);
 }
-
 
 .services-text p{
     font-weight:300;
@@ -28,16 +28,19 @@
 
 
 .services-img{
-    flex:1;
+    flex:0 0 auto;
+    display:flex;
+    justify-content:flex-end;
+    align-items:center;
 }
 
 
 .services-img img{
     display:block;
+    width:clamp(320px,35vw,520px);
     max-width:100%;
     height:auto;
 }
-
 
 .attention{
     display:flex;
@@ -214,6 +217,7 @@
     white-space:nowrap;
 }
 
+
 /* правая часть */
 
 .srv-spec-right{
@@ -270,6 +274,50 @@
 }
 
 
+/* HERO ADAPTIVE */
+
+@media(max-width:900px){
+
+    .services-hero{
+        flex-direction:column;
+        gap:30px;
+        align-items:center;
+    }
+
+    .price-card{
+        grid-template-columns:1fr;
+    }
+
+    .services-text{
+        max-width:100%;
+    }
+
+
+    .services-img{
+        justify-content:center;
+        width:100%;
+    }
+
+
+    .services-img img{
+        width:320px;
+    }
+
+}
+
+
+@media(max-width:600px){
+
+    .services-hero{
+        gap:20px;
+    }
+
+
+    .services-img img{
+        width:250px;
+    }
+
+}
 
 /* =========================
    АДАПТИВ
