@@ -1,55 +1,53 @@
-import React, { Component } from 'react'
-import './blog.css'
+import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
+import './blog.css';
 
-export default class blog extends Component {
-    news =[
-        {
-            title: "Что такое проекция?",
-            image: "/images/news1.png",
-            content: "Проекция — это бессознательный психологический защитный механизм, при котором человек приписывает собственные неприемлемые мысли, чувства, желания или черты характера другим людям или внешнему миру, искренне веря, что они исходят извне, а не изнутри него",
-        },
-        {
-            title: "Что такое проекция?",
-             image: "/images/news1.png",
-            content: "Проекция — это бессознательный психологический защитный механизм, при котором человек приписывает собственные неприемлемые мысли, чувства, желания или черты характера другим людям или внешнему миру, искренне веря, что они исходят извне, а не изнутри него",
-        },
-        {
-            title: "Что такое проекция?",
-             image: "/images/news1.png",
-            content: "Проекция — это бессознательный психологический защитный механизм, при котором человек приписывает собственные неприемлемые мысли, чувства, желания или черты характера другим людям или внешнему миру, искренне веря, что они исходят извне, а не изнутри него",
-        },
-        {
-            title: "Что такое проекция?",
-             image: "/images/news1.png",
-            content: "Проекция — это бессознательный психологический защитный механизм, при котором человек приписывает собственные неприемлемые мысли, чувства, желания или черты характера другим людям или внешнему миру, искренне веря, что они исходят извне, а не изнутри него",
-        },
-    ]
+export default function Blog() {
+  const [posts, setPosts] = useState([]);
 
-  render() {
-    return (
-      <div className='blog' id='blog'>
-        <div className='blog-hero'>
-            <div className='blog-hero-text'>
-                <h2>Блог</h2>
-                <p>Здесь вы можете ознакомиться с текстами, написанными нашими специалистами на популярные и острые темы, которые помогут вам разобраться в чем-то ?</p>
+  useEffect(() => {
+    fetch('/posts.json')
+      .then(response => response.json())
+      .then(data => setPosts(data))
+      .catch(error => console.error('Ошибка загрузки новостей:', error));
+  }, []);
+
+  return (
+    <div className="blog">
+      <h1>Новости</h1>
+
+      <div className="blog-list">
+        {posts.map(post => (
+          <article className="blog-card" key={post.slug}>
+
+            {post.image && (
+              <img
+                src={post.image}
+                alt={post.title}
+              />
+            )}
+
+            <div className="blog-card-content">
+
+              <div className="blog-date">
+                {new Date(post.date).toLocaleDateString('ru-RU')}
+              </div>
+
+              <h2>{post.title}</h2>
+
+              {post.excerpt && (
+                <p>{post.excerpt}</p>
+              )}
+
+              <Link to={`/blog/${post.slug}`}>
+                Читать далее
+              </Link>
+
             </div>
-            <img src='images/blog-iskra.png' alt='Искра'></img>
-        </div>
 
-        <div className='article'>
-            <h2>Непосредственно статьи</h2>
-            <div className='news'>
-                    {this.news.map((item, index) => (
-                    <div className='news-card' key={index}>
-                        <img src={item.image} className="news-img" alt={item.title} />
-                        <p className='news-title'>{item.title}</p>
-                        <p className='news-text'>{item.content}</p>
-                        <a className='news-details' href='/home'>узнать больше <img src='images/black_arrow.svg'></img></a>
-                    </div>
-                    ))}
-            </div>
-        </div>
+          </article>
+        ))}
       </div>
-    )
-  }
+    </div>
+  );
 }

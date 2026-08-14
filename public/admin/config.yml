@@ -1,0 +1,37 @@
+backend:
+  name: github
+  repo: Antropine/psychology
+  branch: main
+
+media_folder: "public/uploads"
+public_folder: "/uploads"
+
+collections:
+  - name: "posts"
+    label: "Новости"
+    folder: "content/posts"
+    create: true
+    slug: "{{slug}}"
+
+    fields:
+      - label: "Заголовок"
+        name: "title"
+        widget: "string"
+
+      - label: "Дата"
+        name: "date"
+        widget: "datetime"
+
+      - label: "Изображение"
+        name: "image"
+        widget: "image"
+        required: false
+
+      - label: "Краткое описание"
+        name: "excerpt"
+        widget: "text"
+        required: false
+
+      - label: "Текст"
+        name: "body"
+        widget: "markdown"

@@ -36,6 +36,7 @@ import Oplata from './pages/oplata/oplata';
 import Cookie from './pages/cookie/cookie';
 import Faq from './pages/home/faq/faq';
 import Metods from './pages/metods/metods';
+import Article from './pages/blog/detail_news';
 
 function HomePage() {
   return (
@@ -72,6 +73,7 @@ function App() {
           <Route path='/specialists/valeria' element={<Valeria />} />
           <Route path='/specialists/ulia' element={<Ulia />} />
           <Route path='/blog' element={<Blog />} />
+          <Route path='/blog/:slug' element={<Article />} />
           <Route path='/tests' element={<Tests />} />
           <Route path='/contacts' element={<Contacts />} />
           <Route path='/cookie' element={<Cookies />} />
