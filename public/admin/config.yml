@@ -2,37 +2,32 @@ backend:
   name: git-gateway
   branch: main
 
-media_folder: "public/uploads"
-public_folder: "/uploads"
+media_folder: public/uploads
+public_folder: /uploads
 
 collections:
-  - name: "posts"
-    label: "Новости"
-    folder: "content/posts"
+  - name: posts
+    label: Новости
+    folder: content/posts
     create: true
-    slug: "{{slug}}"
-    format: "frontmatter"
-    extension: "md"
 
     fields:
-      - label: "Заголовок"
-        name: "title"
-        widget: "string"
+      - label: Заголовок
+        name: title
+        widget: string
 
-      - label: "Дата"
-        name: "date"
-        widget: "datetime"
+      - label: Дата
+        name: date
+        widget: datetime
 
-      - label: "Изображение"
-        name: "image"
-        widget: "image"
-        required: false
+      - label: Изображение
+        name: image
+        widget: image
 
-      - label: "Краткое описание"
-        name: "excerpt"
-        widget: "text"
-        required: false
+      - label: Краткое описание
+        name: excerpt
+        widget: text
 
-      - label: "Текст"
-        name: "body"
-        widget: "markdown"
+      - label: Текст
+        name: body
+        widget: markdown
