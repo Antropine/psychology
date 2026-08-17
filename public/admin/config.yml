@@ -1,6 +1,7 @@
 backend:
   name: git-gateway
   branch: main
+  site_domain: eloquent-concha-0db33c.netlify.app
 
 media_folder: public/uploads
 public_folder: /uploads
