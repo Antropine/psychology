@@ -11,7 +11,6 @@ collections:
     label: Новости
     folder: content/posts
     create: true
-
     fields:
       - label: Заголовок
         name: title

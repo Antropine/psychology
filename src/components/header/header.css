@@ -50,6 +50,14 @@ nav a:hover{
 .phone{
     display: flex;
     justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.tel a{
+    text-decoration: none;
+    color: black;
 }
 
 .socail-icon{

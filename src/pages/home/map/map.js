@@ -27,6 +27,10 @@ export default class Map extends Component {
               <p>@iskra_psycenter</p>
             </div>
             <div className='address-item'>
+              <p><b>Номер телефона:</b></p>
+              <a href='tel:+79675422367'>+7 (967) 542-23-67</a>
+            </div>
+            <div className='address-item'>
               <p><b>График работы:</b></p>
               <p>ежедневно с 12:00 до 21:00 (<b>обязательна предварительная запись</b>)</p>
             </div>
