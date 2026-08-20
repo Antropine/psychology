@@ -16,14 +16,15 @@
     "react-router-dom": "^7.15.1",
     "react-scripts": "5.0.1",
     "react-select": "^5.10.2",
+    "rehype-raw": "^7.0.0",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-  "start": "node scripts/generate-posts.js && react-scripts start",
-  "build": "node scripts/generate-posts.js && react-scripts build",
-  "test": "react-scripts test",
-  "eject": "react-scripts eject"
-},
+    "start": "node scripts/generate-posts.js --dev",
+    "build": "node scripts/generate-posts.js && react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
   "eslintConfig": {
     "extends": [
       "react-app",
