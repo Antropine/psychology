@@ -18,6 +18,7 @@ import Map from './pages/home/map/map';
 import Help from './pages/home/help/help';
 import Services from './pages/services/services';
 import Assortment2 from './pages/home/assortment_replace/assortment2';
+import Place from './pages/home/place/place';
 
 // Отдельные страницы
 import About from './pages/about/about';
@@ -48,6 +49,7 @@ function HomePage() {
       <SpecialistsSection />
       <Metods />
       <Form />
+      <Place />
       <Result />
       <Map />
       <Faq />
