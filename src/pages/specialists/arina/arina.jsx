@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import './arina.css'
 import Form from '../../home/form/form'
+import SpecialistArticles from '../specialist-articles'
 
 export default class Arina extends Component {
 
@@ -57,7 +58,7 @@ export default class Arina extends Component {
           </div>
 
           <div className='about-right'>
-            {/* тут будет видео визитка и тд */}
+            <SpecialistArticles author='arina' />
           </div>
           
         </div>
