@@ -1,0 +1,128 @@
+.sertificates {
+    margin-top: 50px;
+}
+
+.sertificates button {
+    background: #ABD2FF;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 18px;
+    font-family: Unbounded;
+    font-size: clamp(16px, 1.1vw, 20px);
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.sertificates button:hover {
+    transform: scale(1.03);
+}
+
+.sert-overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 2000;
+    background: rgba(0, 0, 0, 0.72);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+    box-sizing: border-box;
+}
+
+.sert-gallery {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: min(920px, 100%);
+    max-height: 90vh;
+    user-select: none;
+    touch-action: pan-y;
+}
+
+.sert-image {
+    display: block;
+    max-width: 100%;
+    max-height: 80vh;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+}
+
+.sert-nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 46px;
+    height: 46px;
+    border: none;
+    border-radius: 50%;
+    background: #abd2ff;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    z-index: 2;
+}
+
+.sert-nav img {
+    width: 18px;
+    height: auto;
+}
+
+.sert-prev {
+    left: -12px;
+}
+
+.sert-next {
+    right: -12px;
+}
+
+.sert-close {
+    position: absolute;
+    top: -44px;
+    right: 0;
+    border: none;
+    background: none;
+    color: white;
+    font-size: 36px;
+    line-height: 1;
+    cursor: pointer;
+    padding: 0 6px;
+}
+
+.sert-counter {
+    position: absolute;
+    left: 50%;
+    bottom: -36px;
+    transform: translateX(-50%);
+    margin: 0;
+    color: white;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+@media (max-width: 768px) {
+    .sert-overlay {
+        padding: 16px;
+    }
+
+    .sert-nav {
+        width: 38px;
+        height: 38px;
+    }
+
+    .sert-prev {
+        left: 4px;
+    }
+
+    .sert-next {
+        right: 4px;
+    }
+
+    .sert-image {
+        max-height: 70vh;
+    }
+}

@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import '../arina/arina.css'
 import Form from '../../home/form/form'
 import SpecialistArticles from '../specialist-articles'
+import Certificates from '../certificates'
 
 export default class Ulia extends Component {
 
@@ -54,6 +55,8 @@ export default class Ulia extends Component {
               <p className='about-tit'>С какими запросами предпочитаю работать <img src='/images/heart.svg' alt='сердце'></img></p>
               <p className='about-text'>Тревога, страхи, навязчивые мысли и состояния, травмирующий опыт, ПРЛ (пограничное расстройство личности), работа с эмоциями, отношения (с партнером, родителями, друзьями, коллегами и другими людьми), расставание, развод, одиночество, отсутствие отношений, эмоциональное и профессиональное выгорание, потеря смысла жизни, жизненные цели, прокрастинация, самоопределение, принятие себя, самооценка и уверенность в себе</p>
             </div>
+
+            <Certificates specialist='ulia' />
           </div>
 
           <div className='about-right'>
