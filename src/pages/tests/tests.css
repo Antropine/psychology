@@ -6,3 +6,10 @@
 .tests-hero img{
     width: 460px;
 }
+
+.tests-iframe {
+    width: 80vw;
+    min-width: 100%;
+    height: 600px;
+    border: none;
+}
