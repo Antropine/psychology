@@ -5,22 +5,18 @@ export default class howwork extends Component {
   render() {
     return (
       <div className='work' id='work'>
-        <h2>Как мы работаем</h2>
+        <h2>Как мы работаем <img src='images/heart_white.svg' alt='' /></h2>
         <div className='work-steps'>
             <div className='work-step'>
-                <p className='step-header'>1 Расскажите о своем запросе</p>
-                <p>Несколько вопросов помогут понять, что вас беспокоит и какой формат вам подойдет</p>
+                <p className='step-header'><span className='step-nubmer'>1.</span> Подберем психолога</p>
+                <p>Поможем определиться с психологом, который подойдет именно вам</p>
             </div>
             <div className='work-step'>
-                <p className='step-header'>2 Подберем психолога</p>
-                <p>Мы поможем выбрать специалиста, исходя из ваших ответов</p>
-            </div>
-            <div className='work-step'>
-                <p className='step-header'>3 Запишитесь на сессию</p>
+                <p className='step-header'><span className='step-nubmer'>2.</span> Запишитесь на встречу</p>
                 <p>Выберите удобное время для консультации</p>
             </div>
             <div className='work-step'>
-                <p className='step-header'>4 Получите поддержку</p>
+                <p className='step-header'><span className='step-nubmer'>3.</span> Получите поддержку</p>
                 <p>Приходите на консультацию и получайте поддержку в комфортном пространстве</p>
             </div>
         </div>

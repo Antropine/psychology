@@ -1,39 +1,89 @@
 .work{
     background-color: #60BDFF;
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding-top: clamp(32px, 5vw, 60px);
+    padding-bottom: clamp(32px, 5vw, 60px);
     box-shadow: 0 0 0 100vmax #60BDFF;
     clip-path: inset(0 -100vmax);
+}
+
+.work h2{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: clamp(20px, 3vw, 36px);
+}
+
+.work h2 img{
+    width: clamp(32px, 4.25vw, 60px);
+    height: auto;
+    flex-shrink: 0;
 }
 
 .work-steps{
     display: flex;
     text-align: left;
-    gap: 25px;
+    gap: clamp(16px, 6.25vw, 90px);
     justify-content: space-between;
 }
 
 .work-step{
-    width: 350px;
+    flex: 1 1 0;
+    min-width: 0;
+    box-sizing: border-box;
     font-weight: 300;
+    font-size: clamp(13px, 1.15vw, 16px);
+    line-height: 1.45;
+    background-color: white;
+    padding: clamp(14px, 1.8vw, 20px);
+    border-radius: 20px;
+}
+
+.work-step p{
+    margin: 0;
+}
+
+.work-step p + p{
+    margin-top: 10px;
+}
+
+.step-nubmer{
+    display: inline-block;
+    background-color: #60BDFF;
+    padding: 6px 12px;
+    border-radius: 100px;
+    margin-right: 6px;
+    white-space: nowrap;
 }
 
 .step-header{
     font-weight: 600;
-    font-size: 20px;
+    font-size: clamp(15px, 1.6vw, 20px);
+    line-height: 1.35;
 }
 
 @media (max-width: 768px) {
     .work-steps {
         flex-direction: column;
-        gap: 10px;
     }
 
     .work-step {
         width: 100%;
+        flex: none;
     }
 
     .step-header{
-        margin-bottom: 0px;
+        margin-bottom: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .work {
+        padding-top: 28px;
+        padding-bottom: 28px;
+    }
+
+    .work-step {
+        padding: 16px;
+        border-radius: 16px;
     }
 }
