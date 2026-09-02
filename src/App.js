@@ -38,10 +38,16 @@ import Cookie from './pages/cookie/cookie';
 import Faq from './pages/home/faq/faq';
 import Metods from './pages/metods/metods';
 import Article from './pages/blog/detail_news';
+import { Helmet } from 'react-helmet-async';
 
 function HomePage() {
   return (
     <>
+      <Helmet>
+        <title>Психологический центр «Искра» в Екатеринбурге — Консультация психолога</title>
+        <meta name="description" content="Профессиональная психологическая помощь в центре «Искра». Семейная и индивидуальная психотерапия, консультации очно. Верните гармонию в жизнь!"/>
+         <link rel="canonical" href="https://iskrapsy.ru/" />
+      </Helmet>
       <Hero />
       <Advantages />
       <Howwork />
