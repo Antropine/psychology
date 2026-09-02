@@ -1,12 +1,20 @@
 import React, { Component } from 'react'
 import './specialists.css'
 import Form from '../home/form/form'
+import { Helmet } from 'react-helmet-async';
 
 export default class specialists extends Component {
   state = { policy: false }
 
   render() {
     return (
+      <>
+
+      <Helmet>
+        <title>Психологи психологического центра «Искра»</title>
+        <meta name="description" content="Команда центра «Искра» — это дипломированные психологи и психотерапевты с глубоким практическим опытом. Бережно и конфиденциально помогаем преодолеть жизненные трудности, депрессию и конфликты. Познакомьтесь с нашими экспертами и выберите своего специалиста!"/>
+      </Helmet>
+
       <div className='specialists' id='specialists'>
 
         <div className='services-hero'>
@@ -160,6 +168,9 @@ export default class specialists extends Component {
           <Form title="Приглашаем на первую встречу — чтобы познакомиться и понять, подходим ли мы вам." />
         </div>
       </div>
+
+      </>
+      
     )
   }
 }

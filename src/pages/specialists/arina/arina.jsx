@@ -3,11 +3,18 @@ import './arina.css'
 import Form from '../../home/form/form'
 import SpecialistArticles from '../specialist-articles'
 import Certificates from '../certificates'
+import { Helmet } from 'react-helmet-async';
 
 export default class Arina extends Component {
 
   render() {
     return (
+      <>
+      <Helmet>
+        <title>Арина Джумаян Клинический психолог, КПТ, схема-терапия - психолог центра «Искра»</title>
+        <meta name="description" content="Помогает бережно справиться с тревогой, выгоранием, неуверенностью и кризисами в отношениях. Бережная терапия, конфиденциальность и поддержка на каждом шагу. Запишитесь на первичную сессию!"/>
+      </Helmet>
+
       <div className='specialist-page'>
 
         <div className='specialist-hero'>
@@ -98,6 +105,7 @@ export default class Arina extends Component {
           <Form title="Приглашаем на первую встречу — чтобы познакомиться и понять, подходим ли мы вам." />
         </div>
       </div>
+      </>
     )
   }
 }

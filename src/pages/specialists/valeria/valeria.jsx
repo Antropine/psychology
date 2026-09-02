@@ -2,11 +2,18 @@ import React, { Component } from 'react'
 import '../arina/arina.css'
 import Form from '../../home/form/form'
 import SpecialistArticles from '../specialist-articles'
+import { Helmet } from 'react-helmet-async';
 
 export default class Valeria extends Component {
 
   render() {
     return (
+      <>
+      <Helmet>
+        <title>Валерия Федина Клинический психолог, КПТ, ACT - психолог центра «Искра»</title>
+        <meta name="description" content="Помогает бережно справиться с тревогой, выгоранием, неуверенностью и кризисами в отношениях. Бережная терапия, конфиденциальность и поддержка на каждом шагу. Запишитесь на первичную сессию!"/>
+      </Helmet>
+
       <div className='specialist-page'>
 
         <div className='specialist-hero'>
@@ -87,6 +94,7 @@ export default class Valeria extends Component {
         </div>
 
       </div>
+      </>
     )
   }
 }

@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import './services.css'
 import Form from '../home/form/form'
 import { Link } from 'react-router-dom'
+import { Helmet } from 'react-helmet-async';
 
 
 const services = [
@@ -34,6 +35,13 @@ const services = [
 export default class Services extends Component {
   render() {
     return (
+      <>
+
+      <Helmet>
+        <title>Услуги психологического центр «Искра»</title>
+        <meta name="description" content="Психологический центр «Искра»: вернем баланс и радость жизни. Бережные консультации для взрослых и пар. Помогаем победить стресс, тревогу, выгорание и кризисы. Верните искру радости в жизнь! Запись по телефону и сайте."/>
+      </Helmet>
+
       <div className='services' id='services'>
 
         <div className='services-hero'>
@@ -97,6 +105,7 @@ export default class Services extends Component {
           <Form title="Приглашаем на первую встречу — чтобы познакомиться и понять, подходим ли мы вам." />
           </div>
       </div>
+    </>
     )
   }
 }

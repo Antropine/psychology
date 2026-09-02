@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import './about.css'
 import Form from '../home/form/form'
+import { Helmet } from 'react-helmet-async';
 
 export default class about extends Component {
 
@@ -141,6 +142,12 @@ export default class about extends Component {
 
   render() {
     return (
+      <>
+      <Helmet>
+        <title>О нас психологический центр «Искра»</title>
+        <meta name="description" content="Психологический центр «Искра» — это ваше пространство поддержки и гармонии. Помогаем справиться со стрессом, тревогами и внутренними кризисами. Опытные эксперты проводят личные и семейные консультации. Верните искру радости в жизнь! Запись по телефону и сайте."/>
+      </Helmet>
+
       <div className='about' id='about'>
         <div className='about-hero'>
             <div className='about-text'>
@@ -217,6 +224,7 @@ export default class about extends Component {
             </div>
           </div>
           </div>
+      </>
     )
   }
 }

@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import './blog.css';
+import { Helmet } from 'react-helmet-async';
 
 export function formatPostDate(date) {
   if (!date) return '';
@@ -30,6 +31,12 @@ export default function Blog() {
   }, []);
 
   return (
+    <>
+    <Helmet>
+      <title>Статьи наших специалистов психологического центра «Искра»</title>
+      <meta name="description" content="Полезные статьи от экспертов центра «Искра». Читайте экспертные материалы о психологии, борьбе со стрессом, выгоранием и семейных отношениях. Практические советы, разборы кейсов и методики самопомощи от опытных психотерапевтов."/>
+    </Helmet>
+
     <div className='blog-section'>
       <div className="blog">
         <div className='about-text'>
@@ -76,5 +83,6 @@ export default function Blog() {
         </div>
       </div>
     </div>
+    </>
   );
 }
