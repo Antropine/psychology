@@ -40,6 +40,7 @@ export default class Services extends Component {
       <Helmet>
         <title>Услуги психологического центр «Искра»</title>
         <meta name="description" content="Психологический центр «Искра»: вернем баланс и радость жизни. Бережные консультации для взрослых и пар. Помогаем победить стресс, тревогу, выгорание и кризисы. Верните искру радости в жизнь! Запись по телефону и сайте."/>
+        <link rel="canonical" href="https://iskrapsy.ru/services"></link>
       </Helmet>
 
       <div className='services' id='services'>

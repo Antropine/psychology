@@ -13,6 +13,7 @@ export default class specialists extends Component {
       <Helmet>
         <title>Психологи психологического центра «Искра»</title>
         <meta name="description" content="Команда центра «Искра» — это дипломированные психологи и психотерапевты с глубоким практическим опытом. Бережно и конфиденциально помогаем преодолеть жизненные трудности, депрессию и конфликты. Познакомьтесь с нашими экспертами и выберите своего специалиста!"/>
+        <link rel="canonical" href="https://iskrapsy.ru/specialists"></link>
       </Helmet>
 
       <div className='specialists' id='specialists'>

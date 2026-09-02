@@ -35,6 +35,7 @@ export default function Blog() {
     <Helmet>
       <title>Статьи наших специалистов психологического центра «Искра»</title>
       <meta name="description" content="Полезные статьи от экспертов центра «Искра». Читайте экспертные материалы о психологии, борьбе со стрессом, выгоранием и семейных отношениях. Практические советы, разборы кейсов и методики самопомощи от опытных психотерапевтов."/>
+      <link rel="canonical" href="https://iskrapsy.ru/blog"></link>
     </Helmet>
 
     <div className='blog-section'>

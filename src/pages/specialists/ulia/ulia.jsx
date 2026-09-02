@@ -14,6 +14,7 @@ export default class Ulia extends Component {
       <Helmet>
         <title>Юлия Верёвочникова Психолог, КПТ, ACT - психолог центра «Искра»</title>
         <meta name="description" content="Клинический психолог, КПТ, ACT. Помогает бережно справиться с тревогой, выгоранием, неуверенностью и кризисами в отношениях. Бережная терапия, конфиденциальность и поддержка на каждом шагу. Запишитесь на первичную сессию!"/>
+       <link rel="canonical" href="https://iskrapsy.ru/specialists/ulia"></link>
       </Helmet>
 
       <div className='specialist-page'>

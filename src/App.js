@@ -46,7 +46,7 @@ function HomePage() {
       <Helmet>
         <title>Психологический центр «Искра» в Екатеринбурге — Консультация психолога</title>
         <meta name="description" content="Профессиональная психологическая помощь в центре «Искра». Семейная и индивидуальная психотерапия, консультации очно. Верните гармонию в жизнь!"/>
-         <link rel="canonical" href="https://iskrapsy.ru/" />
+        <link rel="canonical" href="https://iskrapsy.ru/" />
       </Helmet>
       <Hero />
       <Advantages />

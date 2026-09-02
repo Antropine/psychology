@@ -146,6 +146,7 @@ export default class about extends Component {
       <Helmet>
         <title>О нас психологический центр «Искра»</title>
         <meta name="description" content="Психологический центр «Искра» — это ваше пространство поддержки и гармонии. Помогаем справиться со стрессом, тревогами и внутренними кризисами. Опытные эксперты проводят личные и семейные консультации. Верните искру радости в жизнь! Запись по телефону и сайте."/>
+        <link rel="canonical" href="https://iskrapsy.ru/about"></link>
       </Helmet>
 
       <div className='about' id='about'>

@@ -12,6 +12,7 @@ export default class Valeria extends Component {
       <Helmet>
         <title>Валерия Федина Клинический психолог, КПТ, ACT - психолог центра «Искра»</title>
         <meta name="description" content="Помогает бережно справиться с тревогой, выгоранием, неуверенностью и кризисами в отношениях. Бережная терапия, конфиденциальность и поддержка на каждом шагу. Запишитесь на первичную сессию!"/>
+        <link rel="canonical" href="https://iskrapsy.ru/specialists/valeria"></link>
       </Helmet>
 
       <div className='specialist-page'>
