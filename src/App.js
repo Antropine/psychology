@@ -39,6 +39,7 @@ import Faq from './pages/home/faq/faq';
 import Metods from './pages/metods/metods';
 import Article from './pages/blog/detail_news';
 import { Helmet } from 'react-helmet-async';
+import Collaboration from './pages/collaboration/collaboration';
 
 function HomePage() {
   return (
@@ -87,6 +88,7 @@ function App() {
           <Route path='/cookie' element={<Cookies />} />
           <Route path='/oplata' element={<Oplata />} />
           <Route path="*" element={<Page404 />} />
+          <Route path='/collaboration' element={<Collaboration />} />
         </Routes>
         <Cookie />
         <SocialButtons />

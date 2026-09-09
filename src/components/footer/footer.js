@@ -14,6 +14,7 @@ export default class footer extends Component {
               <Link to="/services">услуги</Link>
               <Link to="/specialists">специалисты</Link>
               <Link to="/contacts">контакты</Link>
+              <Link to="/collaboration">сотрудничество</Link>
             </div>
             <div className='footer-column'>
               <p>Еще</p>

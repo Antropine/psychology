@@ -1,0 +1,217 @@
+.hero-section {
+    text-align: left;
+}
+
+.collaboration .hero-text {
+    font-weight: 300;
+}
+
+.collaboration_variant {
+    margin-top: clamp(50px, 8vw, 100px);
+    margin-bottom: clamp(50px, 8vw, 100px);
+}
+
+.collaboration_section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+}
+
+.steps {
+    flex: 1;
+    margin-top: 50px;
+}
+
+.step {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-bottom: 20px;
+    max-width: 60%;
+    text-align: left;
+    font-weight: 300;
+}
+
+.step-number {
+    flex-shrink: 0;
+    width: 65px;
+    height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #60BDFF;
+    border-radius: 50%;
+    color: white;
+    font-size: 36px;
+    margin: 0;
+}
+
+.step-text {
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px;
+    flex: 1;
+}
+
+.step-text p {
+    margin: 0;
+}
+
+.col-img {
+    flex-shrink: 0;
+}
+
+.col-img img {
+    display: block;
+    width: 600px;
+    max-width: 100%;
+    height: auto;
+}
+
+.collab-text {
+    margin-top: clamp(50px, 8vw, 100px);
+    text-align: center;
+}
+
+.collab-text img {
+    margin-bottom: 20px;
+    max-width: 100%;
+}
+
+.collab-text p {
+    font-size: clamp(18px, 2vw, 24px);
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+
+/* Планшет */
+@media (max-width: 1200px) {
+
+    .collaboration_section {
+        gap: 30px;
+    }
+
+    .step {
+        gap: 15px;
+        width: 100%;
+    }
+
+    .step-number {
+        width: 55px;
+        height: 55px;
+        font-size: 28px;
+    }
+
+    .step-text {
+        padding: 15px;
+    }
+
+    .col-img img {
+        width: 380px;
+    }
+}
+
+
+/* Небольшой планшет */
+@media (max-width: 900px) {
+
+    .collaboration_section {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .steps {
+        width: 100%;
+    }
+
+    .step {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .col-img {
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .col-img img {
+        width: 400px;
+        max-width: 80%;
+    }
+}
+
+
+/* Телефон */
+@media (max-width: 600px) {
+
+    .collaboration_variant {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    .collaboration_section {
+        gap: 30px;
+    }
+
+    .steps {
+        margin-top: 20px;
+    }
+
+    .step {
+        gap: 12px;
+        margin-bottom: 15px;
+    }
+
+    .step-number {
+        width: 45px;
+        height: 45px;
+        font-size: 20px;
+    }
+
+    .step-text {
+        padding: 15px;
+        border-radius: 15px;
+        font-size: 13px;
+    }
+
+    .col-img img {
+        width: 300px;
+        max-width: 100%;
+    }
+
+    .collab-text {
+        margin-top: 50px;
+    }
+
+    .collab-text p {
+        max-width: 100%;
+        font-size: 18px;
+    }
+}
+
+
+/* Маленький телефон */
+@media (max-width: 400px) {
+
+    .step {
+        gap: 10px;
+    }
+
+    .step-number {
+        width: 40px;
+        height: 40px;
+        font-size: 18px;
+    }
+
+    .step-text {
+        padding: 12px;
+        font-size: 12px;
+    }
+
+    .collab-text p {
+        font-size: 16px;
+    }
+}
