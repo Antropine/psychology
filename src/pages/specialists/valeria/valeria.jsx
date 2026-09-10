@@ -108,7 +108,7 @@ export default class Valeria extends Component {
                   </div>
                 </div>
                 <div className='spec-links'>
-                  <a href='/specialists/valeria' className='spec-link'>узнать больше<br/>о специалисте</a>
+                  <a href='/specialists/ulia' className='spec-link'>узнать больше<br/>о специалисте</a>
                   <a  className='form-reg' href='#form'>записаться</a>
                 </div>
               </div>
