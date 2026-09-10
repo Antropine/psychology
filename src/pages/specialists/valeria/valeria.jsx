@@ -94,6 +94,41 @@ export default class Valeria extends Component {
           <Form title="Приглашаем на первую встречу — чтобы познакомиться и понять, подходим ли мы вам." />
         </div>
 
+
+        <div className='other-spec'>
+            <h2>Специалисты, которые могут помочь</h2>
+            <div className='spec-cards'>
+              <div className='spec-card'>
+                <div className='spec-info'>
+                  <img src='/images/valeria.png' alt='специалист 1'></img>
+                  <div className='home-specialists-info'>
+                    <p className='home-specialists-name'>Юлия Верёвочникова</p>
+                    <p className='home-spec-work'>Психолог, КПТ, ACT</p>
+                    <p className='spec-price'>от <b>4000 Р</b> / сессия</p>
+                  </div>
+                </div>
+                <div className='spec-links'>
+                  <a href='/specialists/valeria' className='spec-link'>узнать больше<br/>о специалисте</a>
+                  <a  className='form-reg' href='#form'>записаться</a>
+                </div>
+              </div>
+
+              <div className='spec-card'>
+                <div className='spec-info'>
+                  <img src='/images/arina.png' alt='специалист 2'></img>
+                  <div className='home-specialists-info'>
+                    <p className='home-specialists-name'>Арина Джумаян</p>
+                    <p className='home-spec-work'>Клинический психолог, КПТ, схема-терапия, семейная терапия</p>
+                    <p className='spec-price'>от <b>3500 Р</b> / сессия</p>
+                  </div>
+                </div>
+                <div className='spec-links'>
+                  <a href='/specialists/arina' className='spec-link'>узнать больше<br/>о специалисте</a>
+                  <a className='form-reg' href='#form'>записаться</a>
+                </div>
+              </div>
+            </div>
+          </div>
       </div>
       </>
     )

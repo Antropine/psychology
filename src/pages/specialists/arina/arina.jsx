@@ -5,7 +5,7 @@ import SpecialistArticles from '../specialist-articles'
 import Certificates from '../certificates'
 import { Helmet } from 'react-helmet-async';
 
-export default class Arina extends Component {
+export default class Arina extends Component {  
 
   render() {
     return (
@@ -104,7 +104,44 @@ export default class Arina extends Component {
         <div className='about-form'>
           <Form title="Приглашаем на первую встречу — чтобы познакомиться и понять, подходим ли мы вам." />
         </div>
-      </div>
+
+        <div className='other-spec'>
+            <h2>Специалисты, которые могут помочь</h2>
+            <div className='spec-cards'>
+              <div className='spec-card'>
+                <div className='spec-info'>
+                  <img src='/images/valeria.png' alt='специалист 1'></img>
+                  <div className='home-specialists-info'>
+                    <p className='home-specialists-name'>Валерия Федина</p>
+                    <p className='home-spec-work'>Клинический психолог, КПТ, АСТ</p>
+                    <p className='spec-price'>от <b>3500 Р</b> / сессия</p>
+                  </div>
+                </div>
+                <div className='spec-links'>
+                  <a href='/specialists/valeria' className='spec-link'>узнать больше<br/>о специалисте</a>
+                  <a  className='form-reg' href='#form'>записаться</a>
+                </div>
+              </div>
+
+              <div className='spec-card'>
+                <div className='spec-info'>
+                  <img src='/images/ulia.png' alt='специалист 1'></img>
+                  <div className='home-specialists-info'>
+                    <p className='home-specialists-name'>Юлия Верёвочникова</p>
+                    <p className='home-spec-work'>Психолог, КПТ, АСТ</p>
+                    <p className='spec-price'>от <b>4000 Р</b> / сессия</p>
+                  </div>
+                </div>
+                <div className='spec-links'>
+                  <a href='/specialists/ulia' className='spec-link'>узнать больше<br/>о специалисте</a>
+                  <a className='form-reg' href='#form'>записаться</a>
+                </div>
+              </div>
+            </div>
+        </div>
+        
+        </div>
+
       </>
     )
   }
