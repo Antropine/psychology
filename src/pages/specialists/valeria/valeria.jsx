@@ -100,7 +100,7 @@ export default class Valeria extends Component {
             <div className='spec-cards'>
               <div className='spec-card'>
                 <div className='spec-info'>
-                  <img src='/images/valeria.png' alt='специалист 1'></img>
+                  <img src='/images/ulia.png' alt='специалист 1'></img>
                   <div className='home-specialists-info'>
                     <p className='home-specialists-name'>Юлия Верёвочникова</p>
                     <p className='home-spec-work'>Психолог, КПТ, ACT</p>
