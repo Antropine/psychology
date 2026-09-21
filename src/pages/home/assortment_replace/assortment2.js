@@ -32,6 +32,10 @@ export default class Assortment2 extends Component {
                 <button className='advantages-list'>Навязчивые мысли</button>
                 <button className='advantages-list'>Выгорание</button>
                 <button className='advantages-list'>Самооценка</button>
+                <button className='advantages-list'>СДВГ</button>
+                <button className='advantages-list'>Стыд / вина</button>
+                <button className='advantages-list'>Неуверенность в себе</button>
+                <button className='advantages-list'>Прокрастинация</button>
             </div>
         </div>
       </div>

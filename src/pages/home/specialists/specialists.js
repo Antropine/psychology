@@ -45,10 +45,10 @@ export default class specialists extends Component {
 
             <div className='home-problem'>
               <button>Тревога, страхи</button>
+              <button>ПРЛ</button>
               <button>Отношения</button>
               <button>Принятие себя</button>
               <button>Травмирующий опыт</button>
-              <button>Стресс на работе</button>
             </div>
 
             <div className='home-specialists-price'>
