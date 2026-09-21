@@ -21,7 +21,7 @@ export default function Cookie() {
 
   return (
     <div className="cookie">
-      <p>Мы используем <a className='cookie-link' href='/cookie'>куки</a> и <a className='cookie-link' href='/cookie'>рекомендательные технологии</a> — без них сайт просто не сможет нормально работать</p>
+      <p>Мы используем <a className='cookie-link' href='/cookie'>куки</a> и рекомендательные технологии — без них сайт просто не сможет нормально работать</p>
       <button onClick={acceptCookie}>
         хорошо
       </button>
