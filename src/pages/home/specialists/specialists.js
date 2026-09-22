@@ -39,7 +39,7 @@ export default class specialists extends Component {
               <img src='images/ulia.png' alt='специалист 1'></img>
               <div className='home-specialists-info'>
                 <p className='home-specialists-name'>Юлия Верёвочникова</p>
-                <p className='home-spec-work'>Психолог, КПТ (когнитивно-поведенческая терапия), ACT (терапия принятияи ответственности)</p>
+                <p className='home-spec-work'>Психолог, КПТ (когнитивно-поведенческая терапия), ACT (терапия принятия и ответственности)</p>
               </div>
             </div>
 
