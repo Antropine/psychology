@@ -251,6 +251,17 @@
     min-width: 0;
     box-sizing: border-box;
 }
+
+.other-spec .spec-card {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.other-spec .spec-links {
+    margin-top: auto;
+}
+
 .spec-info img {
     width: 100px;
     height: 100px;
