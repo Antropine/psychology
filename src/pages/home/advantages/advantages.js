@@ -17,6 +17,10 @@ export default class advantages extends Component {
             <img src='images/strah.svg' alt='страх'></img>
             <p>Уютный кабинет<br/>и транспортная доступность</p>
         </div>
+        <div className='advantages-step'>
+            <img src='images/gnev.svg' alt='формат работы'></img>
+            <p>Очный<br/>и онлайн формат</p>
+        </div>
       </div>
     )
   }

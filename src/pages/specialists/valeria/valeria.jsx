@@ -3,6 +3,7 @@ import '../arina/arina.css'
 import Form from '../../home/form/form'
 import SpecialistArticles from '../specialist-articles'
 import { Helmet } from 'react-helmet-async';
+import Certificates from '../certificates';
 
 export default class Valeria extends Component {
 
@@ -23,6 +24,7 @@ export default class Valeria extends Component {
             <p>Клинический психолог, взрослый психолог</p>
             <div className='specialist-button'>
               <button>Очно</button>
+              <button>Онлайн</button>
               <button>от 18 лет</button>
               <button>КПТ (когнитивно-поведенческая терапия)</button>
               <button>ACT-терапия (терапия принятия и ответственности)</button>
@@ -62,6 +64,7 @@ export default class Valeria extends Component {
               <p className='about-tit'>С какими запросами предпочитаю работать <img src='/images/heart.svg' alt='сердце'></img></p>
               <p className='about-text'>Тревога, навязчивые мысли, зависимости, депрессивные состояния, жизненные кризисы, РПП (расстройство пищевого поведения), сложности в отношениях с собой и окружающими, нестабильность в жизни и переезд</p>
             </div>
+             <Certificates specialist='valeria' />
           </div>
 
           <div className='about-right'>
@@ -76,6 +79,8 @@ export default class Valeria extends Component {
               <div className='format-card'>
                 <p className='format-title'>Первичная консультация</p>
                 <button className='format-time'>90 минут</button>
+                <button className='format-time'>Очно</button>
+                <button className='format-time'>Онлайн</button>
                 <p className='format-text'>Индивидуальный формат работы с психологом</p>
                 <p className='format-price'>4000 Р</p>
               </div>
@@ -83,6 +88,8 @@ export default class Valeria extends Component {
               <div className='format-card'>
                 <p className='format-title'>Вторичная консультация</p>
                 <button className='format-time'>55 минут</button>
+                <button className='format-time'>Очно</button>
+                <button className='format-time'>Онлайн</button>
                 <p className='format-text'>Индивидуальный формат работы с психологом</p>
                 <p className='format-price'>3500 Р</p>
               </div>

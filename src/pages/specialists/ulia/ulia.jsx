@@ -25,6 +25,7 @@ export default class Ulia extends Component {
             <p>Психолог, взрослый психолог</p>
             <div className='specialist-button'>
               <button>Очно</button>
+              <button>Онлайн</button>
               <button>от 18 лет</button>
               <button>КПТ (когнитивно-поведенческая терапия)</button>
               <button>ACT-терапия (терапия принятия и ответственности)</button>
@@ -80,6 +81,8 @@ export default class Ulia extends Component {
               <div className='format-card'>
                 <p className='format-title'>Первичная консультация</p>
                 <button className='format-time'>90 минут</button>
+                <button className='format-time'>Очно</button>
+                <button className='format-time'>Онлайн</button>
                 <p className='format-text'>Индивидуальный формат работы с психологом</p>
                 <p className='format-price'>4500 Р</p>
               </div>
@@ -87,6 +90,8 @@ export default class Ulia extends Component {
               <div className='format-card'>
                 <p className='format-title'>Вторичная консультация</p>
                 <button className='format-time'>55 минут</button>
+                <button className='format-time'>Очно</button>
+                <button className='format-time'>Онлайн</button>
                 <p className='format-text'>Индивидуальный формат работы с психологом</p>
                 <p className='format-price'>4000 Р</p>
               </div>

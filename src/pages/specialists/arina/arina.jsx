@@ -79,6 +79,7 @@ export default class Arina extends Component {
               <div className='format-card'>
                 <p className='format-title'>Первичная консультация</p>
                 <button className='format-time'>90 минут</button>
+                <button className='format-time'>Очно</button>
                 <p className='format-text'>Индивидуальный формат работы с психологом</p>
                 <p className='format-price'>4000 Р</p>
               </div>
@@ -86,6 +87,7 @@ export default class Arina extends Component {
               <div className='format-card'>
                 <p className='format-title'>Вторичная консультация</p>
                 <button className='format-time'>55 минут</button>
+                <button className='format-time'>Очно</button>
                 <p className='format-text'>Индивидуальный формат работы с психологом</p>
                 <p className='format-price'>3500 Р</p>
               </div>
@@ -94,6 +96,7 @@ export default class Arina extends Component {
                   <div className='format-card'>
                     <p className='format-title'>Семейный психолог</p>
                     <button className='format-time'>90 минут</button>
+                    <button className='format-time'>Очно</button>
                     <p className='format-text'>От 2 участников во время консультации</p>
                     <p className='format-price'>6000 Р</p>
                   </div>

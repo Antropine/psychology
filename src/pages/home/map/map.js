@@ -32,7 +32,7 @@ export default class Map extends Component {
             </div>
             <div className='address-item'>
               <p><b>График работы:</b></p>
-              <p>ежедневно с 12:00 до 21:00 (<b>обязательна предварительная запись</b>)</p>
+              <p>ежедневно с 12:00 до 21:00 по местному времени<br/>(<b>обязательна предварительная запись</b>)</p>
             </div>
           </div>
         <div className='map-frame'>

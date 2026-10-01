@@ -17,7 +17,7 @@ export default class howwork extends Component {
             </div>
             <div className='work-step'>
                 <p className='step-header'><span className='step-nubmer'>3.</span> Получите поддержку</p>
-                <p>Приходите на консультацию и получайте поддержку в комфортном пространстве</p>
+                <p>Приходите на консультацию и получайте поддержку в комфортной обстановке</p>
             </div>
         </div>
       </div>

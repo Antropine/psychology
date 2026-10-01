@@ -4,7 +4,8 @@ import './certificates.css'
 
 const CERT_COUNTS = {
   arina: 6,
-  ulia: 9
+  ulia: 9,
+  valeria: 3
 }
 
 function getCertificates(specialist) {
