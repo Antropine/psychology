@@ -52,7 +52,7 @@ export default class specialists extends Component {
             </div>
 
             <div className='home-specialists-price'>
-              <p className='home-price'>от <b>4000 Р</b> / сессия</p>
+              <p className='home-price'>от <b>3500 Р</b> / сессия</p>
               <div className='button'>
                   <Link to='/specialists/ulia'>выбрать</Link>
               </div>
