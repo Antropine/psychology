@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import './metods.css'
+import { Link } from 'react-router-dom'
 
 export default class metods extends Component {
   render() {
@@ -10,10 +11,12 @@ export default class metods extends Component {
             <div className='metod-card'>
                 <p className='metod-title'>Когнитивно-поведенческая терапия (КПТ)</p>
                 <p className='metod-text'>Понять, как мысли влияют на эмоции и поведение, и приобрести полезные навыки, чтобы самостоятельно использовать их в жизни. Эффективна в решении большинства запросов клиентов.</p>
+                <Link className='metod-article' to='kpt'>Узнать подробнее <img src='images/black_arrow.svg'></img></Link>
             </div>
             <div className='metod-card'>
                 <p className='metod-title'>Терапия принятия и ответственности (ACT)</p>
                 <p className='metod-text'>Научиться строить жизнь в соответствии со своими ценностями и быть психологически гибким.</p>
+                <Link className='metod-article' to='act'>Узнать подробнее <img src='images/black_arrow.svg'></img></Link>
             </div>
             <div className='metod-card'>
                 <p className='metod-title'>Терапия, сфокусированная на сострадании (CFT)</p>

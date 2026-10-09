@@ -84,7 +84,7 @@ export default class Ulia extends Component {
                 <button className='format-time'>Очно</button>
                 <button className='format-time'>Онлайн</button>
                 <p className='format-text'>Индивидуальный формат работы с психологом</p>
-                <p className='format-price'>4500 Р</p>
+                <p className='format-price'>4000 Р</p>
               </div>
               <div className='format-cards'>
               <div className='format-card'>
@@ -93,7 +93,7 @@ export default class Ulia extends Component {
                 <button className='format-time'>Очно</button>
                 <button className='format-time'>Онлайн</button>
                 <p className='format-text'>Индивидуальный формат работы с психологом</p>
-                <p className='format-price'>4000 Р</p>
+                <p className='format-price'>3500 Р</p>
               </div>
               </div>
           </div>

@@ -40,6 +40,8 @@ import Metods from './pages/metods/metods';
 import Article from './pages/blog/detail_news';
 import { Helmet } from 'react-helmet-async';
 import Collaboration from './pages/collaboration/collaboration';
+import Kpt from './pages/metods_pages/kpt';
+import Act from './pages/metods_pages/act';
 
 function HomePage() {
   return (
@@ -89,6 +91,8 @@ function App() {
           <Route path='/oplata' element={<Oplata />} />
           <Route path="*" element={<Page404 />} />
           <Route path='/collaboration' element={<Collaboration />} />
+          <Route path='/kpt' element={<Kpt />} />
+          <Route path='/act' element={<Act />} />
         </Routes>
         <Cookie />
         <SocialButtons />

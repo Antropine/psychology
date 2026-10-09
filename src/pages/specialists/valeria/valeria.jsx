@@ -111,7 +111,7 @@ export default class Valeria extends Component {
                   <div className='home-specialists-info'>
                     <p className='home-specialists-name'>Юлия Верёвочникова</p>
                     <p className='home-spec-work'>Психолог, КПТ, ACT</p>
-                    <p className='spec-price'>от <b>4000 Р</b> / сессия</p>
+                    <p className='spec-price'>от <b>3500 Р</b> / сессия</p>
                   </div>
                 </div>
                 <div className='spec-links'>
