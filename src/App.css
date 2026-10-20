@@ -4,7 +4,7 @@
   text-align: center;
   font-family: "Unbounded", sans-serif;
   background-color: #EAF0FF;
-  overflow-x: hidden;
+  overflow-x: clip;
 }
 
 .App-logo {

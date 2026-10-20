@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import './map.css'
-import { GoArrowRight } from "react-icons/go";
 
 export default class Map extends Component {
   render() {
@@ -14,25 +13,18 @@ export default class Map extends Component {
               <p>г. Екатеринбург, ул. Малышева, 51, БЦ «Высоцкий»</p>
             </div>
             <div className='address-item'>
-              <p><b>ВКонтакте:</b></p>
-              <a href='https://vk.ru/iskra_psycenter'>Написать в VK <GoArrowRight /></a>
-            </div>
-            <div className='address-item'>
-              <p><b>МAX:</b></p>
-              <a href='https://max.ru/u/f9LHodD0cOIhJjPwMBW_HDyIkUGHf8Q5i_e-Tj2UgMTqlOh5eQlo4or6CUQ'>Написать в MAX <GoArrowRight /></a>
-            </div>
-            <div className='address-item'>
-              <p><b>Telegram:</b></p>
-              <a href='https://t.me/iskra_psycenter'>Написать в Telegram <GoArrowRight /></a>
-              <p>@iskra_psycenter</p>
-            </div>
-            <div className='address-item'>
-              <p><b>Номер телефона:</b></p>
-              <a href='tel:+79675422367'>+7 (967) 542-23-67</a>
-            </div>
-            <div className='address-item'>
               <p><b>График работы:</b></p>
               <p>ежедневно с 12:00 до 21:00 по местному времени<br/>(<b>обязательна предварительная запись</b>)</p>
+            </div>
+            <div className='address-item address-phone'>
+              <a href='tel:+79675422367'><b>+7 (967) 542-23-67</b></a>
+            </div>
+            <div className='address-item'>
+              <div className='address-social-buttons'>
+                <a className='social-button' href='https://t.me/iskra_psycenter' target="_blank" rel="noopener noreferrer">Написать в Telegram</a>
+                <a className='social-button' href='https://vk.ru/iskra_psycenter' target="_blank" rel="noopener noreferrer">Написать в ВК</a>
+                <a className='social-button' href='https://max.ru/u/f9LHodD0cOIhJjPwMBW_HDyIkUGHf8Q5i_e-Tj2UgMTqlOh5eQlo4or6CUQ' target="_blank" rel="noopener noreferrer">Написать в МАКС</a>
+              </div>
             </div>
           </div>
         <div className='map-frame'>

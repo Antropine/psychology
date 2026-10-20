@@ -13,7 +13,6 @@ export default function Header() {
         <a href='/'>
         <img className='img_logo' src='/images/logo.svg' alt='логотип' />
       </a>
-      <p className='logo_subtitle'>Современный<br/>психологический<br/>центр</p>
       </div>
       <button className='hamburger' onClick={() => setMenuOpen(!menuOpen)} aria-label='меню'>
         {menuOpen ? <IoCloseOutline /> : <RxHamburgerMenu />}
@@ -29,17 +28,13 @@ export default function Header() {
       </div>
       <div className='header-button'>
         <div className='address'>
-          <p className='city'>г. Екатеринбург</p>
-          <p>ул. Малышева, 51<br />БЦ Высоцкий</p>
+          <p className='city'>+7 (967) 542-23-67<br/>ул. Малышева, 51</p>
         </div>
         <div className='phone'>
           <div className='socail-icon'>
             <a href='https://t.me/iskra_psycenter' target='_blank' rel="noreferrer"><img src='/images/tg.svg' alt='Телеграм' /></a>
             <a href='https://vk.ru/iskra_psycenter' target='_blank' rel="noreferrer"><img src='/images/vk.svg' alt='вконтакте'></img></a>
             <a href='https://max.ru/u/f9LHodD0cOIhJjPwMBW_HDyIkUGHf8Q5i_e-Tj2UgMTqlOh5eQlo4or6CUQ' target='_blank' rel="noreferrer"><img src='/images/max.svg' alt='Макс' /></a>
-          </div>
-          <div className='tel'>
-            <a href='tel:+79675422367'>+7 (967) 542-23-67</a>
           </div>
         </div>
       </div>
