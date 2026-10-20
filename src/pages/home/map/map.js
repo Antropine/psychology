@@ -9,7 +9,7 @@ export default class Map extends Component {
         <div className='map' id='map'>
           <div className='address-text'>
             <div className='address-item'>
-              <p><b>Адрес</b></p>
+              <p><b>Адрес:</b></p>
               <p>г. Екатеринбург, ул. Малышева, 51, БЦ «Высоцкий»</p>
             </div>
             <div className='address-item'>
